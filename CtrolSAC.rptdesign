@@ -1,0 +1,2294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.24" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.9.0.v202203150031</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="SEMESTRE" id="108">
+            <text-property name="promptText">Ingrese Semestre:</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="isRequired">true</property>
+            <property name="dataSetName">ListaMeses</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["MONTH"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["MONTH"]</expression>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="4">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.93.97:1521:ADELIA</property>
+            <property name="odaUser">birt</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">QmlydDk4MiQ=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="cTROLsac" id="1069">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">DOC</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DOC</text-property>
+                    <text-property name="heading">DOC</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NOMBRE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">NOMBRE</text-property>
+                    <text-property name="heading">NOMBRE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CARGO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CARGO</text-property>
+                    <text-property name="heading">CARGO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">MEJOR_SUELDO_SEMESTRE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">MEJOR_SUELDO_SEMESTRE</text-property>
+                    <text-property name="heading">MEJOR_SUELDO_SEMESTRE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ART_SAC</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ART_SAC</text-property>
+                    <text-property name="heading">ART_SAC</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DIAS_TRABAJADOS</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">DIAS_TRABAJADOS</text-property>
+                    <text-property name="heading">DIAS_TRABAJADOS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SAC_LIQUIDADO</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">SAC_LIQUIDADO</text-property>
+                    <text-property name="heading">SAC_LIQUIDADO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CONTROL_SAC</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CONTROL_SAC</text-property>
+                    <text-property name="heading">CONTROL_SAC</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">param_1</property>
+                    <property name="paramName">SEMESTRE</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">param_2</property>
+                    <property name="paramName">SEMESTRE</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">param_3</property>
+                    <property name="paramName">SEMESTRE</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">3</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">DOC</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">NOMBRE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CARGO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">MEJOR_SUELDO_SEMESTRE</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">ART_SAC</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">DIAS_TRABAJADOS</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">SAC_LIQUIDADO</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">CONTROL_SAC</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">DOC</property>
+                    <property name="nativeName">DOC</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">NOMBRE</property>
+                    <property name="nativeName">NOMBRE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CARGO</property>
+                    <property name="nativeName">CARGO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">MEJOR_SUELDO_SEMESTRE</property>
+                    <property name="nativeName">MEJOR_SUELDO_SEMESTRE</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">ART_SAC</property>
+                    <property name="nativeName">ART_SAC</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">DIAS_TRABAJADOS</property>
+                    <property name="nativeName">DIAS_TRABAJADOS</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">SAC_LIQUIDADO</property>
+                    <property name="nativeName">SAC_LIQUIDADO</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">CONTROL_SAC</property>
+                    <property name="nativeName">CONTROL_SAC</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select doc, nombre, MAX(CARGO) CARGO, max(total_grupo_sac) mejor_sueldo_semestre, sum(total_grupo_sac2) art_sac, SUM(CANT_DIAS) DIAS_TRABAJADOS, nvl(min(sac.sac_liquidado),0) sac_liquidado, 
+nvl(min(sac.sac_liquidado),0) - (max(total_grupo_sac) * SUM(CANT_DIAS)/360 - sum(total_grupo_sac2))control_sac
+from (
+select p.NRO_DOCUMENTO doc, trim(p.APELLIDO)||' '|| trim(p.NOMBRE) nombre, rmc.periodo,rmc.TOTAL_GRUPO_SAC, rmc.TOTAL_GRUPO_SAC2, rmc.CANT_DIAS, DC.DESCRIPTION CARGO
+from adelia.resumen_mensual_cargo rmc
+inner join adelia.cargo c on rmc.CARGO = c.OBJECTID
+INNER JOIN ADELIA.DEFINICION_CARGO DC ON C.DEFINICION_CARGO = DC.OBJECTID
+inner join adelia.agente a on c.AGENTE = a.OBJECTID
+inner join adelia.persona p on a.PERSONA = p.OBJECTID
+where rmc.PERIODO between ADD_MONTHS(TO_DATE(?,'DD/MM/YYYY'),-5) and TO_DATE(?,'DD/MM/YYYY')
+)
+LEFT JOIN (
+select p.NRO_DOCUMENTO, ac.MONTO sac_liquidado
+from adelia.liquidacion_cargo lc
+inner join adelia.aplicacion_concepto_liq ac on ac.LIQUIDACION_CARGO = lc.OBJECTID
+inner join adelia.liquidacion l on lc.LIQUIDACION = l.OBJECTID
+inner join adelia.tipo_liquidacion tl on l.TIPO_LIQ = tl.OBJECTID
+inner join adelia.proceso_liquidacion pl on l.PROCESO_LIQ = pl.OBJECTID
+inner join adelia.concepto_liquidacion cl on ac.CONCEPTO_LIQ = cl.OBJECTID
+inner join adelia.cargo c on lc.CARGO = c.OBJECTID
+inner join adelia.agente a on c.AGENTE = a.OBJECTID
+inner join adelia.persona p on a.PERSONA = p.OBJECTID
+where 1 = 1
+and tl.CODE = '0004'
+and pl.PERIODO = TO_DATE(?,'DD/MM/YYYY')
+and cl.CODE = '300-00'
+) sac on sac.nro_documento = doc
+group by doc, nombre
+ORDER BY control_sac desc, sac_liquidado desc]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DOC</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DOC</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DOC</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NOMBRE</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>81</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>NOMBRE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NOMBRE</design:label>
+            <design:formattingHints>
+              <design:displaySize>81</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CARGO</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>60</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CARGO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CARGO</design:label>
+            <design:formattingHints>
+              <design:displaySize>60</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>MEJOR_SUELDO_SEMESTRE</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>MEJOR_SUELDO_SEMESTRE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>MEJOR_SUELDO_SEMESTRE</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ART_SAC</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ART_SAC</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ART_SAC</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DIAS_TRABAJADOS</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DIAS_TRABAJADOS</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DIAS_TRABAJADOS</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SAC_LIQUIDADO</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SAC_LIQUIDADO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SAC_LIQUIDADO</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CONTROL_SAC</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CONTROL_SAC</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CONTROL_SAC</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="ListaMeses" id="565">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">MONTH</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">MONTH</text-property>
+                    <text-property name="heading">MONTH</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">MONTH</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">MONTH</property>
+                    <property name="nativeName">MONTH</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select TO_CHAR(PL.periodo,'DD/MM/YYYY') month
+from ADELIA.PROCESO_LIQUIDACION PL
+WHERE EXTRACT(MONTH FROM PL.PERIODO) IN ('06','12')
+order by periodo desc]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>MONTH</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>MONTH</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>MONTH</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="CtrolSac2" id="1128">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">DOC</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DOC</text-property>
+                    <text-property name="heading">DOC</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">NOMBRE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">NOMBRE</text-property>
+                    <text-property name="heading">NOMBRE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CARGO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CARGO</text-property>
+                    <text-property name="heading">CARGO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ESTADO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ESTADO</text-property>
+                    <text-property name="heading">ESTADO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RECATEGORIZADO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">RECATEGORIZADO</text-property>
+                    <text-property name="heading">RECATEGORIZADO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ALTA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ALTA</text-property>
+                    <text-property name="heading">ALTA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BAJA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BAJA</text-property>
+                    <text-property name="heading">BAJA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">MEJOR_SUELDO_SEMESTRE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">MEJOR_SUELDO_SEMESTRE</text-property>
+                    <text-property name="heading">MEJOR_SUELDO_SEMESTRE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DIAS_TRABAJADOS</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">DIAS_TRABAJADOS</text-property>
+                    <text-property name="heading">DIAS_TRABAJADOS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SAC_LIQUIDADO</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">SAC_LIQUIDADO</text-property>
+                    <text-property name="heading">SAC_LIQUIDADO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CONTROL_SAC</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CONTROL_SAC</text-property>
+                    <text-property name="heading">CONTROL_SAC</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DIFERENCIA_CONTROL</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">DIFERENCIA_CONTROL</text-property>
+                    <text-property name="heading">DIFERENCIA_CONTROL</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">param_1</property>
+                    <property name="paramName">SEMESTRE</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">param_2</property>
+                    <property name="paramName">SEMESTRE</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">param_3</property>
+                    <property name="paramName">SEMESTRE</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">3</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">DOC</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">NOMBRE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CARGO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">ESTADO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">RECATEGORIZADO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">ALTA</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">BAJA</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">MEJOR_SUELDO_SEMESTRE</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">DIAS_TRABAJADOS</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">SAC_LIQUIDADO</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">CONTROL_SAC</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">DIFERENCIA_CONTROL</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">DOC</property>
+                    <property name="nativeName">DOC</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">NOMBRE</property>
+                    <property name="nativeName">NOMBRE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CARGO</property>
+                    <property name="nativeName">CARGO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">ESTADO</property>
+                    <property name="nativeName">ESTADO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">RECATEGORIZADO</property>
+                    <property name="nativeName">RECATEGORIZADO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">ALTA</property>
+                    <property name="nativeName">ALTA</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">BAJA</property>
+                    <property name="nativeName">BAJA</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">MEJOR_SUELDO_SEMESTRE</property>
+                    <property name="nativeName">MEJOR_SUELDO_SEMESTRE</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">DIAS_TRABAJADOS</property>
+                    <property name="nativeName">DIAS_TRABAJADOS</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">SAC_LIQUIDADO</property>
+                    <property name="nativeName">SAC_LIQUIDADO</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">CONTROL_SAC</property>
+                    <property name="nativeName">CONTROL_SAC</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">DIFERENCIA_CONTROL</property>
+                    <property name="nativeName">DIFERENCIA_CONTROL</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[
+select doc, nombre, max(case when orden_cargo = 1 then cargo else '' end) cargo,
+case when trim(max(case when orden_cargo = 1 then estado else '' end)) = '02' then 'Activo Sin Liquidacion'
+when trim(max(case when orden_cargo = 1 then estado else '' end)) = '03' then 'Inactivo'
+when trim(max(case when orden_cargo = 1 then estado else '' end)) = '01' then 'Activo Con Liquidacion' end estado, 
+case when max(rec.docu) is not null then 'S' else 'N' end rECATEGORIZADO,
+max(case when orden_cargo = 1 then alta else null end) alta,
+max(case when orden_cargo = 1 then baja else null end) baja,
+max(total_grupo_sac) mejor_sueldo_semestre,
+SUM(CANT_DIAS) dias_trabajados,
+nvl(min(sac.sac_liquidado),0)sac_liquidado,
+(max(total_grupo_sac) * SUM(CANT_DIAS)/360 - sum(total_grupo_sac2)) control_sac,
+nvl(min(sac.sac_liquidado),0) - (max(total_grupo_sac) * SUM(CANT_DIAS)/360 - sum(total_grupo_sac2)) Diferencia_Control
+from (
+select p.NRO_DOCUMENTO doc, trim(p.APELLIDO)||' '|| trim(p.NOMBRE) nombre,C.ESTADO,c.OBJECTID o_cargo, rmc.periodo, rmc.TOTAL_GRUPO_SAC, rmc.TOTAL_GRUPO_SAC2, rmc.CANT_DIAS, DC.DESCRIPTION CARGO, bc.FECHA baja,
+ RANK() OVER( PARTITION BY p.NRO_DOCUMENTO ORDER BY AC.FECHA desc, rmc.PERIODO DESC) ORDEN_CARGO, ac.fecha alta
+ from adelia.resumen_mensual_cargo rmc
+inner join adelia.cargo c on rmc.CARGO = c.OBJECTID
+INNER JOIN ADELIA.DEFINICION_CARGO DC ON C.DEFINICION_CARGO = DC.OBJECTID
+INNER JOIN ADELIA.ALTA_CARGO AC ON C.ALTA = AC.OBJECTID
+LEFT JOIN ADELIA.BAJA_CARGO BC ON Bc.OBJECTID = C.BAJA
+inner join adelia.agente a on c.AGENTE = a.OBJECTID
+inner join adelia.persona p on a.PERSONA = p.OBJECTID
+where rmc.PERIODO between ADD_MONTHS(TO_DATE(?,'DD/MM/YYYY'),-5) and TO_DATE(?,'DD/MM/YYYY')
+)
+LEFT JOIN (
+select p.NRO_DOCUMENTO, ac.MONTO sac_liquidado
+from adelia.liquidacion_cargo lc
+inner join adelia.aplicacion_concepto_liq ac on ac.LIQUIDACION_CARGO = lc.OBJECTID
+inner join adelia.liquidacion l on lc.LIQUIDACION = l.OBJECTID
+inner join adelia.tipo_liquidacion tl on l.TIPO_LIQ = tl.OBJECTID
+inner join adelia.proceso_liquidacion pl on l.PROCESO_LIQ = pl.OBJECTID
+inner join adelia.concepto_liquidacion cl on ac.CONCEPTO_LIQ = cl.OBJECTID
+inner join adelia.cargo c on lc.CARGO = c.OBJECTID
+inner join adelia.agente a on c.AGENTE = a.OBJECTID
+inner join adelia.persona p on a.PERSONA = p.OBJECTID
+where 1 = 1
+and tl.CODE = '0004'
+and pl.PERIODO = TO_DATE(?,'DD/MM/YYYY')
+and cl.CODE = '300-00'
+) sac on sac.nro_documento = doc
+left join (
+select substr(cuil,3,8) docu from (select cuil from pledezma.cuils union select cuil from pledezma.cuils2 union select cuil from pledezma.cuils3 union select cuil from pledezma.cuils4)
+) rec on rec.docu = trim(doc)
+group by doc, nombre
+HAVING nvl(min(sac.sac_liquidado),0) - (max(total_grupo_sac) * SUM(CANT_DIAS)/360 - sum(total_grupo_sac2)) not between -1 and 1
+order by 5,4,12]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DOC</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DOC</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DOC</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NOMBRE</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>81</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>NOMBRE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NOMBRE</design:label>
+            <design:formattingHints>
+              <design:displaySize>81</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CARGO</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>60</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CARGO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CARGO</design:label>
+            <design:formattingHints>
+              <design:displaySize>60</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ESTADO</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>22</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ESTADO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ESTADO</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ALTA</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ALTA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ALTA</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>BAJA</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>BAJA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>BAJA</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>MEJOR_SUELDO_SEMESTRE</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>MEJOR_SUELDO_SEMESTRE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>MEJOR_SUELDO_SEMESTRE</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DIAS_TRABAJADOS</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DIAS_TRABAJADOS</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DIAS_TRABAJADOS</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SAC_LIQUIDADO</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SAC_LIQUIDADO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SAC_LIQUIDADO</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CONTROL_SAC</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CONTROL_SAC</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CONTROL_SAC</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DIFERENCIA_CONTROL</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DIFERENCIA_CONTROL</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DIFERENCIA_CONTROL</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <label id="107">
+            <property name="backgroundAttachment">scroll</property>
+            <property name="backgroundPositionX">0%</property>
+            <property name="backgroundPositionY">0%</property>
+            <property name="backgroundRepeat">repeat</property>
+            <property name="fontFamily">"Ebrima"</property>
+            <property name="fontSize">xx-large</property>
+            <property name="fontWeight">bold</property>
+            <property name="fontStyle">normal</property>
+            <property name="fontVariant">normal</property>
+            <property name="color">black</property>
+            <property name="textLineThrough">none</property>
+            <property name="textOverline">none</property>
+            <property name="textUnderline">none</property>
+            <property name="borderBottomColor">black</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftColor">black</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightColor">black</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopColor">black</property>
+            <property name="borderTopStyle">none</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">0pt</property>
+            <property name="marginLeft">0pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="marginRight">0pt</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingLeft">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="paddingRight">1pt</property>
+            <property name="textAlign">center</property>
+            <property name="letterSpacing">normal</property>
+            <property name="lineHeight">normal</property>
+            <property name="orphans">2</property>
+            <property name="textTransform">none</property>
+            <property name="verticalAlign">middle</property>
+            <property name="whiteSpace">normal</property>
+            <property name="widows">2</property>
+            <property name="wordSpacing">normal</property>
+            <property name="display">block</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
+            <property name="pageBreakInside">auto</property>
+            <property name="showIfBlank">false</property>
+            <property name="canShrink">false</property>
+            <property name="overflow">hidden</property>
+            <text-property name="text">CONTROL SAC</text-property>
+        </label>
+        <data id="450">
+            <property name="backgroundAttachment">scroll</property>
+            <property name="backgroundPositionX">0%</property>
+            <property name="backgroundPositionY">0%</property>
+            <property name="backgroundRepeat">repeat</property>
+            <property name="fontFamily">"Ebrima"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="fontStyle">normal</property>
+            <property name="fontVariant">normal</property>
+            <property name="color">black</property>
+            <property name="textLineThrough">none</property>
+            <property name="textOverline">none</property>
+            <property name="textUnderline">none</property>
+            <property name="borderBottomColor">black</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftColor">black</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightColor">black</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopColor">black</property>
+            <property name="borderTopStyle">none</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">0pt</property>
+            <property name="marginLeft">0pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="marginRight">0pt</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingLeft">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="paddingRight">1pt</property>
+            <property name="textAlign">center</property>
+            <property name="letterSpacing">normal</property>
+            <property name="lineHeight">normal</property>
+            <property name="orphans">2</property>
+            <property name="textTransform">none</property>
+            <property name="verticalAlign">bottom</property>
+            <property name="whiteSpace">normal</property>
+            <property name="widows">2</property>
+            <property name="wordSpacing">normal</property>
+            <property name="display">block</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
+            <property name="pageBreakInside">auto</property>
+            <property name="showIfBlank">false</property>
+            <property name="canShrink">false</property>
+            <property name="overflow">hidden</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <expression name="expression" type="javascript">"SEMESTRE DE AGUINALDO: " + params["SEMESTRE"].value</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <property name="resultSetColumn">Column Binding</property>
+        </data>
+        <grid id="1045">
+            <column id="1046">
+                <property name="width">5%</property>
+            </column>
+            <column id="1047">
+                <property name="fontFamily">"Ebrima"</property>
+                <property name="fontSize">12pt</property>
+            </column>
+            <column id="1048">
+                <property name="width">5%</property>
+            </column>
+            <row id="1049">
+                <property name="height">1in</property>
+                <cell id="1050">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1051">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1052">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
+            <row id="1201">
+                <cell id="1202">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1203">
+                    <property name="textAlign">center</property>
+                    <label id="1200">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"Ebrima"</property>
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">1pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="verticalAlign">middle</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">auto</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <text-property name="text">Listado Completo</text-property>
+                    </label>
+                </cell>
+                <cell id="1204">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
+            <row id="1053">
+                <cell id="1054">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1055">
+                    <property name="textAlign">center</property>
+                    <table id="1070">
+                        <property name="dataSet">cTROLsac</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">DOC</property>
+                                <text-property name="displayName">DOC</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DOC"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">NOMBRE</property>
+                                <text-property name="displayName">NOMBRE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["NOMBRE"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CARGO</property>
+                                <text-property name="displayName">CARGO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CARGO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">MEJOR_SUELDO_SEMESTRE</property>
+                                <text-property name="displayName">MEJOR_SUELDO_SEMESTRE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["MEJOR_SUELDO_SEMESTRE"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ART_SAC</property>
+                                <text-property name="displayName">ART_SAC</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ART_SAC"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DIAS_TRABAJADOS</property>
+                                <text-property name="displayName">DIAS_TRABAJADOS</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DIAS_TRABAJADOS"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SAC_LIQUIDADO</property>
+                                <text-property name="displayName">SAC_LIQUIDADO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SAC_LIQUIDADO"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONTROL_SAC</property>
+                                <text-property name="displayName">CONTROL_SAC</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CONTROL_SAC"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                        </list-property>
+                        <property name="pageBreakInterval">40000</property>
+                        <column id="1114"/>
+                        <column id="1115"/>
+                        <column id="1116"/>
+                        <column id="1117"/>
+                        <column id="1118"/>
+                        <column id="1119"/>
+                        <column id="1120"/>
+                        <column id="1121"/>
+                        <header>
+                            <row id="1071">
+                                <property name="backgroundColor">silver</property>
+                                <cell id="1072">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1073">
+                                        <text-property name="text">DOC</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1074">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1075">
+                                        <text-property name="text">NOMBRE</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1076">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1077">
+                                        <text-property name="text">CARGO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1078">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1079">
+                                        <text-property name="text">MEJOR SUELDO SEMESTRE</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1080">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1081">
+                                        <text-property name="text">ART SAC</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1082">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1083">
+                                        <text-property name="text">DIAS TRABAJADOS</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1084">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1085">
+                                        <text-property name="text">SAC LIQUIDADO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1086">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="1087">
+                                        <text-property name="text">CONTROL SAC</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="1088">
+                                <cell id="1089">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1090">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">DOC</property>
+                                    </data>
+                                </cell>
+                                <cell id="1091">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1092">
+                                        <property name="textAlign">left</property>
+                                        <property name="resultSetColumn">NOMBRE</property>
+                                    </data>
+                                </cell>
+                                <cell id="1093">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1094">
+                                        <property name="textAlign">left</property>
+                                        <property name="resultSetColumn">CARGO</property>
+                                    </data>
+                                </cell>
+                                <cell id="1095">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1096">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">MEJOR_SUELDO_SEMESTRE</property>
+                                    </data>
+                                </cell>
+                                <cell id="1097">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1098">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">ART_SAC</property>
+                                    </data>
+                                </cell>
+                                <cell id="1099">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1100">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">###0{RoundingMode=HALF_UP}</property>
+                                        </structure>
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">DIAS_TRABAJADOS</property>
+                                    </data>
+                                </cell>
+                                <cell id="1101">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1102">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">SAC_LIQUIDADO</property>
+                                    </data>
+                                </cell>
+                                <cell id="1103">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <data id="1104">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">CONTROL_SAC</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="1105">
+                                <cell id="1106">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1107">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1108">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1109">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1110">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1111">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1112">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1113">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+                <cell id="1056">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
+            <row id="1057">
+                <cell id="1058">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1059">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1060">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
+            <row id="1061">
+                <cell id="1062">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1063">
+                    <property name="textAlign">center</property>
+                    <label id="1199">
+                        <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundPositionX">0%</property>
+                        <property name="backgroundPositionY">0%</property>
+                        <property name="backgroundRepeat">repeat</property>
+                        <property name="fontFamily">"Ebrima"</property>
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="fontStyle">normal</property>
+                        <property name="fontVariant">normal</property>
+                        <property name="color">black</property>
+                        <property name="textLineThrough">none</property>
+                        <property name="textOverline">none</property>
+                        <property name="textUnderline">none</property>
+                        <property name="borderBottomColor">black</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">black</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">black</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">black</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0pt</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="marginRight">0pt</property>
+                        <property name="paddingTop">1pt</property>
+                        <property name="paddingLeft">1pt</property>
+                        <property name="paddingBottom">1pt</property>
+                        <property name="paddingRight">1pt</property>
+                        <property name="textAlign">center</property>
+                        <property name="letterSpacing">normal</property>
+                        <property name="lineHeight">normal</property>
+                        <property name="orphans">2</property>
+                        <property name="textTransform">none</property>
+                        <property name="verticalAlign">middle</property>
+                        <property name="whiteSpace">normal</property>
+                        <property name="widows">2</property>
+                        <property name="wordSpacing">normal</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakAfter">auto</property>
+                        <property name="pageBreakBefore">always</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="showIfBlank">false</property>
+                        <property name="canShrink">false</property>
+                        <property name="overflow">hidden</property>
+                        <text-property name="text">Analizar Diferencias</text-property>
+                    </label>
+                </cell>
+                <cell id="1064">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
+            <row id="1065">
+                <cell id="1066">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="1067">
+                    <property name="textAlign">center</property>
+                    <table id="1129">
+                        <property name="dataSet">CtrolSac2</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">DOC</property>
+                                <text-property name="displayName">DOC</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DOC"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">NOMBRE</property>
+                                <text-property name="displayName">NOMBRE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["NOMBRE"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CARGO</property>
+                                <text-property name="displayName">CARGO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CARGO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ESTADO</property>
+                                <text-property name="displayName">ESTADO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ESTADO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ALTA</property>
+                                <text-property name="displayName">ALTA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ALTA"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">BAJA</property>
+                                <text-property name="displayName">BAJA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["BAJA"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">MEJOR_SUELDO_SEMESTRE</property>
+                                <text-property name="displayName">MEJOR_SUELDO_SEMESTRE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["MEJOR_SUELDO_SEMESTRE"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DIAS_TRABAJADOS</property>
+                                <text-property name="displayName">DIAS_TRABAJADOS</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DIAS_TRABAJADOS"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SAC_LIQUIDADO</property>
+                                <text-property name="displayName">SAC_LIQUIDADO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SAC_LIQUIDADO"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONTROL_SAC</property>
+                                <text-property name="displayName">CONTROL_SAC</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CONTROL_SAC"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DIFERENCIA_CONTROL</property>
+                                <text-property name="displayName">DIFERENCIA_CONTROL</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DIFERENCIA_CONTROL"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">3</property>
+                                <text-property name="displayName">ESTADO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["RECATEGORIZADO"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="pageBreakInterval">40000</property>
+                        <column id="1188"/>
+                        <column id="1189"/>
+                        <column id="1190"/>
+                        <column id="1191"/>
+                        <column id="1208"/>
+                        <column id="1192"/>
+                        <column id="1193"/>
+                        <column id="1194"/>
+                        <column id="1195"/>
+                        <column id="1196"/>
+                        <column id="1197"/>
+                        <column id="1198"/>
+                        <header>
+                            <row id="1130">
+                                <property name="backgroundColor">silver</property>
+                                <cell id="1131">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1132">
+                                        <text-property name="text">DOC</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1133">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1134">
+                                        <text-property name="text">NOMBRE</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1135">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1136">
+                                        <text-property name="text">CARGO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1137">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1138">
+                                        <text-property name="text">ESTADO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1205">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1209">
+                                        <text-property name="text">RECATEGORIZADO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1139">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1140">
+                                        <text-property name="text">ALTA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1141">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1142">
+                                        <text-property name="text">BAJA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1143">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1144">
+                                        <text-property name="text">MEJOR SUELDO SEMESTRE</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1145">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1146">
+                                        <text-property name="text">DIAS TRABAJADOS</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1147">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1148">
+                                        <text-property name="text">SAC LIQUIDADO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1149">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1150">
+                                        <text-property name="text">CONTROL SAC</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1151">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <label id="1152">
+                                        <text-property name="text">DIFERENCIA CONTROL</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="1153">
+                                <cell id="1154">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1155">
+                                        <property name="resultSetColumn">DOC</property>
+                                    </data>
+                                </cell>
+                                <cell id="1156">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1157">
+                                        <property name="textAlign">left</property>
+                                        <property name="resultSetColumn">NOMBRE</property>
+                                    </data>
+                                </cell>
+                                <cell id="1158">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1159">
+                                        <property name="resultSetColumn">CARGO</property>
+                                    </data>
+                                </cell>
+                                <cell id="1160">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1161">
+                                        <property name="resultSetColumn">ESTADO</property>
+                                    </data>
+                                </cell>
+                                <cell id="1206">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1210">
+                                        <property name="resultSetColumn">3</property>
+                                    </data>
+                                </cell>
+                                <cell id="1162">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1163">
+                                        <structure name="dateTimeFormat">
+                                            <property name="category">Short Date</property>
+                                            <property name="pattern">Short Date</property>
+                                        </structure>
+                                        <property name="resultSetColumn">ALTA</property>
+                                    </data>
+                                </cell>
+                                <cell id="1164">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1165">
+                                        <structure name="dateTimeFormat">
+                                            <property name="category">Short Date</property>
+                                            <property name="pattern">Short Date</property>
+                                        </structure>
+                                        <property name="resultSetColumn">BAJA</property>
+                                    </data>
+                                </cell>
+                                <cell id="1166">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1167">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">MEJOR_SUELDO_SEMESTRE</property>
+                                    </data>
+                                </cell>
+                                <cell id="1168">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1169">
+                                        <property name="resultSetColumn">DIAS_TRABAJADOS</property>
+                                    </data>
+                                </cell>
+                                <cell id="1170">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1171">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">SAC_LIQUIDADO</property>
+                                    </data>
+                                </cell>
+                                <cell id="1172">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1173">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">CONTROL_SAC</property>
+                                    </data>
+                                </cell>
+                                <cell id="1174">
+                                    <property name="fontSize">10pt</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="textAlign">center</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <data id="1175">
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                            <property name="pattern">¤###,##0.00</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">DIFERENCIA_CONTROL</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="1176">
+                                <cell id="1177">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1178">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1179">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1180">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1207">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1181">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1182">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1183">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1184">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1185">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1186">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                                <cell id="1187">
+                                    <property name="fontSize">10pt</property>
+                                </cell>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+                <cell id="1068">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

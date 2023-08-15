@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.24" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.9.0.v202203150031</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="4">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.93.97:1521:ADELIA</property>
+            <property name="odaUser">birt</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">QmlydDk4MiQ=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Agentes_y_Sind" id="5">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">CUIL</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CUIL</text-property>
+                    <text-property name="heading">CUIL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">APELLIDO Y NOMBRE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">APELLIDO Y NOMBRE</text-property>
+                    <text-property name="heading">APELLIDO Y NOMBRE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">MINISTERIO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">MINISTERIO</text-property>
+                    <text-property name="heading">MINISTERIO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DEPENDENCIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DEPENDENCIA</text-property>
+                    <text-property name="heading">DEPENDENCIA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CODE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CODE</text-property>
+                    <text-property name="heading">CODE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DESCRIPTION</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCRIPTION</text-property>
+                    <text-property name="heading">DESCRIPTION</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ANTIGUEDAD</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ANTIGUEDAD</text-property>
+                    <text-property name="heading">ANTIGUEDAD</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">EDAD</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">EDAD</text-property>
+                    <text-property name="heading">EDAD</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FECHA NACIMIENTO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">FECHA NACIMIENTO</text-property>
+                    <text-property name="heading">FECHA NACIMIENTO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CONVENIO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CONVENIO</text-property>
+                    <text-property name="heading">CONVENIO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FUNCION</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">FUNCION</text-property>
+                    <text-property name="heading">FUNCION</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DIRECCION</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DIRECCION</text-property>
+                    <text-property name="heading">DIRECCION</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PUERTA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">PUERTA</text-property>
+                    <text-property name="heading">PUERTA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DEPARTAMENTO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DEPARTAMENTO</text-property>
+                    <text-property name="heading">DEPARTAMENTO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">MANZANA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">MANZANA</text-property>
+                    <text-property name="heading">MANZANA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BARRIO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BARRIO</text-property>
+                    <text-property name="heading">BARRIO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LOCALIDAD</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">LOCALIDAD</text-property>
+                    <text-property name="heading">LOCALIDAD</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TELEFONO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">TELEFONO</text-property>
+                    <text-property name="heading">TELEFONO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TELEFONO2</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">TELEFONO2</text-property>
+                    <text-property name="heading">TELEFONO2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TELEFONO3</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">TELEFONO3</text-property>
+                    <text-property name="heading">TELEFONO3</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ZIP_CODE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ZIP_CODE</text-property>
+                    <text-property name="heading">ZIP_CODE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">IMPORTE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">IMPORTE</text-property>
+                    <text-property name="heading">IMPORTE</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CUIL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">APELLIDO Y NOMBRE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">MINISTERIO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">DEPENDENCIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">CODE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">DESCRIPTION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">ANTIGUEDAD</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">EDAD</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">FECHA NACIMIENTO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">CONVENIO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">FUNCION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">DIRECCION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">PUERTA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">DEPARTAMENTO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">MANZANA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">BARRIO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">LOCALIDAD</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">TELEFONO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">TELEFONO2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">TELEFONO3</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">ZIP_CODE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">IMPORTE</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CUIL</property>
+                    <property name="nativeName">CUIL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">APELLIDO Y NOMBRE</property>
+                    <property name="nativeName">APELLIDO Y NOMBRE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">MINISTERIO</property>
+                    <property name="nativeName">MINISTERIO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">DEPENDENCIA</property>
+                    <property name="nativeName">DEPENDENCIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">CODE</property>
+                    <property name="nativeName">CODE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">DESCRIPTION</property>
+                    <property name="nativeName">DESCRIPTION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">ANTIGUEDAD</property>
+                    <property name="nativeName">ANTIGUEDAD</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">EDAD</property>
+                    <property name="nativeName">EDAD</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">FECHA NACIMIENTO</property>
+                    <property name="nativeName">FECHA NACIMIENTO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">CONVENIO</property>
+                    <property name="nativeName">CONVENIO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">FUNCION</property>
+                    <property name="nativeName">FUNCION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">DIRECCION</property>
+                    <property name="nativeName">DIRECCION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">PUERTA</property>
+                    <property name="nativeName">PUERTA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">DEPARTAMENTO</property>
+                    <property name="nativeName">DEPARTAMENTO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">MANZANA</property>
+                    <property name="nativeName">MANZANA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">BARRIO</property>
+                    <property name="nativeName">BARRIO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">LOCALIDAD</property>
+                    <property name="nativeName">LOCALIDAD</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">TELEFONO</property>
+                    <property name="nativeName">TELEFONO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">TELEFONO2</property>
+                    <property name="nativeName">TELEFONO2</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">TELEFONO3</property>
+                    <property name="nativeName">TELEFONO3</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">ZIP_CODE</property>
+                    <property name="nativeName">ZIP_CODE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">IMPORTE</property>
+                    <property name="nativeName">IMPORTE</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[--//Agentes con sus SINDICATOS//
+select   F.CUIT_CUIL cuil,
+           trim(f.apellido)||', '||trim(f.nombre) as "APELLIDO Y NOMBRE",
+           I.DESCRIPTION ministerio,
+           h.description as dependencia,
+           G.CODE, G.DESCRIPTION,
+           a.cantidad as antiguedad, 
+           TRUNC( ( TO_NUMBER(TO_CHAR(SYSDATE,'YYYYMMDD')) -  TO_NUMBER(TO_CHAR(F.FECHA_NACIMIENTO ,'YYYYMMDD') ) ) / 10000) AS Edad,
+           TO_CHAR(F.FECHA_NACIMIENTO ,'dd/mm/yyyy') as "FECHA NACIMIENTO",
+           'ESCALAFON GENERAL' convenio,
+           DC.DESCRIPTION funcion, 
+        --   null caracter,null "TIPO ACTO", null "NRO ACTO", null "FECHA ACTO", 
+           ad.street_name || ' ' || ad.street_number as "DIRECCION",
+           null puerta,
+           null departamento, null manzana, null barrio, 
+    CI.DESCRIPTION localidad, F.TELEFONO_CELULAR telefono, null telefono2,null telefono3  
+      , AD.ZIP_CODE
+      ,monto as importe      
+      --select distinct g.code, g.description
+    from adelia.aplicacion_concepto_liq a
+    inner join adelia.liquidacion_cargo    b on b.objectid = a.liquidacion_cargo
+    inner join adelia.liquidacion          c on c.objectid = b.liquidacion
+    inner join adelia.cargo                d on d.objectid = b.cargo
+    inner join adelia.agente               e on e.objectid = d.agente
+    inner join adelia.persona              f on f.objectid = e.persona
+    inner join adelia.concepto_liquidacion g on g.objectid = a.concepto_liq
+    inner join adelia.nodo_pof             h on h.nodo_estruc = d.nodopof_designado
+    inner join adelia.nodo_pof i    on i.nodo_estruc = h.ministerio
+    left join adelia.address             ad on AD.OBJECTID=e.domicilio
+    left join adelia.city                ci on CI.OBJECTID=ad.city
+    inner join adelia.definicion_cargo dc on DC.OBJECTID = D.DEFINICION_CARGO
+    inner join adelia.area ar on ar.objectid = d.area
+    where numero_liq  in (2731,2736)
+      and ar.description='PROGRAMAS' 
+      --and g.code in ('510-00','510-99') --SINDICATO A.T.E.
+      --//todos los sindicatos//
+      and g.code in ('510-00','510-99','512-00','512-99', 
+                     '514-00','515-00',
+                     '516-00','516-01', 
+                     '518-00','518-10','518-99','518-20',
+                     '520-00','520-99',                     
+                     '522-00','522-99',
+                     '524-99',
+                     '526-00','526-01','526-02','526-99',
+                     '528-00','528-99',
+                     '529-00',
+                     '533-00')       
+      order by 1]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="NewStyle" id="142">
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">thin</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">thin</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">thin</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">thin</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="orientation">landscape</property>
+            <property name="height">30cm</property>
+            <property name="width">60cm</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="6">
+            <property name="dataSet">Agentes_y_Sind</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">CUIL</property>
+                    <text-property name="displayName">CUIL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CUIL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">APELLIDO Y NOMBRE</property>
+                    <text-property name="displayName">APELLIDO Y NOMBRE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["APELLIDO Y NOMBRE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">MINISTERIO</property>
+                    <text-property name="displayName">MINISTERIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MINISTERIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">DEPENDENCIA</property>
+                    <text-property name="displayName">DEPENDENCIA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DEPENDENCIA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CODE</property>
+                    <text-property name="displayName">CODE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CODE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">DESCRIPTION</property>
+                    <text-property name="displayName">DESCRIPTION</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DESCRIPTION"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ANTIGUEDAD</property>
+                    <text-property name="displayName">ANTIGUEDAD</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ANTIGUEDAD"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">EDAD</property>
+                    <text-property name="displayName">EDAD</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["EDAD"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">FECHA NACIMIENTO</property>
+                    <text-property name="displayName">FECHA NACIMIENTO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["FECHA NACIMIENTO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CONVENIO</property>
+                    <text-property name="displayName">CONVENIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CONVENIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">FUNCION</property>
+                    <text-property name="displayName">FUNCION</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["FUNCION"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">DIRECCION</property>
+                    <text-property name="displayName">DIRECCION</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DIRECCION"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">PUERTA</property>
+                    <text-property name="displayName">PUERTA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PUERTA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">DEPARTAMENTO</property>
+                    <text-property name="displayName">DEPARTAMENTO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DEPARTAMENTO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">MANZANA</property>
+                    <text-property name="displayName">MANZANA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MANZANA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BARRIO</property>
+                    <text-property name="displayName">BARRIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BARRIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">LOCALIDAD</property>
+                    <text-property name="displayName">LOCALIDAD</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["LOCALIDAD"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">TELEFONO</property>
+                    <text-property name="displayName">TELEFONO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TELEFONO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">TELEFONO2</property>
+                    <text-property name="displayName">TELEFONO2</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TELEFONO2"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">TELEFONO3</property>
+                    <text-property name="displayName">TELEFONO3</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TELEFONO3"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ZIP_CODE</property>
+                    <text-property name="displayName">ZIP_CODE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ZIP_CODE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">IMPORTE</property>
+                    <text-property name="displayName">IMPORTE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["IMPORTE"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <column id="120"/>
+            <column id="121"/>
+            <column id="122"/>
+            <column id="123"/>
+            <column id="124"/>
+            <column id="125"/>
+            <column id="126"/>
+            <column id="127"/>
+            <column id="128"/>
+            <column id="129"/>
+            <column id="130"/>
+            <column id="131"/>
+            <column id="132"/>
+            <column id="133"/>
+            <column id="134"/>
+            <column id="135"/>
+            <column id="136"/>
+            <column id="137"/>
+            <column id="138"/>
+            <column id="139"/>
+            <column id="140"/>
+            <column id="141"/>
+            <header>
+                <row id="7">
+                    <property name="backgroundColor">#D4D4D4</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="verticalAlign">middle</property>
+                    <cell id="8">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="9">
+                            <text-property name="text">CUIL</text-property>
+                        </label>
+                    </cell>
+                    <cell id="10">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="11">
+                            <text-property name="text">APELLIDO Y NOMBRE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="12">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="13">
+                            <text-property name="text">MINISTERIO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="14">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="15">
+                            <text-property name="text">DEPENDENCIA</text-property>
+                        </label>
+                    </cell>
+                    <cell id="16">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="17">
+                            <text-property name="text">CODE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="18">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="19">
+                            <text-property name="text">DESCRIPTION</text-property>
+                        </label>
+                    </cell>
+                    <cell id="20">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="21">
+                            <text-property name="text">ANTIGUEDAD</text-property>
+                        </label>
+                    </cell>
+                    <cell id="22">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="23">
+                            <text-property name="text">EDAD</text-property>
+                        </label>
+                    </cell>
+                    <cell id="24">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="25">
+                            <text-property name="text">FECHA NACIMIENTO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="26">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="27">
+                            <text-property name="text">CONVENIO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="28">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="29">
+                            <text-property name="text">FUNCION</text-property>
+                        </label>
+                    </cell>
+                    <cell id="30">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="31">
+                            <text-property name="text">DIRECCION</text-property>
+                        </label>
+                    </cell>
+                    <cell id="32">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="33">
+                            <text-property name="text">PUERTA</text-property>
+                        </label>
+                    </cell>
+                    <cell id="34">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="35">
+                            <text-property name="text">DEPARTAMENTO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="36">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="37">
+                            <text-property name="text">MANZANA</text-property>
+                        </label>
+                    </cell>
+                    <cell id="38">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="39">
+                            <text-property name="text">BARRIO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="40">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="41">
+                            <text-property name="text">LOCALIDAD</text-property>
+                        </label>
+                    </cell>
+                    <cell id="42">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="43">
+                            <text-property name="text">TELEFONO</text-property>
+                        </label>
+                    </cell>
+                    <cell id="44">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="45">
+                            <text-property name="text">TELEFONO2</text-property>
+                        </label>
+                    </cell>
+                    <cell id="46">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="47">
+                            <text-property name="text">TELEFONO3</text-property>
+                        </label>
+                    </cell>
+                    <cell id="48">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="49">
+                            <text-property name="text">ZIP_CODE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="50">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="51">
+                            <text-property name="text">IMPORTE</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="52">
+                    <property name="verticalAlign">middle</property>
+                    <cell id="53">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="54">
+                            <property name="resultSetColumn">CUIL</property>
+                        </data>
+                    </cell>
+                    <cell id="55">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="56">
+                            <property name="resultSetColumn">APELLIDO Y NOMBRE</property>
+                        </data>
+                    </cell>
+                    <cell id="57">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="58">
+                            <property name="resultSetColumn">MINISTERIO</property>
+                        </data>
+                    </cell>
+                    <cell id="59">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="60">
+                            <property name="resultSetColumn">DEPENDENCIA</property>
+                        </data>
+                    </cell>
+                    <cell id="61">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="62">
+                            <property name="resultSetColumn">CODE</property>
+                        </data>
+                    </cell>
+                    <cell id="63">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="64">
+                            <property name="resultSetColumn">DESCRIPTION</property>
+                        </data>
+                    </cell>
+                    <cell id="65">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="66">
+                            <property name="resultSetColumn">ANTIGUEDAD</property>
+                        </data>
+                    </cell>
+                    <cell id="67">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="68">
+                            <property name="resultSetColumn">EDAD</property>
+                        </data>
+                    </cell>
+                    <cell id="69">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="70">
+                            <property name="resultSetColumn">FECHA NACIMIENTO</property>
+                        </data>
+                    </cell>
+                    <cell id="71">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="72">
+                            <property name="resultSetColumn">CONVENIO</property>
+                        </data>
+                    </cell>
+                    <cell id="73">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="74">
+                            <property name="resultSetColumn">FUNCION</property>
+                        </data>
+                    </cell>
+                    <cell id="75">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="76">
+                            <property name="resultSetColumn">DIRECCION</property>
+                        </data>
+                    </cell>
+                    <cell id="77">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="78">
+                            <property name="resultSetColumn">PUERTA</property>
+                        </data>
+                    </cell>
+                    <cell id="79">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="80">
+                            <property name="resultSetColumn">DEPARTAMENTO</property>
+                        </data>
+                    </cell>
+                    <cell id="81">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="82">
+                            <property name="resultSetColumn">MANZANA</property>
+                        </data>
+                    </cell>
+                    <cell id="83">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="84">
+                            <property name="resultSetColumn">BARRIO</property>
+                        </data>
+                    </cell>
+                    <cell id="85">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="86">
+                            <property name="resultSetColumn">LOCALIDAD</property>
+                        </data>
+                    </cell>
+                    <cell id="87">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="88">
+                            <property name="resultSetColumn">TELEFONO</property>
+                        </data>
+                    </cell>
+                    <cell id="89">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="90">
+                            <property name="resultSetColumn">TELEFONO2</property>
+                        </data>
+                    </cell>
+                    <cell id="91">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="92">
+                            <property name="resultSetColumn">TELEFONO3</property>
+                        </data>
+                    </cell>
+                    <cell id="93">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="94">
+                            <property name="resultSetColumn">ZIP_CODE</property>
+                        </data>
+                    </cell>
+                    <cell id="95">
+                        <property name="style">NewStyle</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <data id="96">
+                            <property name="resultSetColumn">IMPORTE</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="97">
+                    <property name="verticalAlign">middle</property>
+                    <cell id="98">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="99">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="100">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="101">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="102">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="103">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="104">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="105">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="106">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="107">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="108">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="109">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="110">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="111">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="112">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="113">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="114">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="115">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="116">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="117">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="118">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                    <cell id="119">
+                        <property name="style">NewStyle</property>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

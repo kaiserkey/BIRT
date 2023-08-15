@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.24" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.9.0.v202203150031</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="NRO_LIQ" id="6">
+            <text-property name="promptText">Ingrese Nro. de Liquidacion:</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">ListaLiqs</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["NUMERO_LIQ"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["LIQ"]</expression>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="4">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.93.97:1521:ADELIA</property>
+            <property name="odaUser">birt</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">QmlydDk4MiQ=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="AltaCta" id="5">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">LINEA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">LINEA</text-property>
+                    <text-property name="heading">LINEA</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">param_1</property>
+                    <property name="paramName">NRO_LIQ</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">LINEA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">LINEA</property>
+                    <property name="nativeName">LINEA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select
+--DATOS BANCARIOS
+'AH'                                     --PROCESO
+||'GPSL'                                 --SERVICIO
+||trim(AG.suc_bco_nac) -- '3240'                                 --SUCURSAL
+||lpad(AG.cuil,20,'0')                    --CODIGO DE AGENTE
+||'P'                                    --MONEDA DE LA CUENTA
+||'SF'                                   --TITULARIDAD
+||'05'                                   --LIMITE DE TARJETA
+--DATOS 1° TITULAR
+||'F'                                    --TIPO DE PERSONA
+||rpad(AG.apellido,40,' ')                --APELLIDO
+||rpad(AG.nombre,40,' ')                 --NOMBRE
+||'DU'--||nvl(b.tipo_documento,'  ')             --TIPO DE DOCUMENTO
+||lpad(nvl(AG.nro_documento,'0'),8,'0')   --NUMERO DE DOCUMENTO
+||'CFI'                                  --POSICION ANTE EL I.V.A.
+||'1'                                    --TIPO DE CLAVE TRIBUTARIA
+||rpad(AG.cuil,11,'0')                    --NUMERO DE CLAVE TRIBUTARIA
+||rpad(nvl(AG.fecha_nacimiento,'        '),8,' ') --FECHA DE NACIMIENTO ---
+||trim(AG.cod_nacionalidad) --'AR' --nvl(c.codigo_bna,'  ')                 --NACIONALIDAD
+||nvl(ag.sexo,' ')-- a.codigo_sexo                          --SEXO
+||nvl(estado_civil,'S') --nvl(d.codigo_bna,' ')                  --ESTADO CIVIL
+--DOMICILIO PARTICULAR
+||rpad(nvl(ag.calle,''),30,' ') --e.calle                                --CALLE
+||rpad(nvl(ag.numero,'S/N'),6,' ') --e.numero                               --NUMERO
+||rpad(nvl(ag.piso,''),3,' ') --e.piso                                 --PISO
+||rpad(nvl(ag.departamento,''),4,' ') --e.departamento                         --DEPARTAMENTO
+||ag.cod_postal --e.codigo_postal                        --CODIGO POSTAL
+||rpad(ag.localidad,20,' ') -- e.localidad                            --LOCALIDAD
+||ag.cod_provincia -- e.codigo_provincia                     --CODIGO PROVINCIA
+||rpad(ag.telefono,15,' ')                             --TELEFONO
+||rpad(ag.fax,15,' ')                                  --FAX
+--DOMICILIO LABORAL
+||rpad('AV.SERRANIAS PUNTANAS KM 783  ',30,' ')       --CALLE
+||'   S/N'                               --NUMERO
+||'  1'                                  --PISO
+||'    '                                 --DEPARTAMENTO
+||'05700'                                --CODIGO POSTAL
+||'SAN LUIS            '                 --LOCALIDAD
+||'SL'                                   --CODIGO PROVINCIA
+||'               '                      --TELEFONO
+||'               '                      --FAX
+linea
+from 
+(
+select trim(c.cuit_cuil) cuil, trim(C.APELLIDO) apellido, trim(C.NOMBRE) nombre
+           ,C.NRO_DOCUMENTO as nro_documento 
+          ,to_char(C.FECHA_NACIMIENTO,'yyyymmdd') fecha_nacimiento
+          ,f.code as tipo_documento
+          ,upper(C.PAIS_NACIONALIDAD) nacionalidad
+          ,upper(trim(C.SEXO)) SEXO
+          , case 
+                    when g.code='01' then 'C'
+                    when g.code='03' then 'H'
+                    when g.code='06' then 'S'
+                    else 'S' end as estado_civil          
+          ,upper(rpad(nvl(H.STREET_NAME,'                              '),30,' '))  calle
+          ,upper(lpad(nvl(trim(  replace(to_char(H.STREET_NUMBER),'.','S/N')                          ),'   S/N'),6,' '))     numero
+          ,upper(rpad(nvl(H.FLOOR,'   '),3,' ')) piso
+          ,upper(rpad(nvl(H.DEPARTMENT,'    '),4,' ')) departamento
+          --,H.ZIP_CODE codigo_postal
+          --,H.city ciudad     
+          ,LPAD (TRIM(nvl(i.zip_code,'05700')) ,5,'0') cod_postal
+          --,lpad(nvl(I.ZIP_CODE,'05700'),5,'0') cod_postal
+          ,upper(rpad(nvl(I.DESCRIPTION,'SAN LUIS            '),20,' ')) localidad          
+        --  ,H.MOBILE_PHONE telefono_cel
+          ,rpad(nvl(H.PHONE_NUMBER,'               '),15,' ') telefono --telefono_fijo
+          ,rpad(nvl(H.FAX,'               '),15,' ') fax
+          ,upper(J.DESCRIPTION) provincia
+          , nvl((case when j.code='000017' then 'SL'  else 'SL' end),'SL') as cod_provincia
+          ,l.description as sucursal_bco, l.code as codigo_suc
+           , case 
+                    when l.code='106' then '2121'
+                    when l.code in ('121','102') then '2430'
+                    when l.code in ('260','268','101')  then '3240'
+                    when l.code='110' then '2433'
+                    when l.code='116' then '3490'
+                    else  '3240' end as suc_bco_nac
+                    ,ll.description as nacionalidad, LL.CODE as cod_pais
+                    , case 
+                             when ll.code='000004' then 'BV'
+                             when ll.code='000006' then 'CH'
+                             when ll.code='000024' then 'PE'
+                             when ll.code='000038' then 'UR'
+                             else 'AR' end as cod_nacionalidad
+from adelia.agente a
+inner join adelia.cargo b on B.AGENTE=A.OBJECTID    
+inner join adelia.persona c on C.OBJECTID = A.PERSONA
+inner join adelia.area     d on D.OBJECTID = B.AREA
+left join adelia.baja_cargo e on E.OBJECTID = B.BAJA
+inner join adelia.tipo_documento f on f.objectid = C.TIPO_DOCUMENTO
+inner join ADELIA.ESTADO_CIVIL g on G.OBJECTID=C.ESTADO_CIVIL
+left join ADELIA.ADDRESS h on H.OBJECTID = A.DOMICILIO
+left join adelia.city i on H.CITY=I.OBJECTID
+left join ADELIA.PROVINCE j on J.OBJECTID=I.PROVINCE
+left join adelia.cuenta_bancaria k on k.agente= a.objectid
+left join ADELIA.BANCO_SUCURSAL l on k.sucursal = l.objectid
+left join adelia.country ll on LL.OBJECTID = c.pais_nacionalidad
+INNER JOIN ADELIA.LIQUIDACION_CARGO LC ON LC.CARGO = B.OBJECTID
+INNER JOIN ADELIA.LIQUIDACION L ON LC.LIQUIDACION = L.OBJECTID
+WHERE L.NUMERO_LIQ in (?)
+AND C.NRO_DOCUMENTO NOT IN (
+SELECT P.NRO_DOCUMENTO AS DOC
+FROM ADELIA.CUENTA_BANCARIA CB
+INNER JOIN ADELIA.AGENTE A ON CB.AGENTE = A.OBJECTID
+INNER JOIN ADELIA.BANCO_SUCURSAL BS ON CB.SUCURSAL = BS.OBJECTID 
+INNER JOIN ADELIA.TIPO_CUENTA_BANCARIA TCB ON CB.TIPO = TCB.OBJECTID 
+INNER JOIN ADELIA.BANCO B ON BS.BANCO = B.OBJECTID
+INNER JOIN ADELIA.PERSONA P ON A.PERSONA = P.OBJECTID
+WHERE UPPER(B.DESCRIPTION) LIKE '%NACION%'
+AND CB.HABILITADA = 1
+)
+AND C.NRO_DOCUMENTO NOT IN (
+SELECT P.NRO_DOCUMENTO
+FROM ADELIA.RELACION_AGENTE_PERSONA RAP
+INNER JOIN ADELIA.AGENTE A ON RAP.AGENTE = A.OBJECTID
+INNER JOIN ADELIA.PERSONA P ON A.PERSONA = P.OBJECTID
+INNER JOIN ADELIA.PERSONA PF ON RAP.PERSONA = PF.OBJECTID
+FULL OUTER JOIN ADELIA.CERTIFICADO_AGENTE CA ON RAP.CERTIFICADO = CA.OBJECTID
+FULL OUTER JOIN ADELIA.TIPO_CERTIFICADO_AGENTE TCA ON CA.TIPO_CERTIFICADO = TCA.OBJECTID
+FULL OUTER JOIN ADELIA.PARENTESCO PA ON RAP.PARENTESCO = PA.OBJECTID
+FULL OUTER JOIN ADELIA.DETALLE_FAMILIAR_DECLARADO DF ON DF.CUIL = PF.CUIT_CUIL
+WHERE SUBSTR(RAP.OBJECTID,1,4) = '4F91'
+)
+) AG]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="ListaLiqs" id="300">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">NUMERO_LIQ</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">NUMERO_LIQ</text-property>
+                    <text-property name="heading">NUMERO_LIQ</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LIQ</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">LIQ</text-property>
+                    <text-property name="heading">LIQ</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PERIODO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">PERIODO</text-property>
+                    <text-property name="heading">PERIODO</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">NUMERO_LIQ</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">LIQ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">PERIODO</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">NUMERO_LIQ</property>
+                    <property name="nativeName">NUMERO_LIQ</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">LIQ</property>
+                    <property name="nativeName">LIQ</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">PERIODO</property>
+                    <property name="nativeName">PERIODO</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT L.NUMERO_LIQ, TRIM(UPPER(L.NUMERO_LIQ || ' - ' || L.DESCRIPCION)|| ' - ' || TL.DESCRIPTION || ' - ' || TO_CHAR(PL.PERIODO,'YYYY-MM')) AS LIQ, PL.PERIODO 
+FROM ADELIA.LIQUIDACION L
+INNER JOIN ADELIA.PROCESO_LIQUIDACION PL ON PL.OBJECTID = L.PROCESO_LIQ
+INNER JOIN ADELIA.TIPO_LIQUIDACION TL ON L.TIPO_LIQ = TL.OBJECTID
+AND TL.CODE IN (0001, 0004,0014)
+and upper(l.descripcion) not like '%TEST%'
+and upper(l.descripcion) not like '%REIN%'
+ORDER BY 3 DESC, 1 DESC]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NUMERO_LIQ</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>38</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>NUMERO_LIQ</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NUMERO_LIQ</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>LIQ</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>103</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>LIQ</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>LIQ</design:label>
+            <design:formattingHints>
+              <design:displaySize>103</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PERIODO</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>PERIODO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PERIODO</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <table id="7">
+            <property name="dataSet">AltaCta</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">LINEA</property>
+                    <text-property name="displayName">LINEA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["LINEA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="pageBreakInterval">40000000</property>
+            <column id="16"/>
+            <detail>
+                <row id="11">
+                    <cell id="12">
+                        <data id="13">
+                            <property name="resultSetColumn">LINEA</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>
