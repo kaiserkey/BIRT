@@ -2221,41 +2221,6 @@ END]]></xml-property>
                     </table>
                 </cell>
             </row>
-            <row id="893">
-                <property name="height">50pt</property>
-                <cell id="894">
-                    <property name="colSpan">2</property>
-                    <property name="rowSpan">1</property>
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="896">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="897">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="898">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="899">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="900">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="901">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="902">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="903">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="904">
-                    <property name="textAlign">center</property>
-                </cell>
-            </row>
             <row id="891">
                 <property name="height">50pt</property>
                 <cell id="892">
