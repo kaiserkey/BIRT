@@ -1415,9 +1415,13 @@ END]]></xml-property>
                         <column id="907"/>
                         <column id="749"/>
                         <column id="750"/>
+                        <column id="910"/>
                         <column id="751"/>
+                        <column id="913"/>
                         <column id="752"/>
+                        <column id="916"/>
                         <column id="753"/>
+                        <column id="919"/>
                         <header>
                             <row id="715">
                                 <property name="backgroundColor">silver</property>
@@ -1546,10 +1550,12 @@ END]]></xml-property>
                                         <property name="showIfBlank">false</property>
                                         <property name="canShrink">false</property>
                                         <property name="overflow">hidden</property>
-                                        <text-property name="text">CANTIDAD</text-property>
+                                        <text-property name="text">CANT.</text-property>
                                     </label>
                                 </cell>
                                 <cell id="720">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -1613,6 +1619,8 @@ END]]></xml-property>
                                     </label>
                                 </cell>
                                 <cell id="722">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -1676,6 +1684,8 @@ END]]></xml-property>
                                     </label>
                                 </cell>
                                 <cell id="724">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -1739,6 +1749,8 @@ END]]></xml-property>
                                     </label>
                                 </cell>
                                 <cell id="726">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -1936,6 +1948,8 @@ END]]></xml-property>
                                     </data>
                                 </cell>
                                 <cell id="733">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -2000,6 +2014,8 @@ END]]></xml-property>
                                     </data>
                                 </cell>
                                 <cell id="735">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -2064,6 +2080,8 @@ END]]></xml-property>
                                     </data>
                                 </cell>
                                 <cell id="737">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -2128,6 +2146,8 @@ END]]></xml-property>
                                     </data>
                                 </cell>
                                 <cell id="739">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
