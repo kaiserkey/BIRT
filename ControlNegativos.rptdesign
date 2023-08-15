@@ -885,46 +885,46 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         </list-property>
                         <column id="803"/>
                         <column id="804">
-                            <property name="width">140px</property>
+                            <property name="width">100px</property>
                         </column>
                         <column id="805">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="806">
-                            <property name="width">1.1145833333333333in</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="807">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="808">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="809">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="810">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="811">
-                            <property name="width">40ex</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="812">
-                            <property name="width">140px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="813">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="814">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="815">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="820">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <column id="839">
-                            <property name="width">100px</property>
+                            <property name="width">70px</property>
                         </column>
                         <header>
                             <row id="730">
