@@ -3211,7 +3211,7 @@ END]]></xml-property>
                                         <property name="paddingRight">1pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
-                                            <property name="pattern">¤###,##0.00</property>
+                                            <property name="pattern">$###,##0.00</property>
                                         </structure>
                                         <property name="textAlign">right</property>
                                         <property name="letterSpacing">normal</property>
@@ -3443,7 +3443,7 @@ END]]></xml-property>
                                         <property name="paddingRight">1pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
-                                            <property name="pattern">¤###,##0.00</property>
+                                            <property name="pattern">$###,##0.00</property>
                                         </structure>
                                         <property name="textAlign">right</property>
                                         <property name="letterSpacing">normal</property>
