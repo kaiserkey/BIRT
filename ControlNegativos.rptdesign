@@ -891,7 +891,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                             <property name="width">25px</property>
                         </column>
                         <column id="806">
-                            <property name="width">25px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="807">
                             <property name="width">25px</property>
@@ -903,28 +903,28 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                             <property name="width">25px</property>
                         </column>
                         <column id="810">
-                            <property name="width">25px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="811">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="812">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="813">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="814">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="815">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="820">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <column id="839">
-                            <property name="width">40px</property>
+                            <property name="width">30px</property>
                         </column>
                         <header>
                             <row id="730">
