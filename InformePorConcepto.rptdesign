@@ -1680,7 +1680,7 @@ order by 2 desc,3 desc]]></xml-property>
                         <property name="paddingLeft">1pt</property>
                         <property name="paddingBottom">1pt</property>
                         <property name="paddingRight">1pt</property>
-                        <property name="textAlign">right</property>
+                        <property name="textAlign">left</property>
                         <property name="letterSpacing">normal</property>
                         <property name="lineHeight">normal</property>
                         <property name="orphans">2</property>
