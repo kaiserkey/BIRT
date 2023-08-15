@@ -1425,7 +1425,7 @@ END]]></xml-property>
                         <header>
                             <row id="715">
                                 <property name="backgroundColor">silver</property>
-                                <property name="height">10px</property>
+                                <property name="height">50%</property>
                                 <cell id="716">
                                     <property name="colSpan">2</property>
                                     <property name="rowSpan">1</property>
