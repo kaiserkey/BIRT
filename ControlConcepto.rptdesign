@@ -2202,6 +2202,45 @@ END]]></xml-property>
                     <property name="rowSpan">1</property>
                     <property name="textAlign">center</property>
                     <table id="903">
+                        <property name="dataSet">Estadisticas Concepto</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">DESCRIPCION</property>
+                                <text-property name="displayName">DESCRIPCION</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DESCRIPCION"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">COUNT(*)</property>
+                                <text-property name="displayName">COUNT(*)</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["COUNT(*)"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">EJEMPLO_1</property>
+                                <text-property name="displayName">EJEMPLO_1</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["EJEMPLO_1"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">AUMENTO_1</property>
+                                <text-property name="displayName">AUMENTO_1</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["AUMENTO_1"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">EJEMPLO_2</property>
+                                <text-property name="displayName">EJEMPLO_2</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["EJEMPLO_2"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">AUMENTO_2</property>
+                                <text-property name="displayName">AUMENTO_2</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["AUMENTO_2"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
                         <column id="931">
                             <property name="repeat">1</property>
                         </column>
