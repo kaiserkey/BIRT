@@ -1205,17 +1205,8 @@ order by 2 desc,3 desc]]></xml-property>
     <body>
         <grid id="112">
             <property name="textAlign">center</property>
-            <column id="603">
-                <property name="width">5%</property>
-            </column>
             <column id="113"/>
-            <column id="614">
-                <property name="width">5%</property>
-            </column>
             <row id="114">
-                <cell id="593">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="115">
                     <property name="textAlign">center</property>
                     <label id="107">
@@ -1272,14 +1263,8 @@ order by 2 desc,3 desc]]></xml-property>
                         <text-property name="text">INFORME POR CONCEPTO</text-property>
                     </label>
                 </cell>
-                <cell id="604">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="116">
-                <cell id="594">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="117">
                     <property name="textAlign">center</property>
                     <data id="110">
@@ -1348,26 +1333,14 @@ order by 2 desc,3 desc]]></xml-property>
                         <property name="resultSetColumn">Datos</property>
                     </data>
                 </cell>
-                <cell id="605">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="566">
                 <property name="height">30pt</property>
-                <cell id="595">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="567">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="606">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="568">
-                <cell id="596">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="569">
                     <property name="textAlign">center</property>
                     <label id="618">
@@ -1424,14 +1397,8 @@ order by 2 desc,3 desc]]></xml-property>
                         <text-property name="text">Listado de Concepto Liquidado Agrupado Por Orden de Ejecucion</text-property>
                     </label>
                 </cell>
-                <cell id="607">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="570">
-                <cell id="597">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="571">
                     <property name="textAlign">center</property>
                     <table id="619">
@@ -1669,26 +1636,14 @@ order by 2 desc,3 desc]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="608">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="576">
                 <property name="height">30pt</property>
-                <cell id="598">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="577">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="609">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="574">
-                <cell id="599">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="575">
                     <property name="textAlign">center</property>
                     <label id="665">
@@ -1745,14 +1700,8 @@ order by 2 desc,3 desc]]></xml-property>
                         <text-property name="text">Listado de Concepto Liquidado Agrupado por Cantidad</text-property>
                     </label>
                 </cell>
-                <cell id="610">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="661">
-                <cell id="662">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="663">
                     <property name="textAlign">center</property>
                     <table id="666">
@@ -2000,26 +1949,14 @@ order by 2 desc,3 desc]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="664">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="657">
                 <property name="height">30pt</property>
-                <cell id="658">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="659">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="660">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="700">
-                <cell id="701">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="702">
                     <property name="textAlign">center</property>
                     <label id="712">
@@ -2076,14 +2013,8 @@ order by 2 desc,3 desc]]></xml-property>
                         <text-property name="text">Listado de Concepto Liquidado Agrupado por Importe</text-property>
                     </label>
                 </cell>
-                <cell id="703">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="704">
-                <cell id="705">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="706">
                     <property name="textAlign">center</property>
                     <table id="713">
@@ -2514,26 +2445,14 @@ order by 2 desc,3 desc]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="707">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="708">
                 <property name="height">30pt</property>
-                <cell id="709">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="710">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="711">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="572">
-                <cell id="600">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="573">
                     <property name="textAlign">center</property>
                     <label id="578">
@@ -2590,14 +2509,8 @@ order by 2 desc,3 desc]]></xml-property>
                         <text-property name="text">Listado de Concepto Liquidado Por Agente</text-property>
                     </label>
                 </cell>
-                <cell id="611">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="118">
-                <cell id="601">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="119">
                     <property name="textAlign">center</property>
                     <table id="122">
@@ -3789,19 +3702,10 @@ order by 2 desc,3 desc]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="612">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="120">
                 <property name="height">30pt</property>
-                <cell id="602">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="121">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="613">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
