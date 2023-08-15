@@ -1365,7 +1365,6 @@ END]]></xml-property>
                 </cell>
             </row>
             <row id="711">
-                <property name="height">50pt</property>
                 <cell id="712">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
@@ -2222,7 +2221,6 @@ END]]></xml-property>
                 </cell>
             </row>
             <row id="891">
-                <property name="height">50pt</property>
                 <cell id="892">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
