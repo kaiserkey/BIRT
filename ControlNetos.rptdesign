@@ -702,18 +702,8 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
     </page-setup>
     <body>
         <grid id="288">
-            <column id="836">
-                <property name="width">5%</property>
-            </column>
             <column id="289"/>
-            <column id="829">
-                <property name="width">5%</property>
-            </column>
             <row id="290">
-                <cell id="830">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="291">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
@@ -725,35 +715,15 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <text-property name="text">INFORME DE NETOS POR LIQUIDACION</text-property>
                     </label>
                 </cell>
-                <cell id="823">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="699">
                 <property name="height">15pt</property>
-                <cell id="831">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="700">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-                <cell id="824">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
             </row>
             <row id="292">
-                <cell id="832">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="293">
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">medium</property>
@@ -815,36 +785,16 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="825">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="294">
                 <property name="height">30pt</property>
-                <cell id="833">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="295">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-                <cell id="826">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
             </row>
             <row id="911">
                 <property name="height">30pt</property>
-                <cell id="912">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="913">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
@@ -856,18 +806,10 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <text-property name="text">INFORME DE TOTALES</text-property>
                     </label>
                 </cell>
-                <cell id="914">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="864">
                 <property name="verticalAlign">middle</property>
                 <property name="height">30pt</property>
-                <cell id="865">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="866">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
@@ -1779,32 +1721,16 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="867">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="868">
                 <property name="height">30pt</property>
-                <cell id="869">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="870">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-                <cell id="871">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
             </row>
             <row id="923">
                 <property name="height">30pt</property>
-                <cell id="924">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="925">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
@@ -1816,16 +1742,8 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <text-property name="text">LISTADO POR AGENTE</text-property>
                     </label>
                 </cell>
-                <cell id="926">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="296">
-                <cell id="834">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="297">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
@@ -4025,21 +3943,9 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="827">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="298">
-                <cell id="835">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="299">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-                <cell id="828">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
