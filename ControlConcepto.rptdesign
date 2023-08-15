@@ -1176,37 +1176,18 @@ END]]></xml-property>
             <text-property name="text">CONTROL DE CONCEPTO:</text-property>
         </label>
         <grid id="488">
-            <column id="761">
-                <property name="width">5%</property>
-            </column>
             <column id="489"/>
             <column id="490"/>
-            <column id="769">
-                <property name="width">5%</property>
-            </column>
             <row id="704">
                 <property name="height">15pt</property>
-                <cell id="754">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="705">
                     <property name="textAlign">center</property>
                 </cell>
                 <cell id="706">
                     <property name="textAlign">center</property>
                 </cell>
-                <cell id="762">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="497">
-                <cell id="755">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="498">
                     <property name="colSpan">2</property>
                     <property name="rowSpan">1</property>
@@ -1270,22 +1251,8 @@ END]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="763">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="491">
-                <cell id="756">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="492">
                     <property name="colSpan">2</property>
                     <property name="rowSpan">1</property>
@@ -1348,34 +1315,18 @@ END]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="764">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="711">
                 <property name="height">50pt</property>
-                <cell id="757">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="712">
                     <property name="textAlign">center</property>
                 </cell>
                 <cell id="713">
                     <property name="textAlign">center</property>
                 </cell>
-                <cell id="765">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="708">
                 <property name="height">50pt</property>
-                <cell id="758">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="709">
                     <property name="colSpan">2</property>
                     <property name="rowSpan">1</property>
@@ -2204,29 +2155,17 @@ END]]></xml-property>
                         </detail>
                     </table>
                 </cell>
-                <cell id="766">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="700">
                 <property name="height">50pt</property>
-                <cell id="759">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="701">
                     <property name="textAlign">center</property>
                 </cell>
                 <cell id="702">
                     <property name="textAlign">center</property>
                 </cell>
-                <cell id="767">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="494">
-                <cell id="760">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="495">
                     <property name="colSpan">2</property>
                     <property name="rowSpan">1</property>
@@ -3577,22 +3516,13 @@ END]]></xml-property>
                         </detail>
                     </table>
                 </cell>
-                <cell id="768">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="770">
                 <property name="height">5in</property>
-                <cell id="771">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="772">
                     <property name="textAlign">center</property>
                 </cell>
                 <cell id="773">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="774">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
