@@ -704,15 +704,8 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
     </page-setup>
     <body>
         <grid id="288">
-            <column id="836">
-                <property name="width">5%</property>
-            </column>
             <column id="289"/>
-            <column id="829">
-                <property name="width">5%</property>
-            </column>
             <row id="290">
-                <cell id="830"/>
                 <cell id="291">
                     <label id="245">
                         <property name="fontFamily">"Ebrima"</property>
@@ -722,21 +715,12 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <text-property name="text">CONTROL DE AGENTES CON NETOS NEGATIVOS POR LIQUIDACION</text-property>
                     </label>
                 </cell>
-                <cell id="823"/>
             </row>
             <row id="699">
                 <property name="height">15pt</property>
-                <cell id="831"/>
                 <cell id="700"/>
-                <cell id="824"/>
             </row>
             <row id="292">
-                <cell id="832">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                </cell>
                 <cell id="293">
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">medium</property>
@@ -796,21 +780,12 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="825">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                </cell>
             </row>
             <row id="294">
                 <property name="height">30pt</property>
-                <cell id="833"/>
                 <cell id="295"/>
-                <cell id="826"/>
             </row>
             <row id="296">
-                <cell id="834"/>
                 <cell id="297">
                     <table id="729">
                         <property name="dataSet">Netos</property>
@@ -2900,12 +2875,9 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         </detail>
                     </table>
                 </cell>
-                <cell id="827"/>
             </row>
             <row id="298">
-                <cell id="835"/>
                 <cell id="299"/>
-                <cell id="828"/>
             </row>
         </grid>
     </body>
