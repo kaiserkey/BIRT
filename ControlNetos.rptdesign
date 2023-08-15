@@ -1366,8 +1366,8 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                         <property name="paddingBottom">1pt</property>
                                         <property name="paddingRight">1pt</property>
                                         <structure name="numberFormat">
-                                            <property name="category">Custom</property>
-                                            <property name="pattern">$###,###,###.##</property>
+                                            <property name="category">Currency</property>
+                                            <property name="pattern">$ ###0.0{RoundingMode=HALF_UP}</property>
                                         </structure>
                                         <property name="textAlign">right</property>
                                         <property name="letterSpacing">normal</property>
