@@ -883,7 +883,9 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                 <property name="allowExport">true</property>
                             </structure>
                         </list-property>
-                        <column id="803"/>
+                        <column id="803">
+                            <property name="width">25px</property>
+                        </column>
                         <column id="804">
                             <property name="width">100px</property>
                         </column>
@@ -909,7 +911,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                             <property name="width">30px</property>
                         </column>
                         <column id="812">
-                            <property name="width">30px</property>
+                            <property name="width">35px</property>
                         </column>
                         <column id="813">
                             <property name="width">30px</property>
@@ -921,7 +923,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                             <property name="width">30px</property>
                         </column>
                         <column id="820">
-                            <property name="width">30px</property>
+                            <property name="width">35px</property>
                         </column>
                         <column id="839">
                             <property name="width">30px</property>
