@@ -2243,9 +2243,11 @@ END]]></xml-property>
                         </list-property>
                         <column id="931">
                             <property name="repeat">1</property>
+                            <property name="width">2.0520833333333335in</property>
                         </column>
                         <column id="936">
                             <property name="repeat">1</property>
+                            <property name="width">0.8229166666666666in</property>
                         </column>
                         <column id="941">
                             <property name="repeat">1</property>
