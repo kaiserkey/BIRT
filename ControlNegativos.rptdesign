@@ -891,7 +891,9 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                         <column id="808"/>
                         <column id="809"/>
                         <column id="810"/>
-                        <column id="811"/>
+                        <column id="811">
+                            <property name="width">10ex</property>
+                        </column>
                         <column id="812"/>
                         <column id="813"/>
                         <column id="814"/>
