@@ -1412,6 +1412,7 @@ END]]></xml-property>
                             </structure>
                         </list-property>
                         <column id="748"/>
+                        <column id="907"/>
                         <column id="749"/>
                         <column id="750"/>
                         <column id="751"/>
@@ -1421,6 +1422,8 @@ END]]></xml-property>
                             <row id="715">
                                 <property name="backgroundColor">silver</property>
                                 <cell id="716">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -1803,6 +1806,8 @@ END]]></xml-property>
                         <detail>
                             <row id="728">
                                 <cell id="729">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
                                     <property name="fontFamily">"Ebrima"</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
@@ -2193,6 +2198,41 @@ END]]></xml-property>
                             </row>
                         </detail>
                     </table>
+                </cell>
+            </row>
+            <row id="893">
+                <property name="height">50pt</property>
+                <cell id="894">
+                    <property name="colSpan">2</property>
+                    <property name="rowSpan">1</property>
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="896">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="897">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="898">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="899">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="900">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="901">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="902">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="903">
+                    <property name="textAlign">center</property>
+                </cell>
+                <cell id="904">
+                    <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="891">
