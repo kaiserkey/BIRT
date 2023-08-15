@@ -2195,14 +2195,6 @@ END]]></xml-property>
                     </table>
                 </cell>
             </row>
-            <row id="700">
-                <property name="height">50pt</property>
-                <cell id="701">
-                    <property name="colSpan">11</property>
-                    <property name="rowSpan">1</property>
-                    <property name="textAlign">center</property>
-                </cell>
-            </row>
             <row id="891">
                 <property name="height">50pt</property>
                 <cell id="892">
