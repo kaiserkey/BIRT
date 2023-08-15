@@ -2226,8 +2226,8 @@ END]]></xml-property>
                     <property name="rowSpan">1</property>
                     <property name="textAlign">center</property>
                     <text id="944">
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[-------------------------------------------------------------------------------------------------------------------]]></text-property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[                                                                                                                      ]]></text-property>
                     </text>
                 </cell>
             </row>
