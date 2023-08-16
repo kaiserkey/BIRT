@@ -5201,7 +5201,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">green</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -5276,7 +5276,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">yellow</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -5351,7 +5351,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">teal</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -5426,7 +5426,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -5501,7 +5501,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
