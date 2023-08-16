@@ -1541,6 +1541,14 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="textLineThrough">none</property>
                         <property name="textOverline">none</property>
                         <property name="textUnderline">none</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
                         <property name="marginTop">0pt</property>
                         <property name="marginLeft">10pt</property>
                         <property name="marginBottom">4pt</property>
@@ -1566,6 +1574,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
                         <property name="height">30pt</property>
+                        <property name="width">4in</property>
                         <property name="dataSet">DatosLiq</property>
                         <list-property name="boundDataColumns">
                             <structure>
