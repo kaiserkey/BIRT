@@ -921,19 +921,12 @@ group by concepto]]></xml-property>
                     <property name="allowExport">true</property>
                 </structure>
             </list-property>
-            <column id="662">
-                <property name="width">10%</property>
-            </column>
             <column id="663">
+                <property name="paddingLeft">5%</property>
+                <property name="paddingRight">5%</property>
                 <property name="width">80%</property>
             </column>
-            <column id="664">
-                <property name="width">10%</property>
-            </column>
             <row id="665">
-                <cell id="666">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="667">
                     <property name="textAlign">center</property>
                     <label id="107">
@@ -990,26 +983,14 @@ group by concepto]]></xml-property>
                         <text-property name="text">ASIGNACIONES LIQUIDADAS POR AGENTE</text-property>
                     </label>
                 </cell>
-                <cell id="668">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="669">
                 <property name="height">0.5in</property>
-                <cell id="670">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="671">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="672">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="829">
-                <cell id="830">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="831">
                     <property name="textAlign">center</property>
                     <grid id="833">
@@ -1191,37 +1172,19 @@ group by concepto]]></xml-property>
                         </row>
                     </grid>
                 </cell>
-                <cell id="832">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="673">
                 <property name="height">1in</property>
-                <cell id="674">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="675">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="676">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="943">
-                <cell id="944">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="945">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="946">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="677">
-                <cell id="678">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="679">
                     <property name="textAlign">center</property>
                     <table id="787">
@@ -1600,26 +1563,14 @@ group by concepto]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="680">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="681">
                 <property name="height">1in</property>
-                <cell id="682">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="683">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="684">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="685">
-                <cell id="686">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="687">
                     <property name="textAlign">center</property>
                     <label id="947">
@@ -1676,14 +1627,8 @@ group by concepto]]></xml-property>
                         <text-property name="text">Estadisticas</text-property>
                     </label>
                 </cell>
-                <cell id="688">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="689">
-                <cell id="690">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="691">
                     <property name="textAlign">center</property>
                     <table id="933">
@@ -2075,150 +2020,69 @@ group by concepto]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="692">
-                    <property name="textAlign">center</property>
-                </cell>
             </row>
             <row id="693">
-                <cell id="694">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="695">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="696">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="697">
-                <cell id="698">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="699">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="700">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="701">
-                <cell id="702">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="703">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="704">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="705">
-                <cell id="706">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="707">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="708">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="709">
-                <cell id="710">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="711">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="712">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="713">
-                <cell id="714">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="715">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="716">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="717">
-                <cell id="718">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="719">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="720">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="721">
-                <cell id="722">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="723">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="724">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="725">
-                <cell id="726">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="727">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="728">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="729">
-                <cell id="730">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="731">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="732">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="733">
-                <cell id="734">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="735">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="736">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="737">
-                <cell id="738">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="739">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="740">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="741">
-                <cell id="742">
-                    <property name="textAlign">center</property>
-                </cell>
                 <cell id="743">
-                    <property name="textAlign">center</property>
-                </cell>
-                <cell id="744">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
