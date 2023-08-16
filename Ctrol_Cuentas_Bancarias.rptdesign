@@ -2336,7 +2336,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                             <property name="width">4.520833333333333in</property>
                         </column>
                         <column id="537">
-                            <property name="width">1.8541666666666667in</property>
+                            <property name="width">2.5in</property>
                         </column>
                         <header>
                             <row id="499">
