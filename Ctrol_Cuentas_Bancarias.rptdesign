@@ -1545,9 +1545,9 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="marginBottom">4pt</property>
                         <property name="marginRight">0pt</property>
                         <property name="paddingTop">1pt</property>
-                        <property name="paddingLeft">5%</property>
+                        <property name="paddingLeft">1pt</property>
                         <property name="paddingBottom">1pt</property>
-                        <property name="paddingRight">5%</property>
+                        <property name="paddingRight">1pt</property>
                         <property name="textAlign">center</property>
                         <property name="letterSpacing">normal</property>
                         <property name="lineHeight">normal</property>
