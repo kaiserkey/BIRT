@@ -433,7 +433,10 @@ order by 1,2,3
                 <cell id="831">
                     <property name="textAlign">center</property>
                     <grid id="833">
-                        <column id="835"/>
+                        <column id="835">
+                            <property name="paddingLeft">5%</property>
+                            <property name="paddingRight">5%</property>
+                        </column>
                         <row id="837">
                             <cell id="839">
                                 <data id="930">
