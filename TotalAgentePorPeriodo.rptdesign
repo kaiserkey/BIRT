@@ -4642,35 +4642,16 @@ ORDER BY 1]]></xml-property>
             <property name="resultSetColumn">PeriodoYDni</property>
         </data>
         <grid id="111">
-            <column id="181">
-                <property name="width">5%</property>
-            </column>
             <column id="112"/>
-            <column id="179">
-                <property name="width">5%</property>
-            </column>
             <row id="182">
                 <property name="height">0.5in</property>
-                <cell id="183">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="184">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
-                <cell id="185">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="186">
-                <cell id="187">
-                    <property name="backgroundColor">black</property>
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="188">
                     <property name="backgroundColor">black</property>
                     <property name="fontFamily">"Ebrima"</property>
@@ -4730,33 +4711,16 @@ ORDER BY 1]]></xml-property>
                         <text-property name="text">Conceptos Liquidados Por Periodo De Imputacion</text-property>
                     </label>
                 </cell>
-                <cell id="189">
-                    <property name="backgroundColor">black</property>
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="1249">
                 <property name="height">0.5in</property>
-                <cell id="1250">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="1251">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
-                <cell id="1252">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="113">
-                <cell id="180">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="114">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -4776,17 +4740,9 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="178">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="196">
                 <property name="height">1in</property>
-                <cell id="197">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="198">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -5677,17 +5633,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="199">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="268">
                 <property name="height">1in</property>
-                <cell id="269">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="270">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -5707,16 +5655,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="271">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="272">
-                <cell id="273">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="274">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -6606,17 +6546,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="275">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="284">
                 <property name="height">1in</property>
-                <cell id="285">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="286">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -6636,16 +6568,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="287">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="288">
-                <cell id="289">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="290">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -7535,17 +7459,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="291">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="292">
                 <property name="height">1in</property>
-                <cell id="293">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="294">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -7565,16 +7481,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="295">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="296">
-                <cell id="297">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="298">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -8464,17 +8372,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="299">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="280">
                 <property name="height">1in</property>
-                <cell id="281">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="282">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -8494,16 +8394,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="283">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="276">
-                <cell id="277">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="278">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -9393,18 +9285,10 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="279">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="633">
                 <property name="verticalAlign">middle</property>
                 <property name="height">1in</property>
-                <cell id="634">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="635">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -9424,16 +9308,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="636">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="629">
-                <cell id="630">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="631">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -10323,17 +10199,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="632">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="625">
                 <property name="height">1in</property>
-                <cell id="626">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="627">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -10353,16 +10221,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="628">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="621">
-                <cell id="622">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="623">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -11252,17 +11112,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="624">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="617">
                 <property name="height">1in</property>
-                <cell id="618">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="619">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -11282,16 +11134,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="620">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="613">
-                <cell id="614">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="615">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -12181,17 +12025,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="616">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="609">
                 <property name="height">1in</property>
-                <cell id="610">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="611">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -12211,16 +12047,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="612">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="605">
-                <cell id="606">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="607">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -13110,17 +12938,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="608">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="601">
                 <property name="height">1in</property>
-                <cell id="602">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="603">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -13140,16 +12960,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="604">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="637">
-                <cell id="638">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="639">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -14039,17 +13851,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="640">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="653">
                 <property name="height">1in</property>
-                <cell id="654">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="655">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -14069,16 +13873,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="656">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="649">
-                <cell id="650">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="651">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -14968,17 +14764,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="652">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="645">
                 <property name="height">1in</property>
-                <cell id="646">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="647">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -14998,16 +14786,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="648">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="641">
-                <cell id="642">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="643">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -15897,17 +15677,9 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="644">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="1105">
                 <property name="height">1in</property>
-                <cell id="1106">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="1107">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -15927,16 +15699,8 @@ ORDER BY 1]]></xml-property>
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="1108">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="1109">
-                <cell id="1110">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="1111">
                     <property name="fontFamily">"Ebrima"</property>
                     <property name="textAlign">center</property>
@@ -16826,23 +16590,11 @@ ORDER BY 1]]></xml-property>
                         </footer>
                     </table>
                 </cell>
-                <cell id="1112">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
             </row>
             <row id="1253">
                 <property name="height">1in</property>
-                <cell id="1254">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
                 <cell id="1255">
                     <property name="fontFamily">"Ebrima"</property>
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-                <cell id="1256">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                 </cell>
