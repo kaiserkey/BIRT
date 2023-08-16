@@ -1574,7 +1574,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
                         <property name="height">30pt</property>
-                        <property name="width">4in</property>
+                        <property name="width">7in</property>
                         <property name="dataSet">DatosLiq</property>
                         <list-property name="boundDataColumns">
                             <structure>
