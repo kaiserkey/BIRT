@@ -707,6 +707,7 @@ order by 1,2,3
                                     </label>
                                 </cell>
                                 <cell id="971">
+                                    <property name="backgroundColor">#000000</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -717,6 +718,7 @@ order by 1,2,3
                                     <property name="borderTopWidth">medium</property>
                                     <data id="754">
                                         <property name="backgroundAttachment">scroll</property>
+                                        <property name="backgroundColor">white</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
                                         <property name="backgroundRepeat">repeat</property>
@@ -772,6 +774,7 @@ order by 1,2,3
                                     </data>
                                 </cell>
                                 <cell id="972">
+                                    <property name="backgroundColor">#000000</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -782,6 +785,7 @@ order by 1,2,3
                                     <property name="borderTopWidth">medium</property>
                                     <data id="978">
                                         <property name="backgroundAttachment">scroll</property>
+                                        <property name="backgroundColor">white</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
                                         <property name="backgroundRepeat">repeat</property>
