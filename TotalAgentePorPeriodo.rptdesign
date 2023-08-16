@@ -5276,7 +5276,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">yellow</property>
+                                        <property name="color">orange</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -6114,7 +6114,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">green</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -6179,7 +6179,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="350">
+                                    <data id="1258">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -6189,7 +6189,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">orange</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
