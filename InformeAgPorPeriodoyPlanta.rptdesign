@@ -1173,6 +1173,12 @@ order by 1,2,3]]></xml-property>
                     </label>
                 </cell>
             </row>
+            <row id="1023">
+                <property name="height">0.5in</property>
+                <cell id="1024">
+                    <property name="textAlign">center</property>
+                </cell>
+            </row>
             <row id="983">
                 <cell id="984">
                     <property name="textAlign">center</property>
