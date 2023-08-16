@@ -1519,6 +1519,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                 <property name="paddingLeft">5%</property>
                 <property name="paddingRight">5%</property>
                 <property name="textAlign">center</property>
+                <property name="verticalAlign">middle</property>
                 <cell id="707">
                     <property name="borderBottomStyle">none</property>
                     <property name="borderLeftStyle">none</property>
@@ -1526,6 +1527,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                     <property name="borderTopStyle">none</property>
                     <property name="paddingLeft">30%</property>
                     <property name="paddingRight">30%</property>
+                    <property name="verticalAlign">middle</property>
                     <property name="width">5in</property>
                     <data id="699">
                         <property name="backgroundAttachment">scroll</property>
@@ -1562,7 +1564,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="lineHeight">normal</property>
                         <property name="orphans">2</property>
                         <property name="textTransform">none</property>
-                        <property name="verticalAlign">bottom</property>
+                        <property name="verticalAlign">middle</property>
                         <property name="whiteSpace">normal</property>
                         <property name="widows">2</property>
                         <property name="wordSpacing">normal</property>
