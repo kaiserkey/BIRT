@@ -641,6 +641,7 @@ order by 1,2,3
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <data id="961">
+                                        <property name="textAlign">left</property>
                                         <property name="resultSetColumn">ESCALAFON</property>
                                     </data>
                                 </cell>
