@@ -5530,6 +5530,7 @@ ORDER BY 3 DESC]]></xml-property>
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                     <table id="1029">
+                        <property name="width">70%</property>
                         <property name="dataSet">MinisteriosLiquidados</property>
                         <list-property name="boundDataColumns">
                             <structure>
