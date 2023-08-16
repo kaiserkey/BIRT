@@ -5163,7 +5163,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="240">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="241">
                                     <property name="colSpan">2</property>
@@ -6076,7 +6076,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="344">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="345">
                                     <property name="colSpan">2</property>
