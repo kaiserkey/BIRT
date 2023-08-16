@@ -573,7 +573,7 @@ order by 1,2,3
                         </column>
                         <header>
                             <row id="950">
-                                <property name="backgroundColor">#C0C0C0</property>
+                                <property name="backgroundColor">#D4D4D4</property>
                                 <property name="fontWeight">bold</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="951">
@@ -689,6 +689,7 @@ order by 1,2,3
                         </detail>
                         <footer>
                             <row id="968">
+                                <property name="backgroundColor">#D4D4D4</property>
                                 <cell id="969">
                                     <property name="colSpan">2</property>
                                     <property name="rowSpan">1</property>
