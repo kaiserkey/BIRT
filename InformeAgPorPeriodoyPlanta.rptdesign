@@ -560,7 +560,7 @@ order by 1,2,3
                             </structure>
                         </list-property>
                         <column id="973">
-                            <property name="width">1in</property>
+                            <property name="width">2in</property>
                         </column>
                         <column id="974">
                             <property name="width">1in</property>
