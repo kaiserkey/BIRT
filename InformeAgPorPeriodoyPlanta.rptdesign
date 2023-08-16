@@ -559,10 +559,18 @@ order by 1,2,3
                                 <property name="allowExport">true</property>
                             </structure>
                         </list-property>
-                        <column id="973"/>
-                        <column id="974"/>
-                        <column id="975"/>
-                        <column id="976"/>
+                        <column id="973">
+                            <property name="width">20%</property>
+                        </column>
+                        <column id="974">
+                            <property name="width">20%</property>
+                        </column>
+                        <column id="975">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="976">
+                            <property name="width">10%</property>
+                        </column>
                         <header>
                             <row id="950">
                                 <property name="backgroundColor">#C0C0C0</property>
@@ -603,7 +611,7 @@ order by 1,2,3
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <label id="956">
-                                        <text-property name="text">CANT_AGENTES</text-property>
+                                        <text-property name="text">CANT AGENTES</text-property>
                                     </label>
                                 </cell>
                                 <cell id="957">
@@ -616,7 +624,7 @@ order by 1,2,3
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <label id="958">
-                                        <text-property name="text">CANT_CARGOS</text-property>
+                                        <text-property name="text">CANT CARGOS</text-property>
                                     </label>
                                 </cell>
                             </row>
