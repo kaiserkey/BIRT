@@ -1234,6 +1234,7 @@ order by 1,2,3]]></xml-property>
                                 <property name="allowExport">true</property>
                             </structure>
                         </list-property>
+                        <property name="pageBreakInterval">999999</property>
                         <column id="1012">
                             <property name="width">2in</property>
                         </column>
