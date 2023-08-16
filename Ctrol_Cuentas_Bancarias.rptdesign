@@ -1516,6 +1516,8 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                 </cell>
             </row>
             <row id="706">
+                <property name="paddingLeft">5%</property>
+                <property name="paddingRight">5%</property>
                 <property name="textAlign">center</property>
                 <cell id="707">
                     <property name="borderBottomStyle">solid</property>
