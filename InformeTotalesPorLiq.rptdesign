@@ -2103,6 +2103,8 @@ ORDER BY 3 DESC]]></xml-property>
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                     <table id="466">
+                        <property name="marginLeft">5%</property>
+                        <property name="marginRight">5%</property>
                         <property name="paddingLeft">5%</property>
                         <property name="paddingRight">5%</property>
                         <property name="dataSet">InformeLiqCargo</property>
