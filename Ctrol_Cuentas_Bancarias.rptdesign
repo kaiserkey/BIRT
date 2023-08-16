@@ -1445,6 +1445,8 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
     <body>
         <grid id="700">
             <column id="701">
+                <property name="paddingLeft">5%</property>
+                <property name="paddingRight">5%</property>
                 <property name="textAlign">center</property>
                 <property name="canShrink">true</property>
                 <property name="width">13.322916666666666in</property>
