@@ -4523,6 +4523,9 @@ ORDER BY 1]]></xml-property>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
     </data-sets>
+    <styles>
+        <style name="Totales" id="1262"/>
+    </styles>
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2"/>
     </page-setup>
@@ -5266,7 +5269,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="261">
+                                    <data id="1261">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -5276,7 +5279,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">orange</property>
+                                        <property name="color">#C17D00</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -5967,7 +5970,7 @@ ORDER BY 1]]></xml-property>
                                     <data id="333">
                                         <property name="fontSize">10pt</property>
                                         <property name="fontWeight">bold</property>
-                                        <property name="color">orange</property>
+                                        <property name="color">#C17D00</property>
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
                                             <property name="pattern">¤###,##0.00</property>
@@ -6076,6 +6079,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="344">
+                                <property name="style">Totales</property>
                                 <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="345">
@@ -6189,15 +6193,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-<<<<<<< HEAD
-<<<<<<< HEAD
                                         <property name="color">#C17D00</property>
-=======
-                                        <property name="color">yellow</property>
->>>>>>> parent of 7dfad18 (new changes)
-=======
-                                        <property name="color">#D78B00</property>
->>>>>>> parent of d1e48e3 (new changes)
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -6272,7 +6268,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">teal</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -6347,7 +6343,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -6422,7 +6418,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -6888,7 +6884,7 @@ ORDER BY 1]]></xml-property>
                                     <data id="396">
                                         <property name="fontSize">10pt</property>
                                         <property name="fontWeight">bold</property>
-                                        <property name="color">orange</property>
+                                        <property name="color">#C17D00</property>
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
                                             <property name="pattern">¤###,##0.00</property>
@@ -6997,7 +6993,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="407">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="408">
                                     <property name="colSpan">2</property>
@@ -7025,7 +7021,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="411">
+                                    <data id="1265">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -7035,7 +7031,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">green</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -7100,7 +7096,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="413">
+                                    <data id="1266">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -7110,7 +7106,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">#C17D00</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -7175,7 +7171,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="415">
+                                    <data id="1268">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -7185,7 +7181,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">teal</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -7250,7 +7246,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="417">
+                                    <data id="1269">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -7260,7 +7256,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -7325,7 +7321,7 @@ ORDER BY 1]]></xml-property>
                                     <property name="borderRightWidth">medium</property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
-                                    <data id="419">
+                                    <data id="1273">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
@@ -7335,7 +7331,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
