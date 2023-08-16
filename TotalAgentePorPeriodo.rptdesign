@@ -4851,6 +4851,7 @@ ORDER BY 1]]></xml-property>
                                 <property name="dataType">string</property>
                             </structure>
                         </list-property>
+                        <property name="pageBreakInterval">9999999</property>
                         <column id="250">
                             <property name="width">4in</property>
                         </column>
