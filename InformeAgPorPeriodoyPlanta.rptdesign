@@ -434,8 +434,8 @@ order by 1,2,3
                     <property name="textAlign">center</property>
                     <grid id="833">
                         <column id="835">
-                            <property name="paddingLeft">5%</property>
-                            <property name="paddingRight">5%</property>
+                            <property name="paddingLeft">25%</property>
+                            <property name="paddingRight">25%</property>
                         </column>
                         <row id="837">
                             <cell id="839">
