@@ -1324,6 +1324,7 @@ order by 1,2,3]]></xml-property>
                         </header>
                         <detail>
                             <row id="996">
+                                <property name="verticalAlign">middle</property>
                                 <cell id="997">
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
