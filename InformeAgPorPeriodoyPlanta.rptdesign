@@ -354,20 +354,8 @@ order by 1,2,3
         <grid id="661">
             <list-property name="boundDataColumns">
                 <structure>
-                    <property name="name">Column Binding</property>
-                    <expression name="expression" type="javascript">"D.N.I.: " + params["DNI"].value</expression>
-                    <property name="dataType">string</property>
-                    <property name="allowExport">true</property>
-                </structure>
-                <structure>
                     <property name="name">Column Binding_1</property>
                     <expression name="expression" type="javascript">"PERIODO DE INFORME: " + params["PERIODO"].value</expression>
-                    <property name="dataType">string</property>
-                    <property name="allowExport">true</property>
-                </structure>
-                <structure>
-                    <property name="name">Column Binding_2</property>
-                    <expression name="expression" type="javascript">"HASTA: " + params["PERIODO2"].value</expression>
                     <property name="dataType">string</property>
                     <property name="allowExport">true</property>
                 </structure>
