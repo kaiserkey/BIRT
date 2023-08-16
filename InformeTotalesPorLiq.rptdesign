@@ -5300,7 +5300,7 @@ ORDER BY 3 DESC]]></xml-property>
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
                     <table id="1007">
-                        <property name="width">90%</property>
+                        <property name="width">80%</property>
                         <property name="dataSet">DependenciasLiquidadas</property>
                         <list-property name="boundDataColumns">
                             <structure>
