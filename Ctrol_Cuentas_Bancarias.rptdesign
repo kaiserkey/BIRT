@@ -1450,9 +1450,6 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                 <property name="textAlign">center</property>
                 <property name="canShrink">true</property>
             </column>
-            <column id="726">
-                <property name="width">0.22916666666666666in</property>
-            </column>
             <row id="702">
                 <property name="textAlign">center</property>
                 <cell id="703">
@@ -1511,16 +1508,10 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <text-property name="text">CONTROL DE CUENTAS BANCARIAS</text-property>
                     </label>
                 </cell>
-                <cell id="721">
-                    <property name="width">95%</property>
-                </cell>
             </row>
             <row id="704">
                 <property name="height">15pt</property>
                 <cell id="705">
-                    <property name="width">95%</property>
-                </cell>
-                <cell id="722">
                     <property name="width">95%</property>
                 </cell>
             </row>
@@ -1586,21 +1577,11 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="resultSetColumn">Column Binding</property>
                     </data>
                 </cell>
-                <cell id="723">
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="width">95%</property>
-                </cell>
             </row>
             <row id="776">
                 <property name="textAlign">center</property>
                 <property name="height">1in</property>
                 <cell id="778">
-                    <property name="width">95%</property>
-                </cell>
-                <cell id="779">
                     <property name="width">95%</property>
                 </cell>
             </row>
@@ -1662,9 +1643,6 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="height">0.5in</property>
                         <text-property name="text">Resumen Altas BNA</text-property>
                     </label>
-                </cell>
-                <cell id="774">
-                    <property name="width">95%</property>
                 </cell>
             </row>
             <row id="708">
@@ -1998,9 +1976,6 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         </footer>
                     </table>
                 </cell>
-                <cell id="724">
-                    <property name="width">95%</property>
-                </cell>
             </row>
             <row id="811">
                 <property name="textAlign">center</property>
@@ -2059,9 +2034,6 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="height">0.5in</property>
                         <text-property name="text">Resumen Recategorizaciones</text-property>
                     </label>
-                </cell>
-                <cell id="814">
-                    <property name="width">95%</property>
                 </cell>
             </row>
             <row id="785">
@@ -2233,17 +2205,11 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         </footer>
                     </table>
                 </cell>
-                <cell id="788">
-                    <property name="width">95%</property>
-                </cell>
             </row>
             <row id="781">
                 <property name="textAlign">center</property>
                 <property name="height">1in</property>
                 <cell id="783">
-                    <property name="width">95%</property>
-                </cell>
-                <cell id="784">
                     <property name="width">95%</property>
                 </cell>
             </row>
@@ -2304,9 +2270,6 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         <property name="height">0.5in</property>
                         <text-property name="text">Listado de Advertencias</text-property>
                     </label>
-                </cell>
-                <cell id="737">
-                    <property name="width">95%</property>
                 </cell>
             </row>
             <row id="710">
@@ -3098,16 +3061,10 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                         </detail>
                     </table>
                 </cell>
-                <cell id="725">
-                    <property name="width">95%</property>
-                </cell>
             </row>
             <row id="738">
                 <property name="height">1in</property>
                 <cell id="740">
-                    <property name="width">95%</property>
-                </cell>
-                <cell id="741">
                     <property name="width">95%</property>
                 </cell>
             </row>
