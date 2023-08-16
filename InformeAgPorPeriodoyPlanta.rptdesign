@@ -575,6 +575,7 @@ order by 1,2,3
                             <row id="950">
                                 <property name="backgroundColor">#C0C0C0</property>
                                 <property name="fontWeight">bold</property>
+                                <property name="verticalAlign">middle</property>
                                 <cell id="951">
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
