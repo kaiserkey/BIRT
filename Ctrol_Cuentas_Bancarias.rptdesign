@@ -2947,7 +2947,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                                     <property name="borderLeftWidth">medium</property>
                                     <data id="522">
                                         <property name="backgroundAttachment">scroll</property>
-                                        <property name="backgroundColor">black</property>
+                                        <property name="backgroundColor">#FFFFFF</property>
                                         <property name="backgroundPositionX">0%</property>
                                         <property name="backgroundPositionY">0%</property>
                                         <property name="backgroundRepeat">repeat</property>
@@ -2956,7 +2956,7 @@ AND TRIM(LC.NRO_DOCUMENTO) IN ( SELECT SUBSTR(CUIL,3,8) FROM ( SELECT CUIL FROM 
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">white</property>
+                                        <property name="color">black</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
