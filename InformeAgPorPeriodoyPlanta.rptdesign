@@ -560,16 +560,16 @@ order by 1,2,3
                             </structure>
                         </list-property>
                         <column id="973">
-                            <property name="width">20%</property>
+                            <property name="width">10%</property>
                         </column>
                         <column id="974">
-                            <property name="width">20%</property>
+                            <property name="width">10%</property>
                         </column>
                         <column id="975">
-                            <property name="width">10%</property>
+                            <property name="width">5%</property>
                         </column>
                         <column id="976">
-                            <property name="width">10%</property>
+                            <property name="width">5%</property>
                         </column>
                         <header>
                             <row id="950">
