@@ -361,8 +361,6 @@ order by 1,2,3
                 </structure>
             </list-property>
             <column id="663">
-                <property name="marginLeft">5%</property>
-                <property name="marginRight">5%</property>
                 <property name="paddingLeft">5%</property>
                 <property name="paddingRight">5%</property>
                 <property name="width">80%</property>
