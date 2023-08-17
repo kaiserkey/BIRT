@@ -7906,7 +7906,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="470">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="471">
                                     <property name="colSpan">2</property>
@@ -8169,7 +8169,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -8244,7 +8244,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -8819,7 +8819,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="533">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="534">
                                     <property name="colSpan">2</property>
@@ -9082,7 +9082,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -9157,7 +9157,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -9733,7 +9733,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="703">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="704">
                                     <property name="colSpan">2</property>
@@ -9996,7 +9996,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -10071,7 +10071,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -10646,7 +10646,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="766">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="767">
                                     <property name="colSpan">2</property>
@@ -10909,7 +10909,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -10984,7 +10984,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -11559,7 +11559,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="829">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="830">
                                     <property name="colSpan">2</property>
@@ -11822,7 +11822,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -11897,7 +11897,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -12472,7 +12472,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="892">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="893">
                                     <property name="colSpan">2</property>
@@ -12735,7 +12735,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -12810,7 +12810,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -13385,7 +13385,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="955">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="956">
                                     <property name="colSpan">2</property>
@@ -13648,7 +13648,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -13723,7 +13723,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -14298,7 +14298,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="1018">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="1019">
                                     <property name="colSpan">2</property>
@@ -14561,7 +14561,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -14636,7 +14636,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -15211,7 +15211,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="1081">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="1082">
                                     <property name="colSpan">2</property>
@@ -15474,7 +15474,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -15549,7 +15549,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -16124,7 +16124,7 @@ ORDER BY 1]]></xml-property>
                         </detail>
                         <footer>
                             <row id="1162">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="1163">
                                     <property name="colSpan">2</property>
@@ -16387,7 +16387,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">red</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
@@ -16462,7 +16462,7 @@ ORDER BY 1]]></xml-property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
                                         <property name="fontVariant">normal</property>
-                                        <property name="color">black</property>
+                                        <property name="color">blue</property>
                                         <property name="textLineThrough">none</property>
                                         <property name="textOverline">none</property>
                                         <property name="textUnderline">none</property>
