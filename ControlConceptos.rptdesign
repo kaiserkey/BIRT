@@ -890,6 +890,8 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
     </page-setup>
     <body>
         <grid id="433">
+            <property name="marginLeft">5%</property>
+            <property name="marginRight">5%</property>
             <property name="width">90%</property>
             <column id="435"/>
             <row id="441">
