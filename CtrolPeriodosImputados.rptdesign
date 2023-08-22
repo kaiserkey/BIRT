@@ -2052,6 +2052,7 @@ order by 1,2,3,4,5,6]]></xml-property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <property name="verticalAlign">middle</property>
+                                    <property name="width">7%</property>
                                     <label id="652">
                                         <property name="fontSize">10pt</property>
                                         <text-property name="text">CONCEPTO</text-property>
@@ -2163,6 +2164,7 @@ order by 1,2,3,4,5,6]]></xml-property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <property name="verticalAlign">middle</property>
+                                    <property name="width">7%</property>
                                     <label id="664">
                                         <property name="fontSize">10pt</property>
                                         <text-property name="text">LIQ</text-property>
@@ -2181,6 +2183,7 @@ order by 1,2,3,4,5,6]]></xml-property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <property name="verticalAlign">middle</property>
+                                    <property name="width">13%</property>
                                     <label id="666">
                                         <property name="fontSize">10pt</property>
                                         <text-property name="text">EJ1</text-property>
@@ -2199,6 +2202,7 @@ order by 1,2,3,4,5,6]]></xml-property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <property name="verticalAlign">middle</property>
+                                    <property name="width">13%</property>
                                     <label id="668">
                                         <property name="fontSize">10pt</property>
                                         <text-property name="text">EJ2</text-property>
