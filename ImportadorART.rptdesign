@@ -79,7 +79,7 @@
                     <property name="nativeDataType">12</property>
                 </structure>
             </list-property>
-            <xml-property name="queryText"><![CDATA[select to_char(periodo,'dd/mm/yyyy') month
+            <xml-property name="queryText"><![CDATA[select to_char(add_months(periodo,-1),'dd/mm/yyyy') month
 from ADELIA.PROCESO_LIQUIDACION
 order by periodo desc]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
