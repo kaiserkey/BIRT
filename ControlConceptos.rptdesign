@@ -1063,7 +1063,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="107">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -1139,7 +1138,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="445">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -1213,7 +1211,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="730">
                                         <text-property name="text">CONC.</text-property>
                                     </label>
@@ -1233,7 +1230,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="732">
                                         <text-property name="text">SUBC.</text-property>
                                     </label>
@@ -1253,7 +1249,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="734">
                                         <text-property name="text">PER LIQ</text-property>
                                     </label>
@@ -1273,7 +1268,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="736">
                                         <text-property name="text">TIPO</text-property>
                                     </label>
@@ -1293,7 +1287,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="738">
                                         <text-property name="text">CANT</text-property>
                                     </label>
@@ -1313,7 +1306,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="740">
                                         <text-property name="text">CANT REG</text-property>
                                     </label>
@@ -1333,7 +1325,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="742">
                                         <text-property name="text">CANT AGENTES</text-property>
                                     </label>
@@ -1353,7 +1344,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="744">
                                         <text-property name="text">TOTAL IMPORTE</text-property>
                                     </label>
@@ -1373,7 +1363,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="787">
                                         <text-property name="text">PROMEDIO</text-property>
                                     </label>
@@ -1393,7 +1382,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="798">
                                         <text-property name="text">EJEMPLO 1</text-property>
                                     </label>
@@ -1413,7 +1401,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="799">
                                         <text-property name="text">EJEMPLO 2</text-property>
                                     </label>
