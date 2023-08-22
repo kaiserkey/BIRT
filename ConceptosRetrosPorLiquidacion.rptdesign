@@ -893,6 +893,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
             <property name="backgroundPositionX">center</property>
             <property name="marginLeft">5%</property>
             <property name="marginRight">5%</property>
+            <property name="width">90%</property>
             <column id="821"/>
             <row id="822">
                 <cell id="823">
