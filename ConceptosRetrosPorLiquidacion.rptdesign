@@ -895,7 +895,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
             <property name="marginLeft">5%</property>
             <property name="marginRight">5%</property>
             <property name="paddingTop">1pt</property>
-            <property name="width">90%</property>
             <column id="821"/>
             <row id="822">
                 <cell id="823">
@@ -1731,7 +1730,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                         <property name="showIfBlank">false</property>
                                         <property name="canShrink">false</property>
                                         <property name="overflow">hidden</property>
-                                        <text-property name="text">TOTAL</text-property>
+                                        <text-property name="text">TOTALES</text-property>
                                     </label>
                                 </cell>
                                 <cell id="1091">
