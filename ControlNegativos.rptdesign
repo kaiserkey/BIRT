@@ -709,6 +709,8 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
             <column id="289"/>
             <row id="290">
                 <cell id="291">
+                    <property name="backgroundPositionX">center</property>
+                    <property name="textAlign">center</property>
                     <label id="245">
                         <property name="fontFamily">"Ebrima"</property>
                         <property name="fontSize">20pt</property>
