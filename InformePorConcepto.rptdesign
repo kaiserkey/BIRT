@@ -1211,6 +1211,7 @@ order by 2 desc,3 desc]]></xml-property>
             <property name="width">90%</property>
             <column id="113"/>
             <row id="114">
+                <property name="marginBottom">5pt</property>
                 <cell id="115">
                     <property name="backgroundPositionX">center</property>
                     <property name="borderBottomStyle">solid</property>
@@ -1274,6 +1275,7 @@ order by 2 desc,3 desc]]></xml-property>
                 </cell>
             </row>
             <row id="116">
+                <property name="marginTop">5pt</property>
                 <cell id="117">
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">thin</property>
