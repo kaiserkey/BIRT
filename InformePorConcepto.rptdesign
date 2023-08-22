@@ -1211,6 +1211,7 @@ order by 2 desc,3 desc]]></xml-property>
             <column id="113"/>
             <row id="114">
                 <cell id="115">
+                    <property name="backgroundPositionX">center</property>
                     <property name="textAlign">center</property>
                     <label id="107">
                         <property name="backgroundAttachment">scroll</property>
