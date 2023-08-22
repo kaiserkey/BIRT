@@ -1359,6 +1359,7 @@ END]]></xml-property>
                 <cell id="712">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
+                    <property name="marginTop">15pt</property>
                     <property name="textAlign">center</property>
                     <table id="714">
                         <property name="dataSet">Estadisticas Concepto</property>
