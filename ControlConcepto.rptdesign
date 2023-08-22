@@ -1225,6 +1225,7 @@ END]]></xml-property>
                 </cell>
             </row>
             <row id="858">
+                <property name="marginBottom">10px</property>
                 <cell id="859">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
