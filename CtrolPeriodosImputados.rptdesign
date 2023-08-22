@@ -1362,7 +1362,6 @@ order by 1,2,3,4,5,6]]></xml-property>
                                         <property name="showIfBlank">false</property>
                                         <property name="canShrink">false</property>
                                         <property name="overflow">hidden</property>
-                                        <property name="width">100%</property>
                                         <list-property name="boundDataColumns">
                                             <structure>
                                                 <property name="name">Column Binding</property>
