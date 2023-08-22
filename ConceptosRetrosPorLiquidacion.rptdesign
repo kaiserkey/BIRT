@@ -891,6 +891,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
     <body>
         <grid id="820">
             <property name="backgroundPositionX">center</property>
+            <property name="marginTop">15pt</property>
             <property name="marginLeft">5%</property>
             <property name="marginRight">5%</property>
             <property name="paddingTop">1pt</property>
