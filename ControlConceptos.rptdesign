@@ -1640,10 +1640,10 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="canShrink">true</property>
                                     <label id="782">
                                         <property name="backgroundAttachment">scroll</property>
-                                        <property name="backgroundPositionX">0%</property>
+                                        <property name="backgroundPositionX">center</property>
                                         <property name="backgroundPositionY">0%</property>
                                         <property name="backgroundRepeat">repeat</property>
-                                        <property name="fontFamily">"Gadugi"</property>
+                                        <property name="fontFamily">"Ebrima"</property>
                                         <property name="fontSize">12pt</property>
                                         <property name="fontWeight">bold</property>
                                         <property name="fontStyle">normal</property>
