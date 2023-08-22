@@ -893,10 +893,14 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
             <property name="backgroundPositionX">center</property>
             <property name="marginTop">15pt</property>
             <property name="marginLeft">5%</property>
-            <property name="marginRight">10%</property>
+            <property name="marginRight">5%</property>
             <property name="paddingTop">1pt</property>
-            <column id="821"/>
+            <property name="height">2.3541666666666665in</property>
+            <column id="821">
+                <property name="width">12.302083333333334in</property>
+            </column>
             <row id="822">
+                <property name="height">2.3541666666666665in</property>
                 <cell id="823">
                     <table id="824">
                         <property name="dataSet">InformeConceptosLiquidadosPorLiq</property>
