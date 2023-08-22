@@ -1290,7 +1290,7 @@ END]]></xml-property>
                 </cell>
             </row>
             <row id="497">
-                <property name="marginBottom">15pt</property>
+                <property name="marginBottom">1in</property>
                 <cell id="498">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
@@ -1303,7 +1303,7 @@ END]]></xml-property>
                     <property name="borderRightWidth">medium</property>
                     <property name="borderTopStyle">solid</property>
                     <property name="borderTopWidth">medium</property>
-                    <property name="marginBottom">15pt</property>
+                    <property name="marginBottom">1in</property>
                     <property name="textAlign">center</property>
                     <data id="699">
                         <property name="backgroundAttachment">scroll</property>
@@ -1356,11 +1356,11 @@ END]]></xml-property>
                 </cell>
             </row>
             <row id="711">
-                <property name="marginTop">15pt</property>
+                <property name="marginTop">1in</property>
                 <cell id="712">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
-                    <property name="marginTop">15pt</property>
+                    <property name="marginTop">1in</property>
                     <property name="textAlign">center</property>
                     <table id="714">
                         <property name="dataSet">Estadisticas Concepto</property>
