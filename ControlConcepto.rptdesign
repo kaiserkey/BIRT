@@ -1303,6 +1303,7 @@ END]]></xml-property>
                     <property name="borderRightWidth">medium</property>
                     <property name="borderTopStyle">solid</property>
                     <property name="borderTopWidth">medium</property>
+                    <property name="marginBottom">15pt</property>
                     <property name="textAlign">center</property>
                     <data id="699">
                         <property name="backgroundAttachment">scroll</property>
