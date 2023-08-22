@@ -1425,7 +1425,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="747">
                                         <property name="resultSetColumn">CONCEPTO</property>
                                     </data>
@@ -1444,7 +1443,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="749">
                                         <property name="resultSetColumn">SUBCONCEPTO</property>
                                     </data>
@@ -1463,7 +1461,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="751">
                                         <structure name="dateTimeFormat">
                                             <property name="category">Short Date</property>
@@ -1486,7 +1483,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="753">
                                         <property name="resultSetColumn">TIPO</property>
                                     </data>
@@ -1505,7 +1501,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="755">
                                         <property name="resultSetColumn">UNIDAD_CUENTA</property>
                                     </data>
@@ -1524,7 +1519,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="757">
                                         <property name="resultSetColumn">COUNT(*)</property>
                                     </data>
@@ -1543,7 +1537,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="759">
                                         <property name="resultSetColumn">COUNT(DISTINCTNRO_DOCUMENTO)</property>
                                     </data>
@@ -1562,7 +1555,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="761">
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
@@ -1586,7 +1578,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="788">
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
@@ -1610,7 +1601,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="800">
                                         <structure name="numberFormat">
                                             <property name="category">Unformatted</property>
@@ -1633,7 +1623,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="801">
                                         <structure name="numberFormat">
                                             <property name="category">Unformatted</property>
@@ -1663,7 +1652,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">right</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <label id="782">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -1730,7 +1718,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="780">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -1801,7 +1788,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="779">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -1872,7 +1858,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="663">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -1943,7 +1928,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="789">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -2014,7 +1998,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="802">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
@@ -2085,7 +2068,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
-                                    <property name="width">7.8in</property>
                                     <data id="803">
                                         <property name="backgroundAttachment">scroll</property>
                                         <property name="backgroundPositionX">0%</property>
