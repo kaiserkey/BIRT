@@ -1123,6 +1123,9 @@ END]]></xml-property>
     </page-setup>
     <body>
         <grid id="488">
+            <property name="marginLeft">5%</property>
+            <property name="marginRight">5%</property>
+            <property name="width">90%</property>
             <column id="489"/>
             <column id="857"/>
             <column id="847"/>
