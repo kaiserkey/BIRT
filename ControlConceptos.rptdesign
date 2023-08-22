@@ -1010,35 +1010,19 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                             </structure>
                         </list-property>
                         <property name="pageBreakInterval">999999999</property>
-                        <column id="771">
-                            <property name="width">0.6in</property>
-                        </column>
-                        <column id="772">
-                            <property name="width">0.5in</property>
-                        </column>
-                        <column id="773">
-                            <property name="width">0.5in</property>
-                        </column>
-                        <column id="774">
-                            <property name="width">0.4791666666666667in</property>
-                        </column>
-                        <column id="775">
-                            <property name="width">0.6in</property>
-                        </column>
+                        <column id="771"/>
+                        <column id="772"/>
+                        <column id="773"/>
+                        <column id="774"/>
+                        <column id="775"/>
                         <column id="776">
                             <property name="canShrink">true</property>
-                            <property name="width">0.7in</property>
                         </column>
                         <column id="777">
                             <property name="canShrink">true</property>
-                            <property name="width">0.6in</property>
                         </column>
-                        <column id="778">
-                            <property name="width">1.2in</property>
-                        </column>
-                        <column id="786">
-                            <property name="width">1.05in</property>
-                        </column>
+                        <column id="778"/>
+                        <column id="786"/>
                         <column id="793"/>
                         <column id="797"/>
                         <header>
