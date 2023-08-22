@@ -1204,7 +1204,10 @@ order by 2 desc,3 desc]]></xml-property>
     </page-setup>
     <body>
         <grid id="112">
+            <property name="marginLeft">5%</property>
+            <property name="marginRight">5%</property>
             <property name="textAlign">center</property>
+            <property name="width">90%</property>
             <column id="113"/>
             <row id="114">
                 <cell id="115">
