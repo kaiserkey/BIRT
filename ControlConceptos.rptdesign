@@ -1311,6 +1311,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
                                     <property name="textAlign">center</property>
                                     <property name="verticalAlign">middle</property>
                                     <property name="canShrink">true</property>
+                                    <property name="width">8%</property>
                                     <label id="742">
                                         <text-property name="text">CANT AGENTES</text-property>
                                     </label>
