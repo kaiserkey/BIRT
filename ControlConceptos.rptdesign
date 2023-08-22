@@ -895,7 +895,6 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
             <row id="441">
                 <cell id="443">
                     <table id="727">
-                        <property name="width">8in</property>
                         <property name="dataSet">InformeConceptosLiquidadosPorLiq</property>
                         <list-property name="boundDataColumns">
                             <structure>
