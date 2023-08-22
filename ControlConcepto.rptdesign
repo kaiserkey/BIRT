@@ -1290,6 +1290,7 @@ END]]></xml-property>
                 </cell>
             </row>
             <row id="497">
+                <property name="marginBottom">15pt</property>
                 <cell id="498">
                     <property name="colSpan">11</property>
                     <property name="rowSpan">1</property>
