@@ -2066,6 +2066,7 @@ order by 1,2,3,4,5,6]]></xml-property>
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">medium</property>
                                     <property name="verticalAlign">middle</property>
+                                    <property name="width">20%</property>
                                     <label id="654">
                                         <property name="fontSize">10pt</property>
                                         <text-property name="text">DESCRIPTION</text-property>
