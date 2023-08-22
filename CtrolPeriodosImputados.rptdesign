@@ -1056,6 +1056,9 @@ order by 1,2,3,4,5,6]]></xml-property>
     </page-setup>
     <body>
         <grid id="5">
+            <property name="marginLeft">5%</property>
+            <property name="marginRight">5%</property>
+            <property name="width">90%</property>
             <column id="6"/>
             <row id="7">
                 <cell id="8">
