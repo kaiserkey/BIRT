@@ -1283,7 +1283,7 @@ order by periodo desc]]></xml-property>
                             </structure>
                         </list-property>
                         <property name="repeatHeader">false</property>
-                        <property name="pageBreakInterval">0</property>
+                        <property name="pageBreakInterval">1215752191</property>
                         <column id="271">
                             <property name="width">1.0104166666666667in</property>
                         </column>
