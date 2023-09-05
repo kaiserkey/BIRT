@@ -1145,8 +1145,7 @@ order by periodo desc]]></xml-property>
                         <property name="pageBreakInside">auto</property>
                         <property name="showIfBlank">false</property>
                         <property name="canShrink">false</property>
-                        <property name="overflow">hidden</property>
-                        <property name="width">13.520833333333334in</property>
+                        <property name="overflow">auto</property>
                         <property name="dataSet">ATE</property>
                         <list-property name="boundDataColumns">
                             <structure>
