@@ -1064,7 +1064,8 @@ order by periodo desc]]></xml-property>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
     </data-sets>
-    <page-setup>        <simple-master-page name="Simple MasterPage" id="2">
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
             <property name="orientation">landscape</property>
             <property name="leftMargin">0in</property>
@@ -1145,7 +1146,7 @@ order by periodo desc]]></xml-property>
                         <property name="pageBreakInside">auto</property>
                         <property name="showIfBlank">false</property>
                         <property name="canShrink">false</property>
-                        <property name="overflow">auto</property>
+                        <property name="overflow">hidden</property>
                         <property name="dataSet">ATE</property>
                         <list-property name="boundDataColumns">
                             <structure>
@@ -1281,6 +1282,7 @@ order by periodo desc]]></xml-property>
                                 <property name="dataType">decimal</property>
                             </structure>
                         </list-property>
+                        <property name="pushDown">true</property>
                         <property name="repeatHeader">true</property>
                         <property name="pageBreakInterval">99999999</property>
                         <column id="271">
