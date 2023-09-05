@@ -1064,8 +1064,7 @@ order by periodo desc]]></xml-property>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
     </data-sets>
-    <page-setup>
-        <simple-master-page name="Simple MasterPage" id="2">
+    <page-setup>        <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
             <property name="orientation">landscape</property>
             <property name="leftMargin">0in</property>
