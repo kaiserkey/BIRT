@@ -378,6 +378,7 @@ from (
     inner join adelia.concepto_liquidacion cl on a.CODE = cl.code
     INNER JOIN ADELIA.AGENTE AG ON AA.AGENTE = AG.OBJECTID
     INNER JOIN ADELIA.CARGO C ON C.AGENTE = AG.OBJECTID
+    inner join adelia.area ar on ar.objectid = c.area
     INNER JOIN ADELIA.PERSONA P ON AG.PERSONA = P.OBJECTID
     INNER JOIN ADELIA.ALTA_CARGO ALC ON C.ALTA = ALC.OBJECTID
     LEFT JOIN ADELIA.BAJA_CARGO BC ON BC.OBJECTID = C.BAJA
@@ -395,7 +396,7 @@ from (
         where cl.CODE LIKE '517%'
         and AC.PERIODO = to_date(?,'dd/mm/yyyy')
         ) des on des.doc = P.NRO_DOCUMENTO and des.code = a.code and des.periodo = aa.fecha_desde
-    WHERE A.CODE LIKE '517%'
+    WHERE A.CODE LIKE '517%' and ar.code = '000003'
     GROUP BY  P.NRO_DOCUMENTO,des.doc, a.code, AA.FECHA_DESDE,p.CUIT_CUIL,trim(p.APELLIDO) ||' '|| trim(p.NOMBRE), C.OBJECTID
 ) cuo
 left join (
