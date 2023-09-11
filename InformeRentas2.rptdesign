@@ -400,7 +400,7 @@ from (
     GROUP BY  P.NRO_DOCUMENTO,des.doc, a.code, AA.FECHA_DESDE,p.CUIT_CUIL,trim(p.APELLIDO) ||' '|| trim(p.NOMBRE), C.OBJECTID
 ) cuo
 left join (
-select * from pledezma.aux_creditos091 WHERE TANDA in ('T2-1','T2-2') T1 on trim(cuo.cuil) = t1.cuil 
+select * from pledezma.aux_creditos091 WHERE TANDA in ('T2-1','T2-2')) T1 on trim(cuo.cuil) = t1.cuil 
 WHERE 1 = 1
 --and (ESTADO = 'Rentas' or estado = 'Descontada')
 and cuo.periodo = to_date(?,'dd/mm/yyyy')
