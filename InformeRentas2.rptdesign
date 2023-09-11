@@ -403,7 +403,8 @@ select * from pledezma.aux_creditos091 WHERE TANDA = 'T2-1') T1 on trim(cuo.cuil
 WHERE 1 = 1
 --and (ESTADO = 'Rentas' or estado = 'Descontada')
 and cuo.periodo = to_date(?,'dd/mm/yyyy')
-And trim(cuo.cuil) not in (select cuil from pledezma.cuils union all select cuil from pledezma.cuils2 union select cuil from pledezma.cuils3 union select cuil from pledezma.cuils4 )
+And trim(cuo.cuil) not in (select cuil from pledezma.cuils union all select cuil from pledezma.cuils2 union select cuil from pledezma.cuils3 
+union select cuil from pledezma.cuils4 union select cuil from pledezma.cuils5 )
 GROUP BY cuo.cuil
 order by 9, 7 DESC]]></xml-property>
         </oda-data-set>
