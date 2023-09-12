@@ -346,7 +346,9 @@ ORDER BY 7,1,4,3 ASC]]></xml-property>
     </page-setup>
     <body>
         <grid id="464">
-            <column id="465"/>
+            <column id="465">
+                <property name="textAlign">center</property>
+            </column>
             <row id="742">
                 <property name="height">10pt</property>
                 <cell id="743">
