@@ -492,6 +492,7 @@ ORDER BY 7,1,4,3 ASC]]></xml-property>
                         <property name="marginLeft">5%</property>
                         <property name="marginRight">50%</property>
                         <property name="verticalAlign">middle</property>
+                        <property name="width">100%</property>
                         <property name="dataSet">InformeRentas</property>
                         <list-property name="boundDataColumns">
                             <structure>
@@ -934,60 +935,6 @@ ORDER BY 7,1,4,3 ASC]]></xml-property>
                             </row>
                         </footer>
                     </table>
-                </cell>
-            </row>
-            <row id="468">
-                <cell id="469">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="470">
-                <cell id="471">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="472">
-                <cell id="473">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="474">
-                <cell id="475">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="476">
-                <cell id="477">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="478">
-                <cell id="479">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="480">
-                <cell id="481">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="482">
-                <cell id="483">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
-                </cell>
-            </row>
-            <row id="484">
-                <cell id="485">
-                    <property name="textAlign">center</property>
-                    <property name="verticalAlign">middle</property>
                 </cell>
             </row>
         </grid>
