@@ -483,6 +483,7 @@ ORDER BY 7,1,4,3 ASC]]></xml-property>
                 </cell>
             </row>
             <row id="466">
+                <property name="textAlign">center</property>
                 <cell id="467">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">middle</property>
