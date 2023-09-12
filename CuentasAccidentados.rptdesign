@@ -491,6 +491,7 @@ ORDER BY 7,1,4,3 ASC]]></xml-property>
                         <property name="fontFamily">"Ebrima"</property>
                         <property name="marginLeft">5%</property>
                         <property name="marginRight">50%</property>
+                        <property name="verticalAlign">middle</property>
                         <property name="dataSet">InformeRentas</property>
                         <list-property name="boundDataColumns">
                             <structure>
