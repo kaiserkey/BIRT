@@ -2703,13 +2703,27 @@ AND C.ESTADO = 1]]></xml-property>
                                 <property name="dataType">decimal</property>
                             </structure>
                         </list-property>
-                        <column id="1059"/>
-                        <column id="1060"/>
-                        <column id="1061"/>
-                        <column id="1062"/>
-                        <column id="1063"/>
-                        <column id="1064"/>
-                        <column id="1065"/>
+                        <column id="1059">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1060">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1061">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1062">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1063">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1064">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1065">
+                            <property name="width">10%</property>
+                        </column>
                         <header>
                             <row id="1021">
                                 <property name="fontWeight">bold</property>
