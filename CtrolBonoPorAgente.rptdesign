@@ -1552,6 +1552,7 @@ AND C.ESTADO = 1]]></xml-property>
                         <header>
                             <row id="963">
                                 <property name="fontWeight">bold</property>
+                                <property name="verticalAlign">middle</property>
                                 <cell id="966">
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
