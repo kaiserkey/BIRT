@@ -149,12 +149,6 @@ order by periodo desc]]></xml-property>
                     <property name="dataType">string</property>
                     <property name="allowExport">true</property>
                 </structure>
-                <structure>
-                    <property name="name">Column Binding_2</property>
-                    <expression name="expression" type="javascript">"HASTA: " + params["PERIODO2"].value</expression>
-                    <property name="dataType">string</property>
-                    <property name="allowExport">true</property>
-                </structure>
             </list-property>
             <column id="663">
                 <property name="paddingLeft">5%</property>
