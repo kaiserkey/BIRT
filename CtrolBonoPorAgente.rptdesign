@@ -1983,24 +1983,12 @@ AND C.ESTADO = 1]]></xml-property>
                                 <property name="allowExport">true</property>
                             </structure>
                         </list-property>
-                        <column id="1002">
-                            <property name="width">1in</property>
-                        </column>
-                        <column id="1003">
-                            <property name="width">5in</property>
-                        </column>
-                        <column id="1004">
-                            <property name="width">0.5in</property>
-                        </column>
-                        <column id="1005">
-                            <property name="width">0.5in</property>
-                        </column>
-                        <column id="1006">
-                            <property name="width">0.5in</property>
-                        </column>
-                        <column id="1007">
-                            <property name="width">0.5in</property>
-                        </column>
+                        <column id="1002"/>
+                        <column id="1003"/>
+                        <column id="1004"/>
+                        <column id="1005"/>
+                        <column id="1006"/>
+                        <column id="1007"/>
                         <header>
                             <row id="963">
                                 <property name="fontWeight">bold</property>
