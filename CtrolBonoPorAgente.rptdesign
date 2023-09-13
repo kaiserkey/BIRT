@@ -506,7 +506,7 @@ AND C.ESTADO = 1]]></xml-property>
                 </structure>
                 <structure>
                     <property name="name">Column Binding_1</property>
-                    <expression name="expression" type="javascript">"DESDE: " + params["PERIODO"].value</expression>
+                    <expression name="expression" type="javascript">"PERIODO BASE: " + params["PERIODO"].value</expression>
                     <property name="dataType">string</property>
                     <property name="allowExport">true</property>
                 </structure>
