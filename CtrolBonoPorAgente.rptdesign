@@ -145,7 +145,7 @@ order by periodo desc]]></xml-property>
                 </structure>
                 <structure>
                     <property name="name">Column Binding_1</property>
-                    <expression name="expression" type="javascript">"DESDE: " + params["PERIODO1"].value</expression>
+                    <expression name="expression" type="javascript">"DESDE: " + params["PERIODO"].value</expression>
                     <property name="dataType">string</property>
                     <property name="allowExport">true</property>
                 </structure>
