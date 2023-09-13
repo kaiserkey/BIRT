@@ -1977,7 +1977,7 @@ AND C.ESTADO = 1]]></xml-property>
                             <property name="width">10%</property>
                         </column>
                         <column id="1003">
-                            <property name="width">50%</property>
+                            <property name="width">40%</property>
                         </column>
                         <column id="1004">
                             <property name="width">10%</property>
@@ -1986,10 +1986,10 @@ AND C.ESTADO = 1]]></xml-property>
                             <property name="width">10%</property>
                         </column>
                         <column id="1006">
-                            <property name="width">10%</property>
+                            <property name="width">15%</property>
                         </column>
                         <column id="1007">
-                            <property name="width">10%</property>
+                            <property name="width">15%</property>
                         </column>
                         <header>
                             <row id="963">
