@@ -1220,7 +1220,7 @@ AND C.ESTADO = 1]]></xml-property>
                 </cell>
             </row>
             <row id="669">
-                <property name="height">0.5in</property>
+                <property name="height">0.1in</property>
                 <cell id="671">
                     <property name="textAlign">center</property>
                 </cell>
@@ -1294,7 +1294,7 @@ AND C.ESTADO = 1]]></xml-property>
             </row>
             <row id="1009">
                 <property name="verticalAlign">bottom</property>
-                <property name="height">0.5in</property>
+                <property name="height">0.1in</property>
                 <cell id="1010">
                     <property name="textAlign">center</property>
                     <property name="verticalAlign">bottom</property>
@@ -1355,7 +1355,6 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="showIfBlank">false</property>
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
-                        <property name="height">0.5in</property>
                         <text-property name="text">DATOS PERSONALES:</text-property>
                     </label>
                 </cell>
@@ -1856,9 +1855,10 @@ AND C.ESTADO = 1]]></xml-property>
                 </cell>
             </row>
             <row id="1011">
-                <property name="height">0.5in</property>
+                <property name="height">0.3in</property>
                 <cell id="1012">
                     <property name="textAlign">center</property>
+                    <property name="height">0.3in</property>
                 </cell>
             </row>
             <row id="677">
@@ -1914,7 +1914,6 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="showIfBlank">false</property>
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
-                        <property name="height">0.5in</property>
                         <text-property name="text">CONTROL LIQUIDACION:</text-property>
                     </label>
                 </cell>
@@ -1983,14 +1982,27 @@ AND C.ESTADO = 1]]></xml-property>
                                 <property name="allowExport">true</property>
                             </structure>
                         </list-property>
-                        <column id="1002"/>
-                        <column id="1003"/>
-                        <column id="1004"/>
-                        <column id="1005"/>
-                        <column id="1006"/>
-                        <column id="1007"/>
+                        <column id="1002">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1003">
+                            <property name="width">50%</property>
+                        </column>
+                        <column id="1004">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1005">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1006">
+                            <property name="width">10%</property>
+                        </column>
+                        <column id="1007">
+                            <property name="width">10%</property>
+                        </column>
                         <header>
                             <row id="963">
+                                <property name="backgroundColor">#EBEBEB</property>
                                 <property name="fontWeight">bold</property>
                                 <property name="verticalAlign">middle</property>
                                 <cell id="966">
@@ -2175,6 +2187,7 @@ AND C.ESTADO = 1]]></xml-property>
                                 <cell id="997"/>
                                 <cell id="998"/>
                                 <cell id="999">
+                                    <property name="backgroundColor">#EBEBEB</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -2240,6 +2253,7 @@ AND C.ESTADO = 1]]></xml-property>
                                     </data>
                                 </cell>
                                 <cell id="1000">
+                                    <property name="backgroundColor">#EBEBEB</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">medium</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -2309,26 +2323,31 @@ AND C.ESTADO = 1]]></xml-property>
                     </table>
                 </cell>
             </row>
-            <row id="685">
-                <cell id="687">
-                    <property name="textAlign">center</property>
-                </cell>
-            </row>
             <row id="689">
+                <property name="height">0.3in</property>
                 <cell id="691">
                     <property name="textAlign">center</property>
                 </cell>
             </row>
             <row id="693">
                 <cell id="695">
-                    <property name="textAlign">center</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
                     <label id="1018">
                         <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FBFDD0</property>
                         <property name="backgroundPositionX">0%</property>
                         <property name="backgroundPositionY">0%</property>
                         <property name="backgroundRepeat">repeat</property>
                         <property name="fontFamily">"Ebrima"</property>
-                        <property name="fontSize">12pt</property>
+                        <property name="fontSize">10pt</property>
                         <property name="fontWeight">bold</property>
                         <property name="fontStyle">normal</property>
                         <property name="fontVariant">normal</property>
@@ -2356,7 +2375,7 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="paddingLeft">1pt</property>
                         <property name="paddingBottom">1pt</property>
                         <property name="paddingRight">1pt</property>
-                        <property name="textAlign">center</property>
+                        <property name="textAlign">left</property>
                         <property name="letterSpacing">normal</property>
                         <property name="lineHeight">normal</property>
                         <property name="orphans">2</property>
@@ -2372,21 +2391,29 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="showIfBlank">false</property>
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
-                        <property name="height">0.5in</property>
                         <text-property name="text">NETO AGENTE PARA CALCULO DE BONO = (BASE REMU * DESCUENTOS) + BASE NORE - SEGUROS</text-property>
                     </label>
                 </cell>
             </row>
             <row id="697">
                 <cell id="699">
-                    <property name="textAlign">center</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">medium</property>
+                    <property name="textAlign">left</property>
                     <label id="1015">
                         <property name="backgroundAttachment">scroll</property>
+                        <property name="backgroundColor">#FBFDD0</property>
                         <property name="backgroundPositionX">0%</property>
                         <property name="backgroundPositionY">0%</property>
                         <property name="backgroundRepeat">repeat</property>
                         <property name="fontFamily">"Ebrima"</property>
-                        <property name="fontSize">12pt</property>
+                        <property name="fontSize">10pt</property>
                         <property name="fontWeight">bold</property>
                         <property name="fontStyle">normal</property>
                         <property name="fontVariant">normal</property>
@@ -2414,7 +2441,7 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="paddingLeft">1pt</property>
                         <property name="paddingBottom">1pt</property>
                         <property name="paddingRight">1pt</property>
-                        <property name="textAlign">center</property>
+                        <property name="textAlign">left</property>
                         <property name="letterSpacing">normal</property>
                         <property name="lineHeight">normal</property>
                         <property name="orphans">2</property>
@@ -2430,7 +2457,6 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="showIfBlank">false</property>
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
-                        <property name="height">0.5in</property>
                         <text-property name="text">VALOR ADICIONAL = 400.000 - ((BASE REMU * DESCUENTOS) + BASE NORE - SEGUROS)</text-property>
                     </label>
                 </cell>
@@ -2442,6 +2468,14 @@ AND C.ESTADO = 1]]></xml-property>
             </row>
             <row id="705">
                 <cell id="707">
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">medium</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">medium</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">medium</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">medium</property>
                     <property name="textAlign">center</property>
                     <table id="1020">
                         <property name="dataSet">TotalesBono</property>
