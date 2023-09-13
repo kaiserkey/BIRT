@@ -2970,7 +2970,7 @@ AND C.ESTADO = 1]]></xml-property>
                                             <property name="category">Custom</property>
                                             <property name="pattern">¤###,##0.00</property>
                                         </structure>
-                                        <property name="textAlign">right</property>
+                                        <property name="textAlign">center</property>
                                         <property name="resultSetColumn">DESCUENTOS</property>
                                     </data>
                                 </cell>
