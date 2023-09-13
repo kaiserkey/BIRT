@@ -2385,7 +2385,7 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
                         <property name="height">0.5in</property>
-                        <text-property name="text">NETO AGENTE PARA CALCULO DE BONO = (BASE REMU * (1 - % DESCUENTOS) + BASE NORE - SEGUROS)</text-property>
+                        <text-property name="text">NETO AGENTE PARA CALCULO DE BONO = (BASE REMU * DESCUENTOS) + BASE NORE - SEGUROS</text-property>
                     </label>
                 </cell>
             </row>
@@ -2443,7 +2443,7 @@ AND C.ESTADO = 1]]></xml-property>
                         <property name="canShrink">false</property>
                         <property name="overflow">hidden</property>
                         <property name="height">0.5in</property>
-                        <text-property name="text">VALOR ADICIONAL = 400.000 - (BASE REMU * (1 - % DESCUENTOS) + BASE NORE - SEGUROS)</text-property>
+                        <text-property name="text">VALOR ADICIONAL = 400.000 - ((BASE REMU * DESCUENTOS) + BASE NORE - SEGUROS)</text-property>
                     </label>
                 </cell>
             </row>
