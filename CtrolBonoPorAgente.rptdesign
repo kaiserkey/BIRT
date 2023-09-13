@@ -648,6 +648,7 @@ AND C.ESTADO = 1]]></xml-property>
                 </cell>
             </row>
             <row id="673">
+                <property name="height">0.5in</property>
                 <cell id="675">
                     <property name="textAlign">center</property>
                 </cell>
