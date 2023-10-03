@@ -106,15 +106,7 @@
                     <text-property name="heading">NOMBRE</text-property>
                 </structure>
             </list-property>
-            <list-property name="filter">
-                <structure>
-                    <property name="operator">in</property>
-                    <expression name="expr" type="javascript">row["ORIGEN"]</expression>
-                    <simple-property-list name="value1">
-                        <value>params["Origen"].value</value>
-                    </simple-property-list>
-                </structure>
-            </list-property>
+            <list-property name="filter"/>
             <list-property name="parameters">
                 <structure>
                     <property name="name">TextoABuscar</property>
