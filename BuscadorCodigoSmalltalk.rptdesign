@@ -22,7 +22,6 @@
     <property name="imageDPI">96</property>
     <parameters>
         <scalar-parameter name="Texto a buscar" id="1298">
-            <text-property name="helpText">Texto a buscar</text-property>
             <text-property name="promptText">Texto a buscar</text-property>
             <property name="valueType">static</property>
             <property name="dataType">string</property>
