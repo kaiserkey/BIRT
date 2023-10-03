@@ -295,6 +295,7 @@ ORDER BY 2]]></xml-property>
     </page-setup>
     <body>
         <grid id="1301">
+            <property name="marginLeft">50pt</property>
             <column id="1302"/>
             <row id="1303">
                 <cell id="1304">
