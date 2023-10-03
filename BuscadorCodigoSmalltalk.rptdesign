@@ -38,6 +38,7 @@
         <scalar-parameter name="Origen" id="1312">
             <text-property name="promptText">Selecciona Origen</text-property>
             <property name="valueType">dynamic</property>
+            <property name="isRequired">false</property>
             <property name="dataSetName">Origen Param</property>
             <expression name="valueExpr" type="javascript">dataSetRow["ORIGEN"]</expression>
             <expression name="labelExpr" type="javascript">dataSetRow["ORIGEN"]</expression>
