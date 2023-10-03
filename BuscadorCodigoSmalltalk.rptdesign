@@ -309,7 +309,7 @@ ORDER BY 2]]></xml-property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">Column Binding</property>
-                                <expression name="expression" type="javascript">'Contenedores del texto: "' + params["Texto a buscar"].value + '"'</expression>
+                                <expression name="expression" type="javascript">'Contenedores del texto: "' + params["TextoABuscar"].value + '"'</expression>
                                 <property name="dataType">string</property>
                                 <property name="allowExport">true</property>
                             </structure>
