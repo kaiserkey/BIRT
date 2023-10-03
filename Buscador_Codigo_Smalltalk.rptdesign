@@ -17,7 +17,7 @@
     </list-property>
     <property name="units">in</property>
     <property name="iconFile">/templates/blank_report.gif</property>
-    <property name="layoutPreference">fixed layout</property>
+    <property name="layoutPreference">auto layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
     <parameters>
@@ -83,7 +83,7 @@
             </list-property>
             <list-property name="parameters">
                 <structure>
-                    <property name="name">param_1</property>
+                    <property name="name">Texto a buscar</property>
                     <property name="paramName">Texto a buscar</property>
                     <property name="nativeName"></property>
                     <property name="dataType">string</property>
@@ -139,12 +139,12 @@
             </list-property>
             <xml-property name="queryText"><![CDATA[  SELECT 
 '<p>
-	<a href="javascript:void(0)" onclick="document.getElementById(''light'||rownum||''').style.display=''block'';document.getElementById(''fade'||rownum||''').style.display=''block''" style="text-decoration:none;color:#004080;font-weight: bold;font-family: Consolas,monaco,monospace;font-size: 15px;" >Ver
+	<a href="javascript:void(0)" onclick="document.getElementById(''light'||rownum||''').style.display=''block'';document.getElementById(''fade'||rownum||''').style.display=''block''" style="text-decoration:none;margin-block-start: 0px;margin-block-end:0px;margin:0px;color:#004080;font-weight: bold;font-family: Consolas,monaco,monospace;font-size: 15px;" >Ver
 	</a>
  </p>
  <div id="light'||rownum||'" class="white_content" style="display: none;position: absolute;top: 25%;left: 25%;width: 50%;height: 50%;padding: 16px;border: 16px solid;border-color:rgba(0, 64, 128, 1);border-radius: 15px;background-color: #ede2dd;z-index: 1002;overflow: auto;font-size: 18px;font-weight: bold;font-family: Ebrima,monaco,monospace;">
  	<a style="text-decoration:none; display:flex; justify-content:end;text-align: right;" href="javascript:void(0)" onclick="document.getElementById(''light'||rownum||''').style.display=''none'';document.getElementById(''fade'||rownum||''').style.display=''none''">
-  		<button style="font-weight: bold;background-color:rgba(0, 64, 128, 0.5);color:red;border-radius:30%;padding:7px;">X
+  		<button style="font-weight: bold;background-color:rgba(0, 64, 128, 0.5);color:white;border-radius:30%;padding:7px;">X
   		</button>
   	</a><br />'|| replace(replace( Codigo, '<', '('), '>',')') ||'
 </div>
@@ -170,9 +170,6 @@ FROM (SELECT EXPRESION AS CODIGO, 'VARIABLE FORMULA' origen, a.CODE nombre
 ORDER BY 2]]></xml-property>
         </oda-data-set>
     </data-sets>
-    <styles>
-        <style name="NewStyle" id="1273"/>
-    </styles>
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
@@ -185,6 +182,9 @@ ORDER BY 2]]></xml-property>
                     <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
                 </text>
             </page-footer>
+        </simple-master-page>
+        <simple-master-page name="NewSimpleMasterPage" id="1311">
+            <property name="numberAlign">left</property>
         </simple-master-page>
     </page-setup>
     <body>
@@ -326,7 +326,7 @@ ORDER BY 2]]></xml-property>
                                 <property name="borderTopWidth">thin</property>
                                 <property name="paddingTop">0pt</property>
                                 <property name="paddingBottom">0pt</property>
-                                <property name="height">50%</property>
+                                <property name="height">10pt</property>
                                 <cell id="1284">
                                     <property name="paddingTop">0pt</property>
                                     <property name="paddingBottom">0pt</property>
@@ -338,17 +338,6 @@ ORDER BY 2]]></xml-property>
                                         <property name="paddingTop">0pt</property>
                                         <property name="paddingBottom">0pt</property>
                                         <property name="textAlign">center</property>
-                                        <method name="onPrepare"><![CDATA[function escapeXml(unsafe) {
-    return unsafe.replace(/[<>&amp;'"]/g, function (c) {
-        switch (c) {
-            case '<': return '&amp;lt;';
-            case '>': return '&amp;gt;';
-            case '&amp;': return '&amp;amp;';
-            case '\'': return '&amp;apos;';
-            case '"': return '&amp;quot;';
-        }
-    });
-}]]></method>
                                         <method name="onCreate"><![CDATA[function escapeXml(unsafe) {
     return unsafe.replace(/[<>&amp;'"]/g, function (c) {
         switch (c) {
