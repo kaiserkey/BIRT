@@ -24,10 +24,12 @@
         <scalar-parameter name="TextoABuscar" id="1298">
             <text-property name="promptText">Texto a buscar</text-property>
             <property name="valueType">static</property>
+            <property name="isRequired">true</property>
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
+            <property name="concealValue">false</property>
             <property name="controlType">text-box</property>
             <structure name="format">
                 <property name="category">Unformatted</property>
@@ -115,8 +117,8 @@
             </list-property>
             <list-property name="parameters">
                 <structure>
-                    <property name="name">Texto a buscar</property>
-                    <property name="paramName">Texto a buscar</property>
+                    <property name="name">TextoABuscar</property>
+                    <property name="paramName">TextoABuscar</property>
                     <property name="nativeName"></property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">0</property>
