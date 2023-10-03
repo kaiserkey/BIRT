@@ -45,11 +45,11 @@
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">VARIABLE FORMULA</value>
-                <value type="constant">OBJETO LIQUIDADO CONCEPTO</value>
-                <value type="constant">FORMULA CONCEPTO</value>
-                <value type="constant">DEFINICION DE CONSULTAS</value>
-                <value type="constant">CONDICION EJECUCION CONCEPTO</value>
+                <value type="constant">VARIABLE_FORMULA</value>
+                <value type="constant">OBJETO_LIQUIDADO_CONCEPTO</value>
+                <value type="constant">FORMULA_CONCEPTO</value>
+                <value type="constant">DEFINICION_DE_CONSULTAS</value>
+                <value type="constant">CONDICION_EJECUCION_CONCEPTO</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">multi-value</property>
@@ -184,22 +184,22 @@
   	</a><br />'|| replace(replace( Codigo, '<', '('), '>',')') ||'
 </div>
 <div id="fade'||rownum||'" class="black_overlay" style="display: none;position: absolute;top: 0%;left: 0%;width: 100%;height: 100%;background-color: black;z-index: 1001;-moz-opacity: 0.8;opacity: .80;filter: alpha(opacity=80);"></div>' codigo, origen, nombre
-FROM (SELECT EXPRESION AS CODIGO, 'VARIABLE FORMULA' origen, a.CODE nombre 
+FROM (SELECT EXPRESION AS CODIGO, 'VARIABLE_FORMULA' origen, a.CODE nombre 
             FROM ADELIA.VARIABLE_FORMULA_LIQUIDACION a
             UNION ALL
-            SELECT CALCULO AS CODIGO, 'FORMULA CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
+            SELECT CALCULO AS CODIGO, 'FORMULA_CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
             FROM ADELIA.FORMULA_LIQUIDACION a
             INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON a.concepto_liquidacion = C.OBJECTID
             UNION ALL
-            SELECT TO_CLOB(OBJETO_LIQUIDADO) AS CODIGO, 'OBJETO LIQUIDADO CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
+            SELECT TO_CLOB(OBJETO_LIQUIDADO) AS CODIGO, 'OBJETO_LIQUIDADO_CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
             FROM ADELIA.FORMULA_LIQUIDACION a
             INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON a.concepto_liquidacion = C.OBJECTID
             UNION ALL
-            SELECT TO_CLOB(CONDICION_EJECUCION) AS CODIGO, 'CONDICION EJECUCION CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
+            SELECT TO_CLOB(CONDICION_EJECUCION) AS CODIGO, 'CONDICION_EJECUCION_CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
             FROM ADELIA.FORMULA_LIQUIDACION a
             INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON a.concepto_liquidacion = C.OBJECTID
             UNION ALL
-			SELECT Blob_TO_CLOB(SOURCE) AS CODIGO, 'DEFINICION DE CONSULTAS' origen, A.DESCRIPTION nombre
+			SELECT Blob_TO_CLOB(SOURCE) AS CODIGO, 'DEFINICION_DE_CONSULTAS' origen, A.DESCRIPTION nombre
 			FROM ADELIA.QUERY_DEFINITION a
 			) WHERE upper(CODIGO) like upper('%'||?||'%')
 ORDER BY 2]]></xml-property>
@@ -213,6 +213,7 @@ ORDER BY 2]]></xml-property>
                     <text-property name="heading">ORIGEN</text-property>
                 </structure>
             </list-property>
+            <list-property name="parameters"/>
             <structure name="cachedMetaData">
                 <list-property name="resultSet">
                     <structure>
@@ -232,15 +233,15 @@ ORDER BY 2]]></xml-property>
                     <property name="nativeDataType">12</property>
                 </structure>
             </list-property>
-            <xml-property name="queryText"><![CDATA[SELECT  'VARIABLE FORMULA' ORIGEN FROM DUAL
+            <xml-property name="queryText"><![CDATA[SELECT  'VARIABLE_FORMULA' ORIGEN FROM DUAL
 			UNION ALL
-			SELECT 'FORMULA CONCEPTO' ORIGEN FROM DUAL
+			SELECT 'FORMULA_CONCEPTO' ORIGEN FROM DUAL
 			UNION ALL
-			SELECT 'OBJETO LIQUIDADO CONCEPTO' ORIGEN FROM DUAL
+			SELECT 'OBJETO_LIQUIDADO_CONCEPTO' ORIGEN FROM DUAL
 			UNION ALL
-			SELECT  'CONDICION EJECUCION CONCEPTO' ORIGEN FROM DUAL
+			SELECT  'CONDICION_EJECUCION_CONCEPTO' ORIGEN FROM DUAL
 			UNION ALL
-			SELECT  'DEFINICION DE CONSULTAS' ORIGEN FROM DUAL]]></xml-property>
+			SELECT  'DEFINICION_DE_CONSULTAS' ORIGEN FROM DUAL]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
