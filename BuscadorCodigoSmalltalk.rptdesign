@@ -38,7 +38,7 @@
         <scalar-parameter name="Origen" id="1312">
             <text-property name="promptText">Selecciona Origen</text-property>
             <property name="valueType">dynamic</property>
-            <property name="isRequired">false</property>
+            <property name="isRequired">true</property>
             <property name="dataSetName">Origen Param</property>
             <expression name="valueExpr" type="javascript">dataSetRow["ORIGEN"]</expression>
             <expression name="labelExpr" type="javascript">dataSetRow["ORIGEN"]</expression>
@@ -107,7 +107,15 @@
                     <text-property name="heading">NOMBRE</text-property>
                 </structure>
             </list-property>
-            <list-property name="filter"/>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">in</property>
+                    <expression name="expr" type="javascript">row["ORIGEN"]</expression>
+                    <simple-property-list name="value1">
+                        <value>params["Origen"].value</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
             <list-property name="parameters">
                 <structure>
                     <property name="name">TextoABuscar</property>
