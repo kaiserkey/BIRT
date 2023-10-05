@@ -438,7 +438,7 @@ ORDER BY 2]]></xml-property>
                                     <property name="paddingTop">0pt</property>
                                     <property name="paddingBottom">0pt</property>
                                     <property name="canShrink">true</property>
-                                    <property name="height">0.5in</property>
+                                    <property name="height">0.05in</property>
                                     <text-data id="1297">
                                         <property name="fontFamily">"Ebrima"</property>
                                         <property name="fontSize">small</property>
@@ -492,7 +492,7 @@ ORDER BY 2]]></xml-property>
                                     <property name="paddingTop">0pt</property>
                                     <property name="paddingBottom">0pt</property>
                                     <property name="verticalAlign">middle</property>
-                                    <property name="height">0.5in</property>
+                                    <property name="height">0.05in</property>
                                     <data id="1287">
                                         <property name="fontFamily">"Ebrima"</property>
                                         <property name="fontSize">small</property>
@@ -508,7 +508,7 @@ ORDER BY 2]]></xml-property>
                                     <property name="paddingTop">0pt</property>
                                     <property name="paddingBottom">0pt</property>
                                     <property name="verticalAlign">middle</property>
-                                    <property name="height">0.5in</property>
+                                    <property name="height">0.05in</property>
                                     <data id="1289">
                                         <property name="fontFamily">"Ebrima"</property>
                                         <property name="fontSize">small</property>
