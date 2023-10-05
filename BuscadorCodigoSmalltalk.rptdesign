@@ -346,6 +346,16 @@ ORDER BY 2]]></xml-property>
                         <property name="pageBreakAfter">avoid</property>
                         <property name="pageBreakBefore">avoid</property>
                         <property name="width">12.594in</property>
+                        <list-property name="highlightRules">
+                            <structure>
+                                <property name="operator">eq</property>
+                                <property name="backgroundColor">#0080C0</property>
+                                <expression name="testExpr" type="javascript">row.__rownum%2</expression>
+                                <simple-property-list name="value1">
+                                    <value type="javascript">0</value>
+                                </simple-property-list>
+                            </structure>
+                        </list-property>
                         <property name="dataSet">Codigos</property>
                         <list-property name="boundDataColumns">
                             <structure>
