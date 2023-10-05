@@ -177,7 +177,7 @@
 	<a href="javascript:void(0)" onclick="document.getElementById(''light'||rownum||''').style.display=''block'';document.getElementById(''fade'||rownum||''').style.display=''block''" style="text-decoration:none;color:#004080;font-weight: bold;font-family: Consolas,monaco,monospace;font-size: 15px;" >Ver
 	</a>
  </p>
- <div id="light'||rownum||'" class="white_content" style="display: none;position:absolute;top:0%;left: 5%;width: 90%;height: 100%;padding: 8px !important;border: 16px solid;border-color:rgba(0, 64, 128, 1);border-radius: 15px;background-color: #ede2dd;z-index: 1002;overflow: auto;font-size: 18px;font-weight: bold;font-family: Ebrima,monaco,monospace;">
+ <div id="light'||rownum||'" class="white_content" style="display: none;top:0%;left: 5%;width: 90%;height: 100%;padding: 8px !important;border: 16px solid;border-color:rgba(0, 64, 128, 1);border-radius: 15px;background-color: #ede2dd;z-index: 1002;overflow: auto;font-size: 18px;font-weight: bold;font-family: Ebrima,monaco,monospace;">
  	<a style="text-decoration:none; display:flex; justify-content:end;text-align: right;" href="javascript:void(0)" onclick="document.getElementById(''light'||rownum||''').style.display=''none'';document.getElementById(''fade'||rownum||''').style.display=''none''">
   		<button style="font-weight: bold;background-color:rgba(0, 64, 128, 0.5);color:white;border-radius:30%;padding:7px;">X
   		</button>
