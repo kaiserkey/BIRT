@@ -173,7 +173,7 @@
                 </structure>
             </list-property>
             <xml-property name="queryText"><![CDATA[  SELECT 
-'<p style="margin: 0px;">
+'<p style="margin: 5px;">
 	<a href="javascript:void(0)" onclick="document.getElementById(''light'||rownum||''').style.display=''block'';document.getElementById(''fade'||rownum||''').style.display=''block''" style="text-decoration:none;color:#004080;font-weight: bold;font-family: Consolas,monaco,monospace;font-size: 15px;" >Ver
 	</a>
  </p>
