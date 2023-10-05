@@ -367,7 +367,7 @@ ORDER BY 2]]></xml-property>
                                 <property name="dataType">string</property>
                             </structure>
                         </list-property>
-                        <property name="pageBreakInterval">40</property>
+                        <property name="pageBreakInterval">20</property>
                         <column id="1294">
                             <property name="width">2.5208333333333335in</property>
                         </column>
