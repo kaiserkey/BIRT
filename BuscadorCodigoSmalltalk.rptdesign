@@ -433,6 +433,7 @@ ORDER BY 2]]></xml-property>
                                 <property name="borderTopWidth">thin</property>
                                 <property name="paddingTop">0pt</property>
                                 <property name="paddingBottom">0pt</property>
+                                <property name="height">0.5in</property>
                                 <cell id="1284">
                                     <property name="paddingTop">0pt</property>
                                     <property name="paddingBottom">0pt</property>
