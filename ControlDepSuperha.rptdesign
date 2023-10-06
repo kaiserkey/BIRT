@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.24" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.9.0.v202203150031</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="Periodo" id="199">
+            <text-property name="promptText">Selecciona Periodo</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="isRequired">true</property>
+            <property name="dataSetName">Periodos</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["FECHA"]</expression>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="javascript">params["Periodo"][0].value</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="Cuadro" id="201">
+            <text-property name="promptText">Seleccione Cuadro</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">Cuadros</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["CUADRO"]</expression>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">07 - ESCALAFON GENERAL</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="108">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.93.97:1521:ADELIA</property>
+            <property name="odaUser">birt</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">QmlydDk4MiQ=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Contables" id="109">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">CODIGO</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CODIGO</text-property>
+                    <text-property name="heading">CODIGO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DESCRIPCION</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCRIPCION</text-property>
+                    <text-property name="heading">DESCRIPCION</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PAG_SUPERHA</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">PAG_SUPERHA</text-property>
+                    <text-property name="heading">PAG_SUPERHA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CONTABLE_SUPERHA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CONTABLE_SUPERHA</text-property>
+                    <text-property name="heading">CONTABLE_SUPERHA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PAG_ADELIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">PAG_ADELIA</text-property>
+                    <text-property name="heading">PAG_ADELIA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CONTABLE_ADELIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CONTABLE_ADELIA</text-property>
+                    <text-property name="heading">CONTABLE_ADELIA</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">Periodo</property>
+                    <property name="paramName">Periodo</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">Cuadro</property>
+                    <property name="paramName">Cuadro</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CODIGO</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">DESCRIPCION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">PAG_SUPERHA</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">CONTABLE_SUPERHA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">PAG_ADELIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">CONTABLE_ADELIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CODIGO</property>
+                    <property name="nativeName">CODIGO</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">DESCRIPCION</property>
+                    <property name="nativeName">DESCRIPCION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">PAG_SUPERHA</property>
+                    <property name="nativeName">PAG_SUPERHA</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">CONTABLE_SUPERHA</property>
+                    <property name="nativeName">CONTABLE_SUPERHA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">PAG_ADELIA</property>
+                    <property name="nativeName">PAG_ADELIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">CONTABLE_ADELIA</property>
+                    <property name="nativeName">CONTABLE_ADELIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT 
+    T.CODIGO_DEPENDENCIA CODIGO, 
+    T.DESCRIPCION, 
+    T.CODIGO_DEPENDENCIA_PAGADORA PAG_SUPERHA,
+    T.INSTITUCIONAL||'-'||T.CENCOS_CODIGO||'-'||T.PROGRAMA||'-'||T.SUBPROGRAMA||'-'||T.PROYECTO||'-'||T.ACTIVIDAD||'-'||T.FUENTE_FINANCIAMIENTO||'-'||T.FUENTE_FINANCIAMIENTO2 CONTABLE_SUPERHA,
+    NMP.ID PAG_ADELIA,
+    POFC.CONTABLE CONTABLE_ADELIA
+    FROM TBDEPEND@SICA_PRODUCCION T
+    LEFT JOIN ADELIA.NODO_MEMENTO NM ON NM.ID = T.CODIGO_DEPENDENCIA
+    left JOIN ADELIA.NODO_MEMENTO NMP ON NMP.NODO = NM.ORGANISMO_PAGADOR
+    LEFT JOIN ADELIA.POF_SAF_CONTABLE POFC ON POFC.ID = NMP.ID
+WHERE T.CODIGO_DEPENDENCIA IN (
+                            SELECT DISTINCT S.CODIGO_DEPENDENCIA
+                            FROM TBMESLEG@SICA_PRODUCCION LC
+                            INNER JOIN TBDEPEND@SICA_PRODUCCION S ON S.CODIGO_DEPENDENCIA = LC.DEPENDENCIA_REVISTA
+                            LEFT JOIN ADELIA.POF_SAF_CONTABLE POFC ON POFC.ID = S.CODIGO_DEPENDENCIA
+                            WHERE 1=1
+                            AND LC.PERIODO_LIQ = ?
+                            AND LC.CUADRO = SUBSTR(?,1,2)
+                            AND POFC.ID IS NULL)]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CODIGO</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>6</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CODIGO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CODIGO</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DESCRIPCION</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>60</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DESCRIPCION</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DESCRIPCION</design:label>
+            <design:formattingHints>
+              <design:displaySize>60</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PAG_SUPERHA</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>6</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>PAG_SUPERHA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PAG_SUPERHA</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CONTABLE_SUPERHA</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>79</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CONTABLE_SUPERHA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CONTABLE_SUPERHA</design:label>
+            <design:formattingHints>
+              <design:displaySize>79</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PAG_ADELIA</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>PAG_ADELIA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PAG_ADELIA</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CONTABLE_ADELIA</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>70</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CONTABLE_ADELIA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CONTABLE_ADELIA</design:label>
+            <design:formattingHints>
+              <design:displaySize>70</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Periodos" id="198">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">FECHA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">FECHA</text-property>
+                    <text-property name="heading">FECHA</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">FECHA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">FECHA</property>
+                    <property name="nativeName">FECHA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT TO_CHAR(PERIODO, 'YYYYMM') FECHA FROM 
+ADELIA.PROCESO_LIQUIDACION
+order by 1 desc]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PERIODO</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>PERIODO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PERIODO</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Cuadros" id="200">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">CUADRO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CUADRO</text-property>
+                    <text-property name="heading">CUADRO</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CUADRO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CUADRO</property>
+                    <property name="nativeName">CUADRO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT DISTINCT (SUBSTR(TRIM(E.CODE),3,4) || ' - ' || E.DESCRIPTION) CUADRO 
+FROM ADELIA.ESCALAFON E ]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CUADRO</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>4</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CUADRO</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CUADRO</design:label>
+            <design:formattingHints>
+              <design:displaySize>4</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Ministerios" id="204">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">DEPE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DEPE</text-property>
+                    <text-property name="heading">DEPE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DESCRIPCION_DEPENDENCIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCRIPCION_DEPENDENCIA</text-property>
+                    <text-property name="heading">DESCRIPCION_DEPENDENCIA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SUPERH</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">SUPERH</text-property>
+                    <text-property name="heading">SUPERH</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DESCCRIPCION_SUPERHA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCCRIPCION_SUPERHA</text-property>
+                    <text-property name="heading">DESCCRIPCION_SUPERHA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ADELIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ADELIA</text-property>
+                    <text-property name="heading">ADELIA</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DESCRIPCION_ADELIA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCRIPCION_ADELIA</text-property>
+                    <text-property name="heading">DESCRIPCION_ADELIA</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">Periodo</property>
+                    <property name="paramName">Periodo</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">Cuadro</property>
+                    <property name="paramName">Cuadro</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">DEPE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">DESCRIPCION_DEPENDENCIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">SUPERH</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">DESCCRIPCION_SUPERHA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">ADELIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">DESCRIPCION_ADELIA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">DEPE</property>
+                    <property name="nativeName">DEPE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">DESCRIPCION_DEPENDENCIA</property>
+                    <property name="nativeName">DESCRIPCION_DEPENDENCIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">SUPERH</property>
+                    <property name="nativeName">SUPERH</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">DESCCRIPCION_SUPERHA</property>
+                    <property name="nativeName">DESCCRIPCION_SUPERHA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">ADELIA</property>
+                    <property name="nativeName">ADELIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">DESCRIPCION_ADELIA</property>
+                    <property name="nativeName">DESCRIPCION_ADELIA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[--BUSCA DIFERENCIAS DE MINISTERIOS EN DEPENDENCIAS
+SELECT DISTINCT(POFC.ID) DEPE,
+    POFC.DESCRIPTION DESCRIPCION_DEPENDENCIA,
+    S.JURISD_CODIGO SUPERH,
+    MS.DESCRIPCION DESCCRIPCION_SUPERHA,
+    NM.ID ADELIA,
+    NM.DESCRIPTION DESCRIPCION_ADELIA
+FROM TBMESLEG@SICA_PRODUCCION LC
+INNER JOIN TBDEPEND@SICA_PRODUCCION S ON S.CODIGO_DEPENDENCIA = LC.DEPENDENCIA_REVISTA
+INNER JOIN TBDEPEND@SICA_PRODUCCION MS ON MS.CODIGO_DEPENDENCIA = S.JURISD_CODIGO
+INNER JOIN ADELIA.POF_SAF_CONTABLE POFC ON POFC.ID = S.CODIGO_DEPENDENCIA
+INNER JOIN ADELIA.NODO_MEMENTO NM ON NM.NODO = POFC.MINISTERIO
+WHERE 1=1
+AND LC.PERIODO_LIQ = ?
+AND LC.CUADRO = SUBSTR(?,1,2)
+AND S.JURISD_CODIGO != NM.ID]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DEPE</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DEPE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DEPE</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DESCRIPCION_DEPENDENCIA</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>150</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DESCRIPCION_DEPENDENCIA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DESCRIPCION_DEPENDENCIA</design:label>
+            <design:formattingHints>
+              <design:displaySize>150</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SUPERH</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>6</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SUPERH</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SUPERH</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DESCCRIPCION_SUPERHA</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>60</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DESCCRIPCION_SUPERHA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DESCCRIPCION_SUPERHA</design:label>
+            <design:formattingHints>
+              <design:displaySize>60</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ADELIA</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ADELIA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ADELIA</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DESCRIPCION_ADELIA</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>150</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DESCRIPCION_ADELIA</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DESCRIPCION_ADELIA</design:label>
+            <design:formattingHints>
+              <design:displaySize>150</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a4</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="110">
+            <property name="borderBottomStyle">none</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderTopStyle">none</property>
+            <property name="marginLeft">0%</property>
+            <property name="textAlign">center</property>
+            <property name="width">80%</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <expression name="expression" type="javascript">"Control de Dependencias SuperHa"</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">Periodo y Cuadro</property>
+                    <expression name="expression" type="javascript">"Periodo: " + params["Periodo"].value.substring(4) + "-" +  params["Periodo"].value.substring(0,4) + "            Cuadro: " + params["Cuadro"].value</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="111"/>
+            <row id="112">
+                <cell id="113">
+                    <text id="246">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<H1>
+Control de Dependencias
+</H1>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="247">
+                <cell id="248">
+                    <data id="249">
+                        <property name="dataSet">Cuadros</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Column Binding</property>
+                                <text-property name="displayName">Perdiodo y Cuadro</text-property>
+                                <expression name="expression" type="javascript">"Periodo: " + params["Periodo"].value.substring(4) + "-" +  params["Periodo"].value.substring(0,4) +&#13;
+"            Cuadro: " + params["Cuadro"].value</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">Column Binding</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="250">
+                <cell id="251">
+                    <text id="252">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<h2>Control de contables</h2>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="114">
+                <cell id="115">
+                    <table id="158">
+                        <property name="fontFamily">"Ebrima"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="pageBreakAfter">always</property>
+                        <property name="dataSet">Contables</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">CODIGO</property>
+                                <text-property name="displayName">CODIGO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CODIGO"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DESCRIPCION</property>
+                                <text-property name="displayName">DESCRIPCION</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DESCRIPCION"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PAG_SUPERHA</property>
+                                <text-property name="displayName">PAG_SUPERHA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PAG_SUPERHA"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONTABLE_SUPERHA</property>
+                                <text-property name="displayName">CONTABLE_SUPERHA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CONTABLE_SUPERHA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PAG_ADELIA</property>
+                                <text-property name="displayName">PAG_ADELIA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PAG_ADELIA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONTABLE_ADELIA</property>
+                                <text-property name="displayName">CONTABLE_ADELIA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CONTABLE_ADELIA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="192">
+                            <property name="width">0.8in</property>
+                        </column>
+                        <column id="193"/>
+                        <column id="194">
+                            <property name="width">1.1in</property>
+                        </column>
+                        <column id="195">
+                            <property name="width">1.7in</property>
+                        </column>
+                        <column id="196">
+                            <property name="width">1.1in</property>
+                        </column>
+                        <column id="197">
+                            <property name="width">1.7in</property>
+                        </column>
+                        <header>
+                            <row id="159">
+                                <property name="backgroundColor">#E2E2E2</property>
+                                <property name="borderBottomStyle">solid</property>
+                                <property name="borderBottomWidth">medium</property>
+                                <property name="borderLeftStyle">solid</property>
+                                <property name="borderLeftWidth">medium</property>
+                                <property name="borderRightStyle">solid</property>
+                                <property name="borderRightWidth">medium</property>
+                                <property name="borderTopStyle">solid</property>
+                                <property name="borderTopWidth">medium</property>
+                                <cell id="160">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="161">
+                                        <text-property name="text">CODIGO</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="162">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="163">
+                                        <text-property name="text">DESCRIPCION</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="164">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="165">
+                                        <text-property name="text">PAGADORA SUPERHA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="166">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="whiteSpace">nowrap</property>
+                                    <label id="167">
+                                        <text-property name="text">CONTABLE SUPERHA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="168">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="169">
+                                        <text-property name="text">PAGADORA ADELIA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="170">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="171">
+                                        <text-property name="text">CONTABLE ADELIA</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="172">
+                                <cell id="173">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="174">
+                                        <property name="resultSetColumn">CODIGO</property>
+                                    </data>
+                                </cell>
+                                <cell id="175">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="176">
+                                        <property name="resultSetColumn">DESCRIPCION</property>
+                                    </data>
+                                </cell>
+                                <cell id="177">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="178">
+                                        <property name="resultSetColumn">PAG_SUPERHA</property>
+                                    </data>
+                                </cell>
+                                <cell id="179">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="180">
+                                        <property name="resultSetColumn">CONTABLE_SUPERHA</property>
+                                    </data>
+                                </cell>
+                                <cell id="181">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="182">
+                                        <property name="resultSetColumn">PAG_ADELIA</property>
+                                    </data>
+                                </cell>
+                                <cell id="183">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="184">
+                                        <property name="resultSetColumn">CONTABLE_ADELIA</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                    </table>
+                </cell>
+            </row>
+            <row id="253">
+                <cell id="254"/>
+            </row>
+            <row id="116">
+                <cell id="117">
+                    <text id="255">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<h2>Control de ministerios</h2>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="202">
+                <cell id="203">
+                    <table id="205">
+                        <property name="fontFamily">"Ebrima"</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <property name="dataSet">Ministerios</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">DEPE</property>
+                                <text-property name="displayName">DEPE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DEPE"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DESCRIPCION_DEPENDENCIA</property>
+                                <text-property name="displayName">DESCRIPCION_DEPENDENCIA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DESCRIPCION_DEPENDENCIA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SUPERH</property>
+                                <text-property name="displayName">SUPERH</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SUPERH"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DESCCRIPCION_SUPERHA</property>
+                                <text-property name="displayName">DESCCRIPCION_SUPERHA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DESCCRIPCION_SUPERHA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ADELIA</property>
+                                <text-property name="displayName">ADELIA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ADELIA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DESCRIPCION_ADELIA</property>
+                                <text-property name="displayName">DESCRIPCION_ADELIA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DESCRIPCION_ADELIA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="239">
+                            <property name="paddingLeft">2pt</property>
+                            <property name="paddingRight">2pt</property>
+                        </column>
+                        <column id="240"/>
+                        <column id="241">
+                            <property name="paddingLeft">2pt</property>
+                            <property name="paddingRight">2pt</property>
+                        </column>
+                        <column id="242"/>
+                        <column id="243">
+                            <property name="paddingLeft">2pt</property>
+                            <property name="paddingRight">2pt</property>
+                        </column>
+                        <column id="244"/>
+                        <header>
+                            <row id="206">
+                                <property name="backgroundColor">#E2E2E2</property>
+                                <property name="borderBottomStyle">solid</property>
+                                <property name="borderBottomWidth">medium</property>
+                                <property name="borderLeftStyle">solid</property>
+                                <property name="borderLeftWidth">medium</property>
+                                <property name="borderRightStyle">solid</property>
+                                <property name="borderRightWidth">medium</property>
+                                <property name="borderTopStyle">solid</property>
+                                <property name="borderTopWidth">medium</property>
+                                <cell id="207">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="208">
+                                        <text-property name="text">DEPE</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="209">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="210">
+                                        <text-property name="text">DESCRIPCION</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="211">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="212">
+                                        <text-property name="text">SUPERHA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="213">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="214">
+                                        <text-property name="text">DESCCRIPCION</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="215">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="216">
+                                        <text-property name="text">ADELIA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="217">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <label id="218">
+                                        <text-property name="text">DESCRIPCION</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="219">
+                                <property name="verticalAlign">middle</property>
+                                <cell id="220">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="221">
+                                        <property name="resultSetColumn">DEPE</property>
+                                    </data>
+                                </cell>
+                                <cell id="222">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="223">
+                                        <property name="resultSetColumn">DESCRIPCION_DEPENDENCIA</property>
+                                    </data>
+                                </cell>
+                                <cell id="224">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="225">
+                                        <property name="resultSetColumn">SUPERH</property>
+                                    </data>
+                                </cell>
+                                <cell id="226">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="227">
+                                        <property name="resultSetColumn">DESCCRIPCION_SUPERHA</property>
+                                    </data>
+                                </cell>
+                                <cell id="228">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="229">
+                                        <property name="resultSetColumn">ADELIA</property>
+                                    </data>
+                                </cell>
+                                <cell id="230">
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="231">
+                                        <property name="resultSetColumn">DESCRIPCION_ADELIA</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="232">
+                                <cell id="233"/>
+                                <cell id="234"/>
+                                <cell id="235"/>
+                                <cell id="236"/>
+                                <cell id="237"/>
+                                <cell id="238"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>
