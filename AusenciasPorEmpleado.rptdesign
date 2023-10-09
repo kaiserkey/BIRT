@@ -2154,6 +2154,26 @@ a</expression>
     </data-sets>
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
+            <page-header>
+                <data id="807">
+                    <property name="dataSet">Log</property>
+                    <list-property name="visibility">
+                        <structure>
+                            <property name="format">all</property>
+                            <expression name="valueExpr" type="javascript">true</expression>
+                        </structure>
+                    </list-property>
+                    <list-property name="boundDataColumns">
+                        <structure>
+                            <property name="name">A</property>
+                            <text-property name="displayName">A</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["A"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                    </list-property>
+                    <property name="resultSetColumn">A</property>
+                </data>
+            </page-header>
             <page-footer>
                 <text id="3">
                     <property name="backgroundAttachment">scroll</property>
@@ -4441,17 +4461,5 @@ a</expression>
                 <cell id="641"/>
             </row>
         </grid>
-        <data id="806">
-            <property name="dataSet">Log</property>
-            <list-property name="boundDataColumns">
-                <structure>
-                    <property name="name">A</property>
-                    <text-property name="displayName">A</text-property>
-                    <expression name="expression" type="javascript">dataSetRow["A"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
-            </list-property>
-            <property name="resultSetColumn">A</property>
-        </data>
     </body>
 </report>
