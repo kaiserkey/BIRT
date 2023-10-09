@@ -1139,7 +1139,7 @@ order by sexo, 3 desc, 1 desc]]></xml-property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">0</property>
                     <property name="position">1</property>
-                    <expression name="defaultValue" type="javascript">reportContext.getDesignHandle().fileName.replace("file:/","").substring(reportContext.getDesignHandle().fileName.replace("file:/","").lastIndexOf('\\')+1)</expression>
+                    <expression name="defaultValue" type="javascript">reportContext.getDesignHandle().fileName.replace("file:/","").substring(reportContext.getDesignHandle().fileName.replace("file:/","").lastIndexOf('\\')+reportContext.getDesignHandle().fileName.replace("file:/","").lastIndexOf('/')+1)</expression>
                     <property name="isOptional">false</property>
                     <property name="isInput">true</property>
                     <property name="isOutput">false</property>
@@ -4441,17 +4441,5 @@ a</expression>
                 <cell id="641"/>
             </row>
         </grid>
-        <data id="805">
-            <property name="dataSet">Log</property>
-            <list-property name="boundDataColumns">
-                <structure>
-                    <property name="name">A</property>
-                    <text-property name="displayName">A</text-property>
-                    <expression name="expression" type="javascript">dataSetRow["A"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
-            </list-property>
-            <property name="resultSetColumn">A</property>
-        </data>
     </body>
 </report>
