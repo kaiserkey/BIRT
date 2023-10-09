@@ -1162,7 +1162,14 @@ order by sexo, 3 desc, 1 desc]]></xml-property>
                     <property name="nativeDataType">0</property>
                     <property name="position">3</property>
                     <expression name="defaultValue" type="javascript">var a = '';&#13;
-&#13;
+var p = reportContext.getDesignHandle().getParameters();&#13;
+for (var i = 0; i &lt; 10; i++) {&#13;
+ if(p.get(i) != null){&#13;
+	var l = p.get(i).getProperty("name");&#13;
+	var v = params[l].value; &#13;
+	a += l + ":" + v + ";";&#13;
+  }&#13;
+}&#13;
 a</expression>
                     <property name="isOptional">false</property>
                     <property name="isInput">true</property>
