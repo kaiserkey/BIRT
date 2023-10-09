@@ -4441,5 +4441,17 @@ a</expression>
                 <cell id="641"/>
             </row>
         </grid>
+        <data id="806">
+            <property name="dataSet">Log</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">A</property>
+                    <text-property name="displayName">A</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["A"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="resultSetColumn">A</property>
+        </data>
     </body>
 </report>
