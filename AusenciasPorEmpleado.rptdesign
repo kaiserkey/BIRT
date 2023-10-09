@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.24" id="1">
     <property name="createdBy">Eclipse BIRT Designer Version 4.9.0.v202203150031</property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">691</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">691</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">691</property>
+        </structure>
+    </list-property>
     <property name="units">in</property>
     <property name="iconFile">/templates/blank_report.gif</property>
     <property name="layoutPreference">auto layout</property>
@@ -1109,6 +1123,7 @@ order by sexo, 3 desc, 1 desc]]></xml-property>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
         <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Log" id="691">
+            <property name="nullsOrdering">nulls lowest</property>
             <list-property name="columnHints">
                 <structure>
                     <property name="columnName">A</property>
@@ -1124,7 +1139,7 @@ order by sexo, 3 desc, 1 desc]]></xml-property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">0</property>
                     <property name="position">1</property>
-                    <expression name="defaultValue" type="javascript">reportContext.getDesignHandle().fileName.replace("file:/","").substring(reportContext.getDesignHandle().fileName.replace("file:/","").lastIndexOf('/')+1)</expression>
+                    <expression name="defaultValue" type="javascript">reportContext.getDesignHandle().fileName.replace("file:/","").substring(reportContext.getDesignHandle().fileName.replace("file:/","").lastIndexOf('\\')+1)</expression>
                     <property name="isOptional">false</property>
                     <property name="isInput">true</property>
                     <property name="isOutput">false</property>
