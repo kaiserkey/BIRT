@@ -28,7 +28,7 @@
                         <property name="width">33%</property>
                     </column>
                     <column id="26">
-                        <property name="textAlign">center</property>
+                        <property name="textAlign">right</property>
                     </column>
                     <column id="27">
                         <property name="textAlign">right</property>
