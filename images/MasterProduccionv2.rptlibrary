@@ -21,6 +21,9 @@
             </page-header>
             <page-footer>
                 <grid name="NewGrid" id="24">
+                    <property name="marginLeft">10%</property>
+                    <property name="marginRight">10%</property>
+                    <property name="width">80%</property>
                     <column id="25"/>
                     <column id="26"/>
                     <column id="27"/>
