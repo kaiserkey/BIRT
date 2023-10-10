@@ -24,7 +24,9 @@
                     <property name="marginLeft">10%</property>
                     <property name="marginRight">10%</property>
                     <property name="width">80%</property>
-                    <column id="25"/>
+                    <column id="25">
+                        <property name="width">33%</property>
+                    </column>
                     <column id="26">
                         <property name="textAlign">center</property>
                     </column>
