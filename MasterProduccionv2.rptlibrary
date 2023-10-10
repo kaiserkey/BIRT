@@ -131,6 +131,7 @@ a</expression>
             <property name="backgroundColor">#FFFFFF</property>
             <page-header>
                 <image name="BannerGobSL" id="698">
+                    <property name="marginBottom">5pt</property>
                     <property name="height">130px</property>
                     <property name="width">100%</property>
                     <property name="source">embed</property>
