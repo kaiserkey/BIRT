@@ -6,6 +6,12 @@
     <property name="layoutPreference">auto layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">MasterProduccionv2.rptlibrary</property>
+            <property name="namespace">MasterProduccionv2</property>
+        </structure>
+    </list-property>
     <parameters>
         <scalar-parameter name="PeriodoInforme" id="633">
             <text-property name="promptText">Ingrese Periodo para el Informe:</text-property>
@@ -24,6 +30,7 @@
                 <property name="category">Unformatted</property>
             </structure>
         </scalar-parameter>
+        <scalar-parameter name="loggedUser" id="778" extends="MasterProduccionv2.loggedUser"/>
     </parameters>
     <data-sources>
         <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="108">
@@ -1078,17 +1085,36 @@ order by periodo desc]]></xml-property>
   </design:ResultSets>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Log" id="777"
+ extends="MasterProduccionv2.Log"/>
     </data-sets>
     <page-setup>
-        <simple-master-page name="Simple MasterPage" id="2">
-            <page-footer>
-                <text id="3">
-                    <property name="fontFamily">"Ebrima"</property>
-                    <property name="fontWeight">bold</property>
-                    <property name="contentType">html</property>
-                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
-                </text>
-            </page-footer>
+        <simple-master-page name="CommonMaster" id="779" extends="MasterProduccionv2.CommonMaster">
+            <overridden-values>
+                <ref-entry baseId="698" name="BannerGobSL" id="780"/>
+                <ref-entry baseId="24" name="NewGrid" id="781"/>
+                <ref-entry baseId="26" id="782"/>
+                <ref-entry baseId="27" id="783"/>
+                <ref-entry baseId="28" id="784"/>
+                <ref-entry baseId="31" id="785"/>
+                <ref-entry baseId="35" name="NewGrid1" id="786"/>
+                <ref-entry baseId="36" id="787"/>
+                <ref-entry baseId="37" id="788"/>
+                <ref-entry baseId="38" id="789"/>
+                <ref-entry baseId="39" id="790"/>
+                <ref-entry baseId="40" id="791"/>
+                <ref-entry baseId="41" name="NewAutoText" id="792"/>
+                <ref-entry baseId="42" id="793"/>
+                <ref-entry baseId="43" name="NewText2" id="794"/>
+                <ref-entry baseId="44" id="795"/>
+                <ref-entry baseId="45" name="NewAutoText1" id="796"/>
+                <ref-entry baseId="33" id="797"/>
+                <ref-entry baseId="34" name="NewText1" id="798"/>
+                <ref-entry baseId="693" id="799"/>
+                <ref-entry baseId="694" id="800"/>
+                <ref-entry baseId="696" name="NewData" id="801"/>
+                <ref-entry baseId="695" id="802"/>
+            </overridden-values>
         </simple-master-page>
     </page-setup>
     <body>
