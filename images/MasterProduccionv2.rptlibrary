@@ -39,7 +39,7 @@
                             </text>
                         </cell>
                         <cell id="31">
-                            <property name="textAlign">center</property>
+                            <property name="textAlign">right</property>
                             <grid name="NewGrid1" id="35">
                                 <column id="36"/>
                                 <column id="37"/>
