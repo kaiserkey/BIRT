@@ -6,6 +6,12 @@
     <property name="layoutPreference">fixed layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">MasterProduccionv2.rptlibrary</property>
+            <property name="namespace">MasterProduccionv2</property>
+        </structure>
+    </list-property>
     <parameters>
         <scalar-parameter name="PERIODO" id="248">
             <text-property name="promptText">Ingrese Periodo</text-property>
@@ -24,6 +30,7 @@
                 <property name="category">Unformatted</property>
             </structure>
         </scalar-parameter>
+        <scalar-parameter name="loggedUser" id="464" extends="MasterProduccionv2.loggedUser"/>
     </parameters>
     <data-sources>
         <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source1" id="462">
@@ -273,9 +280,37 @@ order by periodo desc]]></xml-property>
   </design:ResultSets>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Log" id="463"
+ extends="MasterProduccionv2.Log"/>
     </data-sets>
     <page-setup>
-        <simple-master-page name="Simple MasterPage" id="2"/>
+        <simple-master-page name="CommonMaster" id="465" extends="MasterProduccionv2.CommonMaster">
+            <overridden-values>
+                <ref-entry baseId="698" name="BannerGobSL" id="698"/>
+                <ref-entry baseId="24" name="NewGrid" id="699"/>
+                <ref-entry baseId="26" id="700"/>
+                <ref-entry baseId="27" id="701"/>
+                <ref-entry baseId="28" id="702"/>
+                <ref-entry baseId="31" id="703"/>
+                <ref-entry baseId="35" name="NewGrid1" id="704"/>
+                <ref-entry baseId="36" id="705"/>
+                <ref-entry baseId="37" id="706"/>
+                <ref-entry baseId="38" id="707"/>
+                <ref-entry baseId="39" id="708"/>
+                <ref-entry baseId="40" id="709"/>
+                <ref-entry baseId="41" name="NewAutoText" id="710"/>
+                <ref-entry baseId="42" id="711"/>
+                <ref-entry baseId="43" name="NewText2" id="712"/>
+                <ref-entry baseId="44" id="713"/>
+                <ref-entry baseId="45" name="NewAutoText1" id="714"/>
+                <ref-entry baseId="33" id="715"/>
+                <ref-entry baseId="34" name="NewText1" id="716"/>
+                <ref-entry baseId="693" id="693"/>
+                <ref-entry baseId="694" id="694"/>
+                <ref-entry baseId="696" name="NewData" id="696"/>
+                <ref-entry baseId="695" id="695"/>
+            </overridden-values>
+        </simple-master-page>
     </page-setup>
     <body>
         <grid id="4">
