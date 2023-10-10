@@ -425,7 +425,6 @@ order by 9, 7 DESC]]></xml-property>
  extends="MasterProduccionv2.Log"/>
     </data-sets>
     <page-setup>
-        <simple-master-page name="Simple MasterPage" id="2"/>
         <simple-master-page name="CommonMaster" id="778" extends="MasterProduccionv2.CommonMaster">
             <overridden-values>
                 <ref-entry baseId="698" name="BannerGobSL" id="779"/>
