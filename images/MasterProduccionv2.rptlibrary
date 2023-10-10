@@ -14,7 +14,7 @@
                 <image name="BannerGobSL" id="46">
                     <property name="marginLeft">10%</property>
                     <property name="marginRight">10%</property>
-                    <property name="height">100%</property>
+                    <property name="height">80%</property>
                     <property name="width">100%</property>
                     <property name="source">embed</property>
                     <property name="imageName">Gob_San_Luis.png</property>
