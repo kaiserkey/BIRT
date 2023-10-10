@@ -8,10 +8,14 @@
     </themes>
     <page-setup>
         <simple-master-page name="CommonMaster" id="3">
+            <property name="type">a4</property>
+            <property name="backgroundColor">#FFFFFF</property>
             <page-header>
-                <image name="NewImage" id="10">
+                <image name="BannerGobSL" id="10">
+                    <property name="marginLeft">10%</property>
+                    <property name="marginRight">10%</property>
                     <property name="height">107px</property>
-                    <property name="width">754px</property>
+                    <property name="width">80%</property>
                     <property name="source">embed</property>
                     <property name="imageName">HeaderMaster.png</property>
                 </image>
