@@ -807,7 +807,9 @@ AND S.JURISD_CODIGO != NM.ID]]></xml-property>
     <page-setup>
         <simple-master-page name="CommonMaster" id="265" extends="MasterProduccionv2.CommonMaster">
             <overridden-values>
-                <ref-entry baseId="10" name="NewImage" id="10"/>
+                <ref-entry baseId="46" name="BannerGobSL" id="46">
+                    <property name="height">80%</property>
+                </ref-entry>
                 <ref-entry baseId="24" name="NewGrid" id="24"/>
                 <ref-entry baseId="25" id="25"/>
                 <ref-entry baseId="26" id="26"/>
