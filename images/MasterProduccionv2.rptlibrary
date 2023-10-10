@@ -24,9 +24,6 @@
                     <property name="marginLeft">10%</property>
                     <property name="marginRight">10%</property>
                     <property name="width">80%</property>
-                    <column id="25">
-                        <property name="width">33%</property>
-                    </column>
                     <column id="26">
                         <property name="textAlign">right</property>
                     </column>
@@ -34,12 +31,6 @@
                         <property name="textAlign">right</property>
                     </column>
                     <row id="28">
-                        <cell id="29">
-                            <property name="textAlign">left</property>
-                            <text name="NewText" id="30">
-                                <text-property name="content"><![CDATA[Created by: ]]></text-property>
-                            </text>
-                        </cell>
                         <cell id="31">
                             <property name="textAlign">right</property>
                             <grid name="NewGrid1" id="35">
