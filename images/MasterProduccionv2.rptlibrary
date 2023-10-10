@@ -184,6 +184,33 @@ a</expression>
                             </text>
                         </cell>
                     </row>
+                    <row id="693">
+                        <cell id="694">
+                            <property name="textAlign">right</property>
+                            <data name="NewData" id="696">
+                                <property name="color">blue</property>
+                                <property name="dataSet">Log</property>
+                                <list-property name="visibility">
+                                    <structure>
+                                        <property name="format">all</property>
+                                        <expression name="valueExpr" type="javascript">true</expression>
+                                    </structure>
+                                </list-property>
+                                <list-property name="boundDataColumns">
+                                    <structure>
+                                        <property name="name">A</property>
+                                        <text-property name="displayName">A</text-property>
+                                        <expression name="expression" type="javascript">dataSetRow["A"]</expression>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                                <property name="resultSetColumn">A</property>
+                            </data>
+                        </cell>
+                        <cell id="695">
+                            <property name="textAlign">right</property>
+                        </cell>
+                    </row>
                 </grid>
             </page-footer>
         </simple-master-page>
