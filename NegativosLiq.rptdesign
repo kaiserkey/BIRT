@@ -1528,6 +1528,9 @@ ORDER BY 12]]></xml-property>
                                         <property name="fontSize">10pt</property>
                                         <property name="fontWeight">bold</property>
                                         <property name="color">orange</property>
+                                        <structure name="numberFormat">
+                                            <property name="category">Custom</property>
+                                        </structure>
                                         <property name="textAlign">right</property>
                                         <property name="resultSetColumn">2</property>
                                     </data>
