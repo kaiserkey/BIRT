@@ -12,7 +12,7 @@
             <property name="backgroundColor">#FFFFFF</property>
             <page-header>
                 <image name="BannerGobSL" id="48">
-                    <property name="marginTop">3pt</property>
+                    <property name="marginTop">0pt</property>
                     <property name="height">130px</property>
                     <property name="width">100%</property>
                     <property name="source">embed</property>
