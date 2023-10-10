@@ -17,7 +17,7 @@
     </list-property>
     <property name="units">in</property>
     <property name="iconFile">/templates/blank_report.gif</property>
-    <property name="layoutPreference">fixed layout</property>
+    <property name="layoutPreference">auto layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
     <list-property name="libraries">
@@ -66,7 +66,7 @@
                 <property name="category">Unformatted</property>
             </structure>
         </scalar-parameter>
-        <scalar-parameter name="loggedUser" id="1315" extends="MasterProduccionv2.loggedUser"/>
+        <scalar-parameter name="loggedUser" id="1316" extends="MasterProduccionv2.loggedUser"/>
     </parameters>
     <data-sources>
         <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="5">
@@ -282,14 +282,14 @@ ORDER BY 2]]></xml-property>
   </design:ResultSets>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
-        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Log" id="1313"
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Log" id="1319"
  extends="MasterProduccionv2.Log"/>
     </data-sets>
     <styles>
         <style name="NewStyle" id="1273"/>
     </styles>
     <page-setup>
-        <simple-master-page name="CommonMaster" id="1314" extends="MasterProduccionv2.CommonMaster">
+        <simple-master-page name="CommonMaster" id="1317" extends="MasterProduccionv2.CommonMaster">
             <overridden-values>
                 <ref-entry baseId="698" name="BannerGobSL" id="698"/>
                 <ref-entry baseId="24" name="NewGrid" id="24"/>
