@@ -1507,7 +1507,6 @@ ORDER BY 12]]></xml-property>
                                         <property name="color">green</property>
                                         <structure name="numberFormat">
                                             <property name="category">Custom</property>
-                                            <property name="pattern">$0.00</property>
                                         </structure>
                                         <property name="textAlign">right</property>
                                         <property name="resultSetColumn">REMU</property>
