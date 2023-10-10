@@ -43,6 +43,12 @@ return p;
     <property name="layoutPreference">auto layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">MasterProduccionv2.rptlibrary</property>
+            <property name="namespace">MasterProduccionv2</property>
+        </structure>
+    </list-property>
     <parameters>
         <scalar-parameter name="NRO_LIQ" id="722">
             <text-property name="promptText">Ingrese Nro Liquidacion:</text-property>
@@ -61,6 +67,7 @@ return p;
                 <property name="category">Unformatted</property>
             </structure>
         </scalar-parameter>
+        <scalar-parameter name="loggedUser" id="1297" extends="MasterProduccionv2.loggedUser"/>
     </parameters>
     <data-sources>
         <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="4">
@@ -2319,65 +2326,36 @@ order by 1,2,3
   </design:ResultSets>
 </model:DesignValues>]]></xml-property>
         </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Log" id="1296"
+ extends="MasterProduccionv2.Log"/>
     </data-sets>
     <page-setup>
-        <simple-master-page name="Simple MasterPage" id="2">
-            <page-footer>
-                <text id="3">
-                    <property name="backgroundAttachment">scroll</property>
-                    <property name="backgroundPositionX">0%</property>
-                    <property name="backgroundPositionY">0%</property>
-                    <property name="backgroundRepeat">repeat</property>
-                    <property name="fontFamily">"Ebrima"</property>
-                    <property name="fontSize">10pt</property>
-                    <property name="fontWeight">bold</property>
-                    <property name="fontStyle">normal</property>
-                    <property name="fontVariant">normal</property>
-                    <property name="color">black</property>
-                    <property name="textLineThrough">none</property>
-                    <property name="textOverline">none</property>
-                    <property name="textUnderline">none</property>
-                    <property name="borderBottomColor">black</property>
-                    <property name="borderBottomStyle">none</property>
-                    <property name="borderBottomWidth">medium</property>
-                    <property name="borderLeftColor">black</property>
-                    <property name="borderLeftStyle">none</property>
-                    <property name="borderLeftWidth">medium</property>
-                    <property name="borderRightColor">black</property>
-                    <property name="borderRightStyle">none</property>
-                    <property name="borderRightWidth">medium</property>
-                    <property name="borderTopColor">black</property>
-                    <property name="borderTopStyle">none</property>
-                    <property name="borderTopWidth">medium</property>
-                    <property name="marginTop">0pt</property>
-                    <property name="marginLeft">0pt</property>
-                    <property name="marginBottom">0pt</property>
-                    <property name="marginRight">0pt</property>
-                    <property name="paddingTop">1pt</property>
-                    <property name="paddingLeft">1pt</property>
-                    <property name="paddingBottom">1pt</property>
-                    <property name="paddingRight">1pt</property>
-                    <property name="textAlign">left</property>
-                    <property name="letterSpacing">normal</property>
-                    <property name="lineHeight">normal</property>
-                    <property name="orphans">2</property>
-                    <property name="textTransform">none</property>
-                    <property name="verticalAlign">middle</property>
-                    <property name="whiteSpace">normal</property>
-                    <property name="widows">2</property>
-                    <property name="wordSpacing">normal</property>
-                    <property name="display">block</property>
-                    <property name="pageBreakAfter">auto</property>
-                    <property name="pageBreakBefore">auto</property>
-                    <property name="pageBreakInside">auto</property>
-                    <property name="showIfBlank">false</property>
-                    <property name="canShrink">false</property>
-                    <property name="overflow">hidden</property>
-                    <property name="height">0.5in</property>
-                    <property name="contentType">html</property>
-                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
-                </text>
-            </page-footer>
+        <simple-master-page name="CommonMaster" id="1298" extends="MasterProduccionv2.CommonMaster">
+            <overridden-values>
+                <ref-entry baseId="698" name="BannerGobSL" id="698"/>
+                <ref-entry baseId="24" name="NewGrid" id="24"/>
+                <ref-entry baseId="26" id="26"/>
+                <ref-entry baseId="27" id="27"/>
+                <ref-entry baseId="28" id="28"/>
+                <ref-entry baseId="31" id="31"/>
+                <ref-entry baseId="35" name="NewGrid1" id="35"/>
+                <ref-entry baseId="36" id="36"/>
+                <ref-entry baseId="37" id="37"/>
+                <ref-entry baseId="38" id="38"/>
+                <ref-entry baseId="39" id="39"/>
+                <ref-entry baseId="40" id="40"/>
+                <ref-entry baseId="41" name="NewAutoText" id="41"/>
+                <ref-entry baseId="42" id="42"/>
+                <ref-entry baseId="43" name="NewText2" id="43"/>
+                <ref-entry baseId="44" id="44"/>
+                <ref-entry baseId="45" name="NewAutoText1" id="45"/>
+                <ref-entry baseId="33" id="33"/>
+                <ref-entry baseId="34" name="NewText1" id="34"/>
+                <ref-entry baseId="693" id="693"/>
+                <ref-entry baseId="694" id="694"/>
+                <ref-entry baseId="696" name="NewData" id="696"/>
+                <ref-entry baseId="695" id="695"/>
+            </overridden-values>
         </simple-master-page>
     </page-setup>
     <body>
