@@ -127,7 +127,7 @@ a</expression>
     </themes>
     <page-setup>
         <simple-master-page name="CommonMaster" id="3">
-            <property name="type">a4</property>
+            <property name="type">us-letter</property>
             <property name="backgroundColor">#FFFFFF</property>
             <page-header>
                 <image name="BannerGobSL" id="698">
