@@ -132,7 +132,7 @@ a</expression>
             <page-header>
                 <image name="BannerGobSL" id="698">
                     <property name="marginBottom">5pt</property>
-                    <property name="height">110px</property>
+                    <property name="height">100px</property>
                     <property name="width">100%</property>
                     <property name="source">embed</property>
                     <property name="imageName">Gob_San_LuisH.png</property>
