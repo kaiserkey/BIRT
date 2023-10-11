@@ -2585,6 +2585,7 @@ ORDER BY 3 DESC, 1 DESC]]></xml-property>
     </data-sets>
     <page-setup>
         <simple-master-page name="CommonMaster" id="743" extends="MasterProduccionv2.CommonMaster">
+            <property name="rightMargin">0in</property>
             <overridden-values>
                 <ref-entry baseId="698" name="BannerGobSL" id="698"/>
                 <ref-entry baseId="24" name="NewGrid" id="24"/>
