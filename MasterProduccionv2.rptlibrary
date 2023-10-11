@@ -127,9 +127,11 @@ a</expression>
     </themes>
     <page-setup>
         <simple-master-page name="CommonMaster" id="3">
-            <property name="type">a4</property>
-            <property name="rightMargin">0in</property>
+            <property name="type">custom</property>
+            <property name="rightMargin">0.25in</property>
             <property name="backgroundColor">#FFFFFF</property>
+            <property name="height">12in</property>
+            <property name="width">8.5in</property>
             <page-header>
                 <image name="BannerGobSL" id="698">
                     <property name="marginBottom">5pt</property>
@@ -142,50 +144,44 @@ a</expression>
                 <grid name="NewGrid" id="24">
                     <property name="marginLeft">10%</property>
                     <property name="marginRight">10%</property>
-                    <property name="width">80%</property>
+                    <property name="width">100%</property>
                     <column id="26">
+                        <property name="textAlign">right</property>
+                    </column>
+                    <column id="741">
                         <property name="textAlign">right</property>
                     </column>
                     <column id="27">
                         <property name="textAlign">right</property>
                     </column>
-                    <row id="28">
-                        <cell id="31">
+                    <row id="693">
+                        <cell id="694">
                             <property name="textAlign">right</property>
-                            <grid name="NewGrid1" id="35">
-                                <column id="36"/>
-                                <column id="37"/>
-                                <column id="38"/>
-                                <row id="39">
-                                    <cell id="40">
-                                        <auto-text name="NewAutoText" id="41">
+                            <grid name="NewGrid2" id="725">
+                                <column id="726"/>
+                                <column id="727"/>
+                                <column id="728"/>
+                                <row id="729">
+                                    <cell id="730">
+                                        <auto-text name="NewAutoText2" id="731">
                                             <property name="type">page-number</property>
                                         </auto-text>
                                     </cell>
-                                    <cell id="42">
-                                        <text name="NewText2" id="43">
+                                    <cell id="732">
+                                        <text name="NewText" id="733">
                                             <property name="contentType">plain</property>
                                             <text-property name="content"><![CDATA[/]]></text-property>
                                         </text>
                                     </cell>
-                                    <cell id="44">
-                                        <auto-text name="NewAutoText1" id="45">
+                                    <cell id="734">
+                                        <auto-text name="NewAutoText3" id="735">
                                             <property name="type">total-page</property>
                                         </auto-text>
                                     </cell>
                                 </row>
                             </grid>
                         </cell>
-                        <cell id="33">
-                            <property name="textAlign">right</property>
-                            <text name="NewText1" id="34">
-                                <property name="contentType">html</property>
-                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
-                            </text>
-                        </cell>
-                    </row>
-                    <row id="693">
-                        <cell id="694">
+                        <cell id="740">
                             <property name="textAlign">right</property>
                             <data name="NewData" id="696">
                                 <property name="color">blue</property>
@@ -209,6 +205,10 @@ a</expression>
                         </cell>
                         <cell id="695">
                             <property name="textAlign">right</property>
+                            <text name="NewText1" id="34">
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                            </text>
                         </cell>
                     </row>
                 </grid>
