@@ -130,7 +130,7 @@ a</expression>
             <property name="type">custom</property>
             <property name="rightMargin">0.25in</property>
             <property name="backgroundColor">#FFFFFF</property>
-            <property name="height">12in</property>
+            <property name="height">297mm</property>
             <property name="width">8.5in</property>
             <page-header>
                 <image name="BannerGobSL" id="698">
