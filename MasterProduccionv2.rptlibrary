@@ -217,6 +217,7 @@ a</expression>
         <simple-master-page name="PDFs" id="699">
             <page-header>
                 <image name="BannerGobSLPDFs" id="700">
+                    <property name="marginBottom">10pt</property>
                     <property name="height">85px</property>
                     <property name="width">100%</property>
                     <property name="source">embed</property>
