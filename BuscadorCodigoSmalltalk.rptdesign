@@ -289,9 +289,30 @@ ORDER BY 2]]></xml-property>
         <style name="NewStyle" id="1273"/>
     </styles>
     <page-setup>
-        <simple-master-page name="NewSimpleMasterPage" id="1320" extends="MasterProduccionv2.NewSimpleMasterPage">
+        <simple-master-page name="CommonMaster" id="1321" extends="MasterProduccionv2.CommonMaster">
             <overridden-values>
-                <ref-entry baseId="724" name="NewImage" id="724"/>
+                <ref-entry baseId="698" name="BannerGobSL" id="698"/>
+                <ref-entry baseId="24" name="NewGrid" id="24"/>
+                <ref-entry baseId="26" id="26"/>
+                <ref-entry baseId="741" id="741"/>
+                <ref-entry baseId="27" id="27"/>
+                <ref-entry baseId="693" id="693"/>
+                <ref-entry baseId="694" id="694"/>
+                <ref-entry baseId="725" name="NewGrid2" id="725"/>
+                <ref-entry baseId="726" id="726"/>
+                <ref-entry baseId="727" id="727"/>
+                <ref-entry baseId="728" id="728"/>
+                <ref-entry baseId="729" id="729"/>
+                <ref-entry baseId="730" id="730"/>
+                <ref-entry baseId="731" name="NewAutoText2" id="731"/>
+                <ref-entry baseId="732" id="732"/>
+                <ref-entry baseId="733" name="NewText" id="733"/>
+                <ref-entry baseId="734" id="734"/>
+                <ref-entry baseId="735" name="NewAutoText3" id="735"/>
+                <ref-entry baseId="740" id="740"/>
+                <ref-entry baseId="696" name="NewData" id="696"/>
+                <ref-entry baseId="695" id="695"/>
+                <ref-entry baseId="34" name="NewText1" id="34"/>
             </overridden-values>
         </simple-master-page>
     </page-setup>
@@ -311,6 +332,7 @@ ORDER BY 2]]></xml-property>
                         <property name="fontWeight">bold</property>
                         <property name="textAlign">center</property>
                         <property name="textTransform">capitalize</property>
+                        <property name="width">12.594in</property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">Column Binding</property>
