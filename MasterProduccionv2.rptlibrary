@@ -300,6 +300,15 @@ a</expression>
                 </grid>
             </page-footer>
         </simple-master-page>
+        <simple-master-page name="NewSimpleMasterPage" id="723">
+            <page-header>
+                <image name="NewImage" id="724">
+                    <property name="width">100%</property>
+                    <property name="source">embed</property>
+                    <property name="imageName">Gob_San_LuisH.png</property>
+                </image>
+            </page-header>
+        </simple-master-page>
     </page-setup>
     <list-property name="images">
         <structure>
