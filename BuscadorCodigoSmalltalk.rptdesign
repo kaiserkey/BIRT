@@ -638,6 +638,7 @@ ORDER BY 2]]></xml-property>
                                     <data id="1329">
                                         <property name="fontFamily">"Ebrima"</property>
                                         <property name="fontSize">small</property>
+                                        <property name="fontWeight">bold</property>
                                         <property name="textAlign">center</property>
                                         <property name="resultSetColumn">FECHA</property>
                                     </data>
