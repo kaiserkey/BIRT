@@ -113,6 +113,18 @@
                     <text-property name="displayName">NOMBRE</text-property>
                     <text-property name="heading">NOMBRE</text-property>
                 </structure>
+                <structure>
+                    <property name="columnName">DESCRIPCION</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCRIPCION</text-property>
+                    <text-property name="heading">DESCRIPCION</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FECHA</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">FECHA</text-property>
+                    <text-property name="heading">FECHA</text-property>
+                </structure>
             </list-property>
             <list-property name="filter">
                 <structure>
@@ -153,6 +165,16 @@
                         <property name="name">NOMBRE</property>
                         <property name="dataType">string</property>
                     </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">DESCRIPCION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">FECHA</property>
+                        <property name="dataType">string</property>
+                    </structure>
                 </list-property>
             </structure>
             <property name="dataSource">Data Source</property>
@@ -178,6 +200,20 @@
                     <property name="dataType">string</property>
                     <property name="nativeDataType">12</property>
                 </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">DESCRIPCION</property>
+                    <property name="nativeName">DESCRIPCION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">FECHA</property>
+                    <property name="nativeName">FECHA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
             </list-property>
             <xml-property name="queryText"><![CDATA[  SELECT 
 '<p style="margin: 8px;">
@@ -190,25 +226,25 @@
   		</button>
   	</a><br />'|| replace(replace( Codigo, '<', '('), '>',')') ||'
 </div>
-<div id="fade'||rownum||'" class="black_overlay" style="display: none;position: fixed;top: 0%;left: 0%;width: 100%;height: 100%;background-color: black;z-index: 1001;-moz-opacity: 0.8;opacity: .80;filter: alpha(opacity=80);"></div>' codigo, origen, nombre
-FROM (SELECT EXPRESION AS CODIGO, 'VARIABLE_FORMULA' origen, a.CODE nombre 
-            FROM ADELIA.VARIABLE_FORMULA_LIQUIDACION a
+<div id="fade'||rownum||'" class="black_overlay" style="display: none;position: fixed;top: 0%;left: 0%;width: 100%;height: 100%;background-color: black;z-index: 1001;-moz-opacity: 0.8;opacity: .80;filter: alpha(opacity=80);"></div>'CODIGO, ORIGEN, NOMBRE, DESCRIPCION, FECHA
+FROM (SELECT EXPRESION AS CODIGO, 'VARIABLE_FORMULA' ORIGEN, A.CODE NOMBRE , A.DESCRIPTION DESCRIPCION, NULL FECHA
+            FROM ADELIA.VARIABLE_FORMULA_LIQUIDACION A
             UNION ALL
-            SELECT CALCULO AS CODIGO, 'FORMULA_CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
-            FROM ADELIA.FORMULA_LIQUIDACION a
-            INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON a.concepto_liquidacion = C.OBJECTID
+            SELECT CALCULO AS CODIGO, 'FORMULA_CONCEPTO' ORIGEN, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION ||' HAB? '|| A.HABILITADO) NOMBRE, A.COMENTARIOS DESCRIPCION, TO_CHAR(A.FECHA_DESDE || ' -> ' || A.FECHA_HASTA)FECHA
+            FROM ADELIA.FORMULA_LIQUIDACION A
+            INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON A.CONCEPTO_LIQUIDACION = C.OBJECTID
             UNION ALL
-            SELECT TO_CLOB(OBJETO_LIQUIDADO) AS CODIGO, 'OBJETO_LIQUIDADO_CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
-            FROM ADELIA.FORMULA_LIQUIDACION a
-            INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON a.concepto_liquidacion = C.OBJECTID
+            SELECT TO_CLOB(OBJETO_LIQUIDADO) AS CODIGO, 'OBJETO_LIQUIDADO_CONCEPTO' ORIGEN, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION||' HAB? '|| A.HABILITADO) NOMBRE, A.COMENTARIOS DESCRIPCION,TO_CHAR(A.FECHA_DESDE || ' -> ' || A.FECHA_HASTA) FECHA
+            FROM ADELIA.FORMULA_LIQUIDACION A
+            INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON A.CONCEPTO_LIQUIDACION = C.OBJECTID
             UNION ALL
-            SELECT TO_CLOB(CONDICION_EJECUCION) AS CODIGO, 'CONDICION_EJECUCION_CONCEPTO' origen, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION) nombre
-            FROM ADELIA.FORMULA_LIQUIDACION a
-            INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON a.concepto_liquidacion = C.OBJECTID
+            SELECT TO_CLOB(CONDICION_EJECUCION) AS CODIGO, 'CONDICION_EJECUCION_CONCEPTO' ORIGEN, (A.ORDEN_EJECUCION || ' - ' ||C.CODE ||' '||C.DESCRIPTION||' HAB? '|| A.HABILITADO) NOMBRE, A.COMENTARIOS DESCRIPCION, TO_CHAR(A.FECHA_DESDE || ' -> ' || A.FECHA_HASTA) FECHA
+            FROM ADELIA.FORMULA_LIQUIDACION A
+            INNER JOIN ADELIA.CONCEPTO_LIQUIDACION C ON A.CONCEPTO_LIQUIDACION = C.OBJECTID
             UNION ALL
-			SELECT Blob_TO_CLOB(SOURCE) AS CODIGO, 'DEFINICION_DE_CONSULTAS' origen, A.DESCRIPTION nombre
-			FROM ADELIA.QUERY_DEFINITION a
-			) WHERE upper(CODIGO) like upper('%'||?||'%')
+			SELECT BLOB_TO_CLOB(SOURCE) AS CODIGO, 'DEFINICION_DE_CONSULTAS' ORIGEN, A.DESCRIPTION NOMBRE, NULL DESCRIPCION, NULL FECHA
+			FROM ADELIA.QUERY_DEFINITION A
+			) WHERE UPPER(CODIGO) LIKE UPPER('%'||?||'%')
 ORDER BY 2]]></xml-property>
         </oda-data-set>
         <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Origen Param" id="1311">
