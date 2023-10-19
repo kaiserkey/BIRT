@@ -426,6 +426,18 @@ ORDER BY 2]]></xml-property>
                                 <expression name="expression" type="javascript">dataSetRow["NOMBRE"]</expression>
                                 <property name="dataType">string</property>
                             </structure>
+                            <structure>
+                                <property name="name">FECHA</property>
+                                <text-property name="displayName">FECHA</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["FECHA"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DESCRIPCION</property>
+                                <text-property name="displayName">DESCRIPCION</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DESCRIPCION"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
                         </list-property>
                         <property name="pageBreakInterval">60</property>
                         <column id="1294">
@@ -435,6 +447,12 @@ ORDER BY 2]]></xml-property>
                             <property name="width">2.5104166666666665in</property>
                         </column>
                         <column id="1296">
+                            <property name="width">5.5625in</property>
+                        </column>
+                        <column id="1324">
+                            <property name="width">5.5625in</property>
+                        </column>
+                        <column id="1327">
                             <property name="width">5.5625in</property>
                         </column>
                         <header>
@@ -473,6 +491,16 @@ ORDER BY 2]]></xml-property>
                                 <cell id="1281">
                                     <label id="1282">
                                         <text-property name="text">NOMBRE</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1322">
+                                    <label id="1328">
+                                        <text-property name="text">FECHA</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1325">
+                                    <label id="1330">
+                                        <text-property name="text">DESCRIPCION</text-property>
                                     </label>
                                 </cell>
                             </row>
@@ -588,6 +616,24 @@ ORDER BY 2]]></xml-property>
                                         <property name="textTransform">uppercase</property>
                                         <property name="verticalAlign">middle</property>
                                         <property name="resultSetColumn">NOMBRE</property>
+                                    </data>
+                                </cell>
+                                <cell id="1323">
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <property name="height">0.05in</property>
+                                    <data id="1329">
+                                        <property name="resultSetColumn">FECHA</property>
+                                    </data>
+                                </cell>
+                                <cell id="1326">
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="verticalAlign">middle</property>
+                                    <property name="height">0.05in</property>
+                                    <data id="1331">
+                                        <property name="resultSetColumn">DESCRIPCION</property>
                                     </data>
                                 </cell>
                             </row>
