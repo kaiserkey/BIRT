@@ -494,10 +494,10 @@ ORDER BY 2]]></xml-property>
                                     </label>
                                 </cell>
                                 <cell id="1322">
-                                    <property name="borderLeftColor">#0000FF</property>
+                                    <property name="borderLeftColor">#0000A0</property>
                                     <property name="borderLeftStyle">solid</property>
                                     <property name="borderLeftWidth">medium</property>
-                                    <property name="borderRightColor">#0000FF</property>
+                                    <property name="borderRightColor">#0000A0</property>
                                     <property name="borderRightStyle">solid</property>
                                     <property name="borderRightWidth">medium</property>
                                     <label id="1328">
