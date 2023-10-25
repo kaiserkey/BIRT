@@ -1,8 +1,0 @@
-
-git config --global user.name "nombre_de_usuario"
-git config --global user.email "miemail@gmail.com"
-git config --global init.defaultBranch "main"
-git config --global core.autocrlf input
-
-Ver Configuracion
-git config --global -e
