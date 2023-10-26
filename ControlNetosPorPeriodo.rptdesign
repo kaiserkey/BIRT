@@ -1774,7 +1774,7 @@ order by periodo desc]]></xml-property>
                         </column>
                         <header>
                             <row id="730">
-                                <property name="backgroundColor">silver</property>
+                                <property name="backgroundColor">#804000</property>
                                 <cell id="731">
                                     <property name="borderBottomColor">#000000</property>
                                     <property name="borderBottomStyle">solid</property>
