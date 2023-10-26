@@ -2538,7 +2538,7 @@ order by periodo desc]]></xml-property>
                                 <list-property name="highlightRules">
                                     <structure>
                                         <property name="operator">eq</property>
-                                        <property name="backgroundColor">#EBEBEB</property>
+                                        <property name="backgroundColor">#C0C0C0</property>
                                         <expression name="testExpr" type="javascript">row.__rownum%2</expression>
                                         <simple-property-list name="value1">
                                             <value type="javascript">0</value>
