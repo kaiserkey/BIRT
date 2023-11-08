@@ -15,7 +15,7 @@
     <parameters>
         <scalar-parameter name="PERIODO" id="249">
             <text-property name="promptText">Ingrese Periodo:</text-property>
-            <property name="valueType">static</property>
+            <property name="valueType">dynamic</property>
             <property name="isRequired">true</property>
             <property name="dataSetName">Lista Meses</property>
             <expression name="valueExpr" type="javascript">dataSetRow["MONTH"]</expression>
@@ -24,8 +24,7 @@
             <property name="distinct">true</property>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
-            <property name="concealValue">false</property>
-            <property name="controlType">text-box</property>
+            <property name="controlType">list-box</property>
             <property name="mustMatch">true</property>
             <property name="fixedOrder">true</property>
             <structure name="format">
