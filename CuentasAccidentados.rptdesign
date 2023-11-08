@@ -199,6 +199,30 @@ order by periodo desc]]></xml-property>
                     <property name="isInput">true</property>
                     <property name="isOutput">false</property>
                 </structure>
+                <structure>
+                    <property name="name">param_2</property>
+                    <property name="paramName">PERIODO</property>
+                    <property name="dataType">string</property>
+                    <property name="position">2</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">param_3</property>
+                    <property name="paramName">PERIODO</property>
+                    <property name="dataType">string</property>
+                    <property name="position">3</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">param_4</property>
+                    <property name="paramName">PERIODO</property>
+                    <property name="dataType">string</property>
+                    <property name="position">4</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
             </list-property>
             <structure name="cachedMetaData">
                 <list-property name="resultSet">
@@ -326,19 +350,33 @@ TRIM(TCU.CODE)||'-'||TCU.DESCRIPTION TIPO_CUENTA,
 SUBSTR(CB.NUMERO,12,10 ) NRO_CUENTA,
 CB.NUMERO CBU
 FROM ADELIA.CERTIFICADO_AGENTE CA
-INNER JOIN ADELIA.AGENTE A ON A.OBJECTID = CA.AGENTE
-INNER JOIN ADELIA.PERSONA P ON A.PERSONA = P.OBJECTID
-INNER JOIN ADELIA.TIPO_CERTIFICADO_AGENTE TC ON TC.OBJECTID = CA.TIPO_CERTIFICADO
+LEFT JOIN ADELIA.AGENTE A ON A.OBJECTID = CA.AGENTE
+LEFT JOIN ADELIA.PERSONA P ON A.PERSONA = P.OBJECTID
+LEFT JOIN ADELIA.TIPO_CERTIFICADO_AGENTE TC ON TC.OBJECTID = CA.TIPO_CERTIFICADO
 LEFT JOIN ADELIA.CUENTA_BANCARIA CB ON CB.AGENTE = A.OBJECTID
 LEFT JOIN ADELIA.BANCO_SUCURSAL S ON S.OBJECTID = CB.SUCURSAL
 LEFT JOIN ADELIA.TIPO_CUENTA_BANCARIA TCU ON TCU.OBJECTID = CB.TIPO
-INNER JOIN ADELIA.BANCO B ON B.OBJECTID = S.BANCO
+left JOIN ADELIA.BANCO B ON B.OBJECTID = S.BANCO
 WHERE 1 = 1 
 aND tc.IS_CERTIFICADO_ACCIDENTE = 1
-and ADD_MONTHS(to_date(?,'dd/mm/yyyy'),-1) between ca.FECHA and nvl(ca.FECHA_HASTA,to_date('30/12/9999','dd/mm/yyyy'))
+and (ADD_MONTHS(to_date(?,'dd/mm/yyyy'),-1) between ca.FECHA and nvl(ca.FECHA_HASTA,to_date('30/12/9999','dd/mm/yyyy')) 
+OR CA.FECHA <= LAST_DAY(ADD_MONTHS(to_date(?,'dd/mm/yyyy'),-1)) AND CA.FECHA_HASTA >= ADD_MONTHS(to_date(?,'dd/mm/yyyy'),-1))
 AND B.CODE = 'NA'
 AND CB.HABILITADA = 1
-ORDER BY 7,1,4,3 ASC]]></xml-property>
+and p.NRO_DOCUMENTO in (
+select p.NRO_DOCUMENTO
+from adelia.liquidacion l
+inner join adelia.liquidacion_cargo lc on lc.LIQUIDACION = l.OBJECTID
+inner join adelia.cargo c on lc.CARGO = c.OBJECTID
+inner join adelia.agente a on a.OBJECTID = c.AGENTE
+inner join adelia.persona p on p.OBJECTID = a.PERSONA
+inner join adelia.aplicacion_concepto_liq ac on ac.LIQUIDACION_CARGO = lc.OBJECTID
+inner join adelia.concepto_liquidacion cl on cl.OBJECTID = ac.CONCEPTO_LIQ
+where 1 = 1 and cl.CODE like '064%' and AC.PERIODO = to_date(?,'dd/mm/yyyy')
+group by p.NRO_DOCUMENTO
+having sum(ac.MONTO) <> 0
+)
+ORDER BY 1,4,3 ASC]]></xml-property>
         </oda-data-set>
     </data-sets>
     <page-setup>
