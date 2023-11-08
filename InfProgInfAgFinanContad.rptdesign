@@ -1914,6 +1914,10 @@ ORDER BY 2]]></xml-property>
                                     <property name="borderTopWidth">medium</property>
                                     <property name="verticalAlign">middle</property>
                                     <data id="898">
+                                        <structure name="dateTimeFormat">
+                                            <property name="category">Short Date</property>
+                                            <property name="pattern">Short Date</property>
+                                        </structure>
                                         <property name="textAlign">center</property>
                                         <property name="resultSetColumn">BAJA</property>
                                     </data>
