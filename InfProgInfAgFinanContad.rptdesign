@@ -1248,6 +1248,7 @@ ORDER BY 2]]></xml-property>
                                 <property name="dataType">string</property>
                             </structure>
                         </list-property>
+                        <property name="pageBreakInterval">400000</property>
                         <column id="934">
                             <property name="width">1in</property>
                         </column>
