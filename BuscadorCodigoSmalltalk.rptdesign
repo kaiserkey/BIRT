@@ -245,6 +245,7 @@ FROM (SELECT EXPRESION AS CODIGO, 'VARIABLE_FORMULA' ORIGEN, A.CODE NOMBRE , A.D
 			SELECT BLOB_TO_CLOB(SOURCE) AS CODIGO, 'DEFINICION_DE_CONSULTAS' ORIGEN, A.DESCRIPTION NOMBRE, NULL DESCRIPCION, NULL FECHA
 			FROM ADELIA.QUERY_DEFINITION A
 			) WHERE  REGEXP_LIKE(UPPER(CODIGO), UPPER(?))
+			and rownum = 1
 ORDER BY 2]]></xml-property>
         </oda-data-set>
         <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Origen Param" id="1311">
